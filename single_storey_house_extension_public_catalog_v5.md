@@ -31,7 +31,6 @@ Final quotation depends on confirmed measurement, site condition, selected packa
 
 ---
 
-
 # 01. HOW TO USE THIS CATALOG
 
 1. Choose your extension area:
@@ -62,35 +61,35 @@ Final quotation depends on confirmed measurement, site condition, selected packa
 
 # 02. PACKAGE COMPARISON - DETAILED SUPPLY AND INSTALL SCOPE
 
-The table below explains what the main extension package is intended to supply and install before add-ons are selected. It is written for budget guidance only; the official quotation must still list the exact measured quantities, routes, selected models and any owner-selected upgrades.
+The package below is intended as a normal homeowner all-in extension guide, with the main difference between Basic, Standard and Better Finish being finish level, material tier, number of points and selected accessories. The official quotation must still confirm exact measurements, models, point locations and any owner-selected upgrade.
 
 | Work Item | Basic | Standard | Better Finish |
 |---|---|---|---|
-| Site setup, protection and mobilisation | Contractor mobilisation for the agreed extension area; basic floor/path protection to the work route; ordinary tools and setting-out for the new work area. | Same mobilisation and protection as Basic, with added coordination for smoother wall/ceiling finishing in the new area. | Same mobilisation and protection as Standard, with added coordination for full-ceiling and upgraded finishing works in the new enclosed area. |
+| Site setup, protection and mobilisation | Contractor mobilisation for the agreed extension area; basic floor/path protection to the work route; ordinary tools and setting-out for the new work area. | Same mobilisation and protection as Basic, with added coordination for smoother finishing and wet-work sequencing. | Same mobilisation and protection as Standard, with added coordination for upgraded finishing, design ceiling and higher-detail handover. |
 | Excavation and soil assumption | Excavation for normal shallow extension foundation works under normal soil conditions only. Piling, retaining wall, underpinning, soft-soil treatment and structural strengthening are excluded. | Same foundation excavation basis as Basic. | Same foundation excavation basis as Basic. |
 | Footings and foundation basis | Standard pad footings and foundation works as needed for the agreed new extension footprint, subject to site review and no piling. | Same as Basic. | Same as Basic. |
 | Ground beam, column, lintel and roof beam basis | RC ground beams, columns, lintels and roof-edge beams as required for the new extension under the catalog assumptions. Existing structural defects or load-bearing alterations are excluded. | Same structural basis as Basic. | Same structural basis as Basic. |
 | Slab basis | Ground-floor concrete slab on ground for the agreed extension footprint, with screed to receive floor finish. Upper-floor slab work is not part of the single-storey catalog. | Same slab basis as Basic. | Same slab basis as Basic. |
-| Brick/block wall type and thickness | New nominal 4-inch brick/block walling to the agreed extension area. The exact brick or block product, bond pattern and any thicker or structural wall requirement must be stated in the official quotation. | Same wall basis as Basic. | Same wall basis as Basic. |
+| Brick/block wall type and thickness | New nominal 4-inch brick/block walling to the agreed extension area. Any thicker wall, RC wall, retaining wall or special structural wall must be stated in the official quotation. | Same wall basis as Basic. | Same wall basis as Basic. |
 | Internal and external plaster | Two-coat plaster to new wall surfaces on both sides of the new brick/block walls. | Two-coat plaster to new wall surfaces, prepared for smoother finishing. | Two-coat plaster to new wall surfaces, prepared for upgraded finishing. |
-| Skim coat and final wall finish | Rough plaster finish suitable for the stated paint system; skim coat is excluded unless specifically listed in the official quotation. | Fine skim coat to new internal wall surfaces for a smoother painted finish, subject to official quotation area. | Fine skim coat to new internal wall surfaces for upgraded painted finish, subject to official quotation area. |
-| Roof framing | Basic roof framing for the new extension roof only. Existing roof replacement outside the agreed tie-in area is excluded. | Roof framing for the new extension roof only, coordinated with ceiling works in the agreed ceiling area. | Roof framing for the new extension roof only, coordinated with ceiling works throughout the new enclosed area. |
-| Roof covering | Pre-painted metal sheet or concrete roof tile category, tied to the selected quotation scope. Exact profile, colour and matching requirement must be confirmed. | Same roof-covering category as Basic. | Same roof-covering category as Basic, with finishing coordination for visible roof-edge/fascia areas when included in the quotation. |
-| Roof tie-in and flashing | Tie-in to the existing roof or wall at the new extension only, including practical flashing to the new junction. Existing roof leakage or repair outside the tie-in area is excluded. | Same tie-in and flashing basis as Basic. | Same tie-in and flashing basis as Basic. |
-| Gutter and downpipe | Included only for a new roof edge created by the extension and listed in the official quotation. Existing rainwater rerouting or low drain discharge is excluded. | Same as Basic. | Same as Basic. |
+| Skim coat and final wall finish | Basic skim/finishing coat only where needed to prepare the new plastered internal wall for paint. | Smoother skim coat to new internal wall surfaces in the agreed extension area. | Smoother skim coat and better touch-up preparation to visible new internal wall surfaces. |
+| Roof framing | Roof framing for the new extension roof only. Existing roof replacement outside the agreed tie-in area is excluded. | Same roof-framing basis as Basic with better coordination for ceiling works. | Same roof-framing basis as Standard with better visible roof-edge/fascia coordination when included. |
+| Roof covering | Pre-painted metal sheet or concrete roof tile category, tied to the selected quotation scope. Exact profile, colour and matching requirement must be confirmed. | Same roof-covering category as Basic unless the quotation lists an upgraded profile. | Same roof-covering category as Standard unless the quotation lists an upgraded profile or colour match. |
+| Roof tie-in and flashing | Tie-in to the existing roof or wall at the new extension only, including practical flashing to the new junction. Existing roof leakage or repair outside the tie-in area is excluded. | Same tie-in and flashing basis as Basic with better finishing around visible junctions where accessible. | Same tie-in and flashing basis as Standard with better visible detailing where accessible. |
+| Gutter and downpipe | Included where a new roof edge is created by the extension. Existing rainwater rerouting or low drain discharge is excluded. | Same as Basic. | Same as Basic. |
 | Concrete floor slab and screed | Concrete slab on ground with flat screed to the new extension floor area. | Same slab and screed basis as Basic. | Same slab and screed basis as Basic. |
-| Floor tiles | Supply and install economy ceramic floor tiles on screed to the new extension floor area, including a suitable bedding or adhesive method and grout. The official quotation must state the tile size and agreed material allowance. Customer selections above that allowance are charged as an upgrade. | Supply and install better-grade ceramic or entry-level vitrified floor tiles on screed to the new extension floor area, including a suitable bedding or adhesive method and grout. The official quotation must state the tile size and agreed material allowance. Customer selections above that allowance are charged as an upgrade. | Supply and install an upgraded tile category stated in the official quotation, such as upgraded vitrified tile, including a suitable bedding or adhesive method and grout. The official quotation must state the tile type, size and agreed material allowance. Customer selections above that allowance are charged as an upgrade. |
-| Tile skirting | Tile skirting is excluded unless the official quotation states the included areas, height and tile category. | Same skirting limitation as Basic. | Same skirting limitation as Basic. |
-| Ceiling | No ceiling or underside lining is included. The new roof structure and rafters remain exposed unless a ceiling system is specifically listed in the official quotation. | Flat plaster ceiling only to the area specifically listed in the official quotation. The quotation must state the board type, framing, joint treatment, access-panel provision and paint system. | Flat plaster ceiling throughout the new enclosed extension area when included in the official quotation. The quotation must state the board type, framing, joint treatment, access-panel provision and paint system. Cornice is excluded unless specifically listed. |
-| Waterproofing | Cementitious waterproofing under floor tiles in wet areas only, such as agreed toilet/laundry/wet-zone floor areas. Coverage height and wall coverage must be listed in the official quotation. | Two-layer waterproofing system to the wet zones listed in the official quotation. The quotation must state the product/system, floor coverage, wall coverage and wall height. | Two-layer waterproofing system to the wet zones listed in the official quotation. The quotation must state the product/system, floor coverage, wall coverage and wall height. |
-| Door openings and complete door supply | Formation and making good of normal-sized openings only. Complete door, frame, hinges, lockset, handle, stopper, paint/factory finish and special fire-rated or metal/PVC/timber door systems are not included unless specifically listed in the official quotation. | Same as Basic. | Same as Basic. |
-| Window openings and complete window supply | Formation and making good of normal-sized openings only. Complete window, frame, aluminium, glass, sliding, folding, full-height or feature-opening systems are not included unless specifically listed in the official quotation. | Same as Basic. | Same as Basic. |
-| Electrical wiring and points | This guide does not apply one universal electrical-point quantity to every extension. The official quotation must list light points, switches, 13A sockets, 15A/20A points and whether wiring is surface or concealed. Work assumes extension from an existing suitable circuit only; new circuits, DB extension, DB upgrade, ELCB and earthing correction are excluded unless listed. | Same as Basic, with exact point quantities and route method to be listed in the official quotation. | Same as Basic, with exact point quantities and route method to be listed in the official quotation. |
-| Plumbing and waste points | Main package includes only plumbing/waste items specifically listed in the official quotation. Washing-machine point, utility-sink point, waste outlet, floor trap, outdoor tap, hot-water route, manhole connection, sewer connection, soil-stack work and major drainage rerouting are add-on or custom items unless listed. | Same as Basic. | Same as Basic. |
-| Internal and external paint | Surface preparation and two coats of emulsion paint to new internal wall surfaces; ceiling paint applies only if a ceiling is included. External paint system, sealer/primer and door/frame paint must be listed in the official quotation. | Surface preparation, two coats to new walls and two coats to included ceiling areas when ceiling is included. Sealer/primer, external weather-resistant paint and door/frame paint must be listed in the official quotation. | Surface preparation and premium paint category to new wall/ceiling surfaces when listed in the official quotation. Exact sealer/primer, number of coats, external weather-resistant paint and door/frame paint must be listed. |
+| Floor tiles | Supply and install economy ceramic floor tiles to the new extension floor area, including bedding/adhesive method suitable for the selected tile and grout. Typical tile category is economy ceramic. Exact tile size and RM material allowance must be stated in the quotation. | Supply and install better-grade ceramic or entry-level vitrified floor tiles, including suitable bedding/adhesive and grout. Exact tile size and RM material allowance must be stated in the quotation. | Supply and install upgraded vitrified or approved premium-category floor tiles, including suitable bedding/adhesive and grout. Exact tile size and RM material allowance must be stated in the quotation. |
+| Tile skirting | Include tile skirting up to about 4 inch / 100mm high to new plastered wall areas in the extension, except where the wall is fully tiled, blocked by cabinet/table top, or otherwise stated. | Same skirting basis as Basic, using the selected Standard floor tile category. | Same skirting basis as Basic, using the selected Better Finish floor tile category. |
+| Ceiling | Plain flat plaster ceiling board to the new enclosed extension area, with basic joint treatment and paint. No cornice or design feature. | Flat plaster ceiling board to the new enclosed extension area, with smoother joint treatment, access panel where required and paint. | Design plaster ceiling board may be included instead of plain flat ceiling, such as simple tray/L-box/feature ceiling in the agreed area. Cove light, LED strip, special access panels or complex design are included only if listed. |
+| Waterproofing | Cementitious waterproofing under floor tiles in agreed wet zones only, such as toilet, laundry or wet kitchen floor area. | Two-layer waterproofing system to listed wet zones, with floor coverage and wall-upturn height stated in the quotation. | Two-layer waterproofing system to listed wet zones with better coverage/detailing stated in the quotation. |
+| Door openings and complete door supply | For normal enclosed extension, include one standard single-leaf door set up to approx. 3ft x 7ft when required by the layout. Door material, frame and lockset must be listed. Sliding, folding, full-height, aluminium/glass feature door and oversized opening are quote-only. | Same as Basic, with better lockset/finish where listed. | Same as Standard, with upgraded door set/finish only where listed. Sliding, folding and feature systems remain quote-only. |
+| Window openings and complete window supply | For normal enclosed extension, include one standard aluminium framed window up to approx. 4ft x 3ft when required by the layout. Glass type, colour and exact size must be listed. | Include one standard aluminium framed window up to approx. 5ft x 4ft when required by the layout. Exact system and glass must be listed. | Include one larger or upgraded aluminium framed window up to approx. 6ft x 4ft when required by the layout. Full-height glass, sliding/folding door, feature facade and special glass remain quote-only. |
+| Electrical wiring and points | For a normal extension area up to about 150 sqft, include up to 1 light point with switch and 2 x 13A socket points on a practical route from an existing suitable circuit. Actual light fitting, water-heater point, hood/hob/cooker point, new circuit, DB upgrade and earthing correction are excluded unless listed. | For a normal extension area up to about 150 sqft, include up to 2 light points with switch and 3 x 13A socket points on a practical route. Appliance points, new circuit, DB upgrade and earthing correction are excluded unless listed. | For a normal extension area up to about 150 sqft, include up to 3 light/downlight points, suitable switching and 4 x 13A socket points on a practical route. Appliance points, new circuit, DB upgrade and earthing correction are excluded unless listed. |
+| Plumbing and waste points | For back/kitchen/yard/laundry extensions only, include up to 1 cold-water point, 1 waste outlet and 1 floor trap if the practical route is near the existing water/drainage line. Front/porch/room extension has no plumbing unless listed. | Include Basic plumbing plus 1 washing-machine point or outdoor tap where the route is practical and listed. | Include Standard plumbing plus one additional utility-sink or outdoor tap point where the route is practical and listed. Manhole/sewer relocation and major drainage reroute remain custom quote. |
+| Internal and external paint | Surface preparation, sealer/primer where required and two coats of emulsion paint to new internal wall surfaces. Ceiling paint applies to included ceiling. External wall paint must be suitable for external exposure where the new wall is external. | Same as Basic with smoother finishing and standard branded paint range stated in quotation. | Same as Standard with premium paint range or upgraded finish stated in quotation. Door/frame paint applies only where paintable door/frame is listed. |
 | Normal hacking and making good | Minor hacking/cut-in for normal brick/block wall modification and making good around the agreed new work only. Concrete, RC, precast, IBS, structural wall, load-bearing wall or large opening work is excluded. | Same as Basic. | Same as Basic. |
 | Construction-waste removal | Basic construction waste removal from the agreed work area only. Old furniture, existing cabinet removal, unrelated rubbish, major hacking waste and extra skip-bin disposal are excluded unless listed. | Same as Basic. | Same as Basic. |
-| Final cleaning | Final sweep-clean of the new work area. Detailed post-renovation cleaning, polishing or cleaning of unrelated existing areas is excluded unless listed. | Same as Basic. | Same as Basic. |
+| Final cleaning | Final sweep-clean of the new work area. Detailed post-renovation cleaning, polishing or cleaning of unrelated existing areas is excluded unless listed. | Same as Basic with better touch-up before handover. | Same as Standard with better touch-up before handover. |
 
 ---
 
@@ -228,10 +227,10 @@ Add-ons below are guide prices only. Final price depends on size, model, route, 
 | Wall cabinet | Not included unless specifically listed in the official quotation. |
 | Aluminium cabinet | Not included unless specifically listed in the official quotation. |
 | Kitchen cabinet in any material | Quoted separately unless specifically listed in the official quotation. |
-| Sink opening | Opening can be allowed in the concrete/tiled table top when the sink size/model is confirmed in the official quotation. |
-| Sink supply | Model and inclusion must be confirmed in the official quotation; do not assume it is included from the guide price alone. |
-| Tap supply | Model and inclusion must be confirmed in the official quotation; do not assume it is included from the guide price alone. |
-| Plumbing connection | Cold-water, waste and drainage route must be confirmed in the official quotation. Long route, concealed route or drainage reroute is quoted separately. |
+| Sink opening | Included when the sink size/model is confirmed before table-top work. |
+| Sink supply | Include 1 standard kitchen sink for Wet Kitchen Set A/B/C when listed in the official quotation. Kitchen Table Top Only may exclude sink supply unless listed. Premium sink is quoted separately. |
+| Tap supply | Include 1 standard kitchen tap for Wet Kitchen Set A/B/C when listed in the official quotation. Premium tap is quoted separately. |
+| Plumbing connection | Cold-water, waste and drainage connection to practical nearby route, subject to site condition. Long route, concealed route or drainage reroute is quoted separately. |
 | Quartz, granite or solid-surface top | Not included in the Wet Kitchen Set guide price; quote separately by length/material. |
 | Hood, hob and appliances | Not included; quote separately by model and electrical/gas route. |
 
@@ -256,20 +255,20 @@ Guide price is based on standard bathroom size up to approx. 35 sqft, such as 4f
 | Item | Basic Toilet / Bathroom Set | Standard Toilet / Bathroom Set | Better Toilet / Bathroom Set |
 |---|---|---|---|
 | Maximum guide area | Up to approx. 35 sqft. Larger bathrooms are custom quote. | Up to approx. 35 sqft. Larger bathrooms are custom quote. | Up to approx. 35 sqft. Larger bathrooms are custom quote. |
-| WC | 1 standard WC set; one-piece or two-piece type, brand and model to be confirmed in the official quotation. Cistern arrangement and seat cover follow the selected WC model. | 1 standard WC set; one-piece or two-piece type, brand and model to be confirmed in the official quotation. Cistern arrangement and seat cover follow the selected WC model. | 1 standard WC set; one-piece or two-piece type, brand and model to be confirmed in the official quotation. Cistern arrangement and seat cover follow the selected WC model. |
-| Bidet spray | 1 bidet spray, model to be confirmed. | 1 bidet spray, model to be confirmed. | 1 bidet spray, model to be confirmed. |
-| Basin | 1 basin with basic basin cabinet allowance; exact basin type, cabinet material and model to be confirmed in the official quotation. | 1 basin with basic basin cabinet allowance; exact basin type, cabinet material and model to be confirmed in the official quotation. | 1 basin with basic basin cabinet allowance; exact basin type, cabinet material and model to be confirmed in the official quotation. |
-| Basin tap and trap | 1 basin tap and trap, model to be confirmed. | 1 basin tap and trap, model to be confirmed. | 1 basin tap and trap, model to be confirmed. |
-| Shower | 1 cold-water shower set. Water heater and hot-water route are excluded unless separately quoted. | 1 cold-water shower set. Water heater and hot-water route are excluded unless separately quoted. | 1 cold-water shower set. Water heater and hot-water route are excluded unless separately quoted. |
+| WC | 1 standard two-piece close-coupled WC set. Brand/model to be listed in the official quotation. | 1 better-grade two-piece close-coupled WC set. Brand/model to be listed in the official quotation. | 1 premium one-piece WC combo set where available within the selected allowance. Brand/model to be listed in the official quotation. |
+| Bidet spray | 1 standard bidet spray. | 1 standard/better bidet spray. | 1 upgraded bidet spray or matching accessory set where listed. |
+| Basin | 1 wall-hung or pedestal basin with basic basin cabinet allowance only if listed. | 1 basin with standard basin cabinet or vanity allowance where listed. | 1 upgraded basin/vanity allowance where listed. |
+| Basin tap and trap | 1 standard basin tap and trap. | 1 standard/better basin tap and trap. | 1 upgraded basin tap and trap where listed. |
+| Shower | 1 cold-water shower set. Water heater and hot-water route are excluded unless separately quoted. | 1 standard/better cold-water shower set. Water heater and hot-water route are excluded unless separately quoted. | 1 upgraded cold-water shower set where listed. Water heater and hot-water route are excluded unless separately quoted. |
 | Floor trap and waste | 1 floor trap with waste connection to the practical existing route listed in the official quotation. Long sewer, manhole relocation, soil-stack relocation and major drainage reroute are custom quote. | Same as Basic. | Same as Basic. |
 | Cold-water point | Cold-water points for listed WC/basin/shower fixtures only, route to be confirmed. | Same as Basic. | Same as Basic. |
-| Waterproofing | Waterproofing included; exact system, floor coverage, wall coverage and height must be listed in the official quotation. | Waterproofing included; exact system, floor coverage, wall coverage and height must be listed in the official quotation. | Waterproofing included; exact system, floor coverage, wall coverage and height must be listed in the official quotation. |
-| Floor tile | Floor tile included; exact tile category, size and RM material allowance must be confirmed. | Floor tile included; exact tile category, size and RM material allowance must be confirmed. | Floor tile included; exact tile category, size and RM material allowance must be confirmed. |
-| Wall tile | Wall tile to agreed height; exact tile category, tile size, RM material allowance and wall height must be confirmed. | Wall tile to agreed height; exact tile category, tile size, RM material allowance and wall height must be confirmed. | Wall tile to agreed height; exact tile category, tile size, RM material allowance and wall height must be confirmed. |
-| Toilet door | 1 toilet door set is included. The official quotation must state the door material, frame, lockset, handle, hinges, stopper and finish. | Same as Basic. | Same as Basic. |
-| Light point | 1 light point. Actual light fitting and switch type must be confirmed. | 1 light point. Actual light fitting and switch type must be confirmed. | 1 light point. Actual light fitting and switch type must be confirmed. |
-| Exhaust fan point | Not included unless specifically listed in the official quotation. | Not included unless specifically listed in the official quotation. | Not included unless specifically listed in the official quotation. |
-| Mirror and accessories | LED mirror, premium mirror cabinet, premium vanity cabinet and premium bathroom accessories are excluded unless separately quoted. | Same as Basic. | Same as Basic. |
+| Waterproofing | Waterproofing to bathroom floor with wall upturn/wet-wall coverage stated in quotation. | Better waterproofing coverage/detailing stated in quotation. | Better waterproofing coverage/detailing stated in quotation. |
+| Floor tile | Economy ceramic bathroom floor tile. Exact size and RM allowance to be stated in quotation. | Better ceramic or entry-level vitrified bathroom floor tile. Exact size and RM allowance to be stated in quotation. | Upgraded bathroom floor tile. Exact size and RM allowance to be stated in quotation. |
+| Wall tile | Wall tile to wet-wall/agreed height stated in quotation. | Wall tile to agreed height, normally higher wet-wall coverage than Basic where listed. | Wall tile to agreed height or near/full height where listed. |
+| Toilet door | 1 toilet door set up to approx. 2.5ft x 7ft, typically PVC or aluminium/PVC type by quotation, including frame, hinges and lockset. | Same as Basic with better door/accessory allowance where listed. | Same as Standard with upgraded door/accessory allowance where listed. |
+| Light point | 1 light point with switch. Actual fitting model must be confirmed. | 1 light point with switch. Actual fitting model must be confirmed. | 1 light point with switch. Actual fitting model must be confirmed. |
+| Exhaust fan point | Not included unless specifically listed in the official quotation. | Include exhaust-fan point where listed; fan supply depends on model and quotation. | Include exhaust-fan point where listed; fan supply depends on model and quotation. |
+| Mirror and accessories | LED mirror, premium mirror cabinet, premium vanity cabinet and premium bathroom accessories are excluded unless separately quoted. | Same as Basic. | Upgraded mirror/accessories only where listed. |
 | Shower screen | Not included unless separately quoted by size and hardware specification. | Same as Basic. | Same as Basic. |
 | Manhole, sewer and soil-stack limitations | Major sewer/manhole relocation, soil-stack relocation and long concealed pipe route are excluded unless custom quoted. | Same as Basic. | Same as Basic. |
 
@@ -302,10 +301,10 @@ Guide price is based on standard bathroom size up to approx. 35 sqft, such as 4f
 
 | Item | Clarification |
 |---|---|
-| Light point | Add-on guide price is per extra point. Actual light fitting is not included unless the official quotation lists the fitting model. |
-| Switch | Switch type and location must be listed in the official quotation. |
-| 13A socket | Add-on guide price is per extra 13A socket point on a practical route. Exact quantity must be listed. |
-| 15A / 20A point | Add-on guide price is per point; appliance load and route must be confirmed. |
+| Light point | Package quantity is stated in Section 02. Extra point guide price is per additional point. Actual light fitting is included only if model is listed. |
+| Switch | Standard switch included with listed light point. Special switch, dimmer, smart switch or two-way switch must be listed. |
+| 13A socket | Package quantity is stated in Section 02. Extra socket guide price is per additional practical route point. |
+| 15A / 20A point | Quoted separately by appliance load and route unless listed. |
 | Hood / hob / cooker point | Quoted separately by route, load and appliance requirement. |
 | Exhaust-fan point | Quoted/listed separately unless included in a bathroom quotation. |
 | Surface wiring | Included only when listed as surface route in the official quotation. |
@@ -334,12 +333,12 @@ Guide price is based on standard bathroom size up to approx. 35 sqft, such as 4f
 
 | Item | Clarification |
 |---|---|
-| Cold-water point | Add-on guide is per extra cold-water point when route is practical and listed in the official quotation. |
-| Washing-machine point | Included only in the Laundry / Yard Rough-In Set or when separately listed. |
+| Cold-water point | Included only to the package/add-on quantity listed and only when the route is practical. |
+| Washing-machine point | Included in the Laundry / Yard Rough-In Set or in the Standard/Better wet-area scope only if listed. |
 | Utility-sink point | Quoted separately by route unless listed in the official quotation. |
-| Waste outlet | Add-on guide is per extra waste point when route is practical and listed in the official quotation. |
-| Floor trap | Quoted by route and discharge point. |
-| Outdoor tap | Quoted by route. |
+| Waste outlet | Included only to the listed quantity and practical route. |
+| Floor trap | Quoted by route and discharge point unless already listed in the package/add-on scope. |
+| Outdoor tap | Quoted by route unless already listed. |
 | Hot-water route | Custom quote by route, heater type and concealment requirement. |
 | Manhole connection | Custom quote by site condition. |
 | Sewer connection | Custom quote by site condition. |
@@ -356,7 +355,7 @@ These items are not fixed in the extension catalog because price depends on exac
 
 | Item | Pricing Method |
 |---|---|
-| Aluminium window / door | Quote by size and system |
+| Aluminium window / door beyond package allowance | Quote by size and system |
 | Sliding door / folding door | Quote by size and profile system |
 | Glass partition / fixed glass | Quote by size and glass spec |
 | Shower screen | Quote by size and hardware spec |
@@ -377,7 +376,7 @@ These items are not included unless clearly listed in the official quotation:
 - ID, 2D layout, 3D design or interior design package
 - Kitchen cabinet, aluminium cabinet or premium countertop
 - Quartz, granite or solid surface top
-- Aluminium window, aluminium door, sliding door or folding door
+- Aluminium window, aluminium door, sliding door or folding door beyond the package allowance
 - Glass partition, full-height glass or shower screen
 - Grille, gate, autogate or fencing
 - Water heater, premium sanitary ware or premium bathroom accessories
@@ -421,7 +420,7 @@ High ceiling, double-volume space, special roof pitch or exposed high wall is qu
 
 ## 4. Opening Limitation
 
-Package rates assume normal door/window openings only.
+Package rates include only the normal door/window allowance stated in Section 02.
 
 Large openings, sliding door, folding door, full-height glass, balcony glass, heavy aluminium/glass facade and grille/gate are quoted separately.
 
@@ -498,7 +497,7 @@ Warranty does not cover existing house movement, old leakage, existing crack, ow
 | Question | Answer |
 |---|---|
 | Are these raw material prices? | No. These are public guide selling prices. |
-| Is this an all-in renovation price? | No. It covers the selected extension package only. Add-ons and exclusions must be confirmed in quotation. |
+| Is this an all-in renovation price? | It is an all-in guide for the selected extension package scope, but add-ons, model upgrades and exclusions must be confirmed in quotation. |
 | Which table should I check first? | Check the Ready-Calculated Common Size Examples first. Use the size-band guide only if your size is not listed. |
 | Why is small job price not simply sqft x rate? | Small works still need setup, transport, labour, protection, disposal and coordination. Minimum job price may apply. |
 | Is table top included? | Not in the main extension package. Select Kitchen Table Top or Wet Kitchen add-on. |
@@ -507,7 +506,7 @@ Warranty does not cover existing house movement, old leakage, existing crack, ow
 | Does toilet package include shower? | It includes cold-water shower set. Water heater and shower screen are not included unless listed. |
 | Is water heater included? | No, quoted separately by model and route. |
 | Is shower screen included? | No, quoted separately by size/spec. |
-| Is aluminium/glass included? | No, quoted separately by size/system unless listed. |
+| Is aluminium/glass included? | One normal aluminium window allowance may be included in the main package as stated; other aluminium/glass items are quote-only unless listed. |
 | Is grille/gate included? | No, quoted separately by size/design. |
 | Is permit/council submission included? | No, authority/professional fee is separate unless listed. |
 | Is ID/3D design included? | No, optional and quoted separately. |
