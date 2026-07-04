@@ -17,6 +17,14 @@ It must be understandable by:
 
 This header is not only for the AI that created it. When the owner pastes this header into another AI session or gives it with the latest catalog PDF, that reader must understand the versioning rule, source order, customer-facing catalog intent, quotation test method and safety boundaries.
 
+## Browser reply timestamp rule
+
+Every browser/chat reply for this renovation project must show Malaysia date/time near the top in this format:
+
+`MYT: YYYY-MM-DD HH:mm`
+
+Use Malaysia timezone `Asia/Kuala_Lumpur`. Do not rely on UTC or server local time when stating the time.
+
 ## Project identity guard
 
 This header belongs only to `neprenkha/renovation`.
@@ -47,7 +55,24 @@ Before doing quotation work in ActiveBOQ, check whether the folder contains enou
 - site risk notes;
 - required output format for customer quotation.
 
-If any required detail is missing, mark it as missing and ask only for the exact missing item. Do not invent dimensions, scope or final quotation price from an unclear drawing.
+If any required detail is missing, mark it as missing and ask only for the exact missing item. Do not invent final quotation price from an unclear drawing.
+
+## Floorplan estimate rule
+
+When a customer has supplied a floor plan but exact sizes are not written or are not readable, AI may use reasonable floorplan-based estimates for early budgeting.
+
+Allowed estimate methods:
+
+- derive approximate size from visible room proportions in the floor plan;
+- use typical Malaysian terrace-house proportions when the drawing is clearly a normal terrace-style layout;
+- use practical built-in cabinet depths and heights where not specified;
+- apply `+/-` tolerance and mark the line as `FLOORPLAN ESTIMATE`;
+- choose a reasonable size that does not look illogical for the room type;
+- keep assumptions visible in the audit/spec/quotation file.
+
+Do not present floorplan estimates as final measured quantities. Final quotation must still say subject to site measurement, final cabinet drawing, material confirmation and route verification.
+
+If the floor plan cannot be read at all, state that limitation and use only request-based provisional scope until the readable drawing is available.
 
 ## Catalog fallback and manual BOQ rule
 
@@ -220,6 +245,7 @@ Do not promise a brand/model unless written in the quotation.
 - Do not edit V4, V5, PDF, DOCX, Materials, Labour, README or Deep Research when creating a new version or working file.
 - Do not edit customer originals such as `Customer Request.txt`, drawings, floor plans, photos or uploaded PDFs.
 - Do not invent brands or exact models.
+- Do not present floorplan estimates as final measured quantities.
 - Do not promise cabinets, premium glass, water heater, shower screen, DB upgrade, sewer/manhole work, authority fees or structural strengthening unless listed.
 - Do not work in a hidden branch when the owner expects visible files in `main`, unless branch workflow is explicitly agreed.
 - Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
