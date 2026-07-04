@@ -1,10 +1,25 @@
 # GPT Header Renovation
 
-## Project identity
+## Purpose and audience
 
 Repository: `neprenkha/renovation`
 
-This header is only for ACTIVEBOQ / Mix BOQ renovation catalog, BOQ and quotation work.
+This header is a standalone handover and governance file for ACTIVEBOQ / Mix BOQ renovation catalog, BOQ and quotation work.
+
+It must be understandable by:
+
+- the owner;
+- a new AI session;
+- a human quantity surveyor;
+- an interior designer;
+- a contractor;
+- a future reviewer preparing quotation or checking scope.
+
+This header is not only for the AI that created it. When the owner pastes this header into another AI session or gives it with the latest catalog PDF, that reader must understand the versioning rule, source order, customer-facing catalog intent, quotation test method and safety boundaries.
+
+## Project identity guard
+
+This header belongs only to `neprenkha/renovation`.
 
 Before every reply, prompt, audit or GitHub edit, confirm the work belongs to `neprenkha/renovation`. If the request, permission screen, repository, file names or task point to `neprenkha/BOQ`, LBHub, Enginuity, ONEBOT, ACCOUNT or another project, stop first and warn the owner. Do not silently mix headers, files, rules, branches or project authority.
 
@@ -16,6 +31,13 @@ Current V4 source names:
 
 - `SingleStoreyExtentionNRenovationV4.md`
 - `DoubleStoreyExtentionNRenovationV4.md`
+
+Current V5 source names:
+
+- `SingleStoreyExtentionNRenovationV5.md`
+- `DoubleStoreyExtentionNRenovationV5.md`
+- `V5_CHANGE_REPORT.md`
+- `V5_CUSTOMER_ANSWER.md`
 
 Supporting references:
 
@@ -58,6 +80,21 @@ Current naming pattern:
 Future versions continue as V6, V7 and later.
 
 The latest V number is the current combined version. Older versions remain for audit, correction and rollback reference.
+
+## Catalog and PDF delivery rule
+
+A version is not customer-ready until the matching downloadable files exist or the owner has explicitly accepted Markdown-only use.
+
+For each completed public version, provide at minimum:
+
+- Markdown source for single-storey catalog;
+- Markdown source for double-storey catalog;
+- PDF render for single-storey catalog;
+- PDF render for double-storey catalog;
+- change report;
+- customer answer sheet.
+
+The PDF must be based on the matching same-version catalog source. If the PDF is not yet created, state that the catalog source exists but PDF delivery is still pending.
 
 ## Public catalog rule
 
@@ -107,6 +144,7 @@ Proceed with the smallest complete safe task. If blocked, state the exact block 
 - Do not promise cabinets, premium glass, water heater, shower screen, DB upgrade, sewer/manhole work, authority fees or structural strengthening unless listed.
 - Do not work in a hidden branch when the owner expects visible files in `main`, unless branch workflow is explicitly agreed.
 - Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
+- Do not tell the owner V5 is fully ready if the PDF render is not yet created.
 
 ## Quotation test rule
 
