@@ -100,6 +100,27 @@ SPC pricing assumptions for this job:
 
 These confirmations apply to this ActiveBOQ SPC scope unless owner reuses them in another job.
 
+## Cost versus selling price rule
+
+Every ActiveBOQ estimate must clearly state whether the amount is:
+
+- internal cost / working cost;
+- cost with contingency only;
+- customer selling price with markup;
+- customer selling price with target gross margin.
+
+Do not call a number customer-ready if markup or margin has not been explicitly calculated. Rounding a cost number to the nearest customer figure is not a markup.
+
+When preparing a customer quotation from internal cost, create a separate upgrade file showing at least:
+
+- base working cost;
+- markup on cost options, normally 10%, 15%, and 20%;
+- optional/add-on impact;
+- recommended customer figure;
+- whether SST, management fee, delivery, access cost, or authority cost is included or excluded.
+
+If a rate is already a selling/package rate, mark it as `SELLING RATE USED`. If it is only cost/provisional, mark it as `WORKING COST` or `PROVISIONAL COST`.
+
 ## Immutable source and upgrade-file rule
 
 Do not edit original customer files, old catalog versions, PDFs, DOCX, Materials, Labour, README or Deep Research unless owner explicitly asks to revise that exact file.
@@ -204,6 +225,7 @@ For customer quotation work under `ActiveBOQ/`, use: customer location/job label
 - Do not create separate foam cost when selected SPC product already includes foam.
 - Do not invent foam/underlay price if selected product has no foam and no price source is found.
 - Do not use old AdditionalMaterials prices without marking uplift/age allowance when owner says the reference may be old.
+- Do not present a cost estimate as customer selling price without explicit markup/margin calculation.
 - Do not work in hidden branch when owner expects `main`, unless branch workflow is explicitly agreed.
 - Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
 - Do not treat root catalog as active customer job; active customer job is under `ActiveBOQ/`.
