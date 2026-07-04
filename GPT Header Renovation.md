@@ -84,12 +84,14 @@ For this ActiveBOQ customer job, owner confirmed the existing living hall floor 
 SPC pricing assumptions for this job:
 
 - No floor levelling by default because existing tile floor is assumed usable.
-- No hacking/removal of existing tile; SPC is installed over existing tile.
+- No removal of existing tile; SPC is installed over existing tile.
 - Use SPC installation labour at RM2/sqft.
 - Skirting and profile/trims can use listed AdditionalMaterials prices.
 - Glue is optional only if selected system/profile needs it.
-- Foam/underlay is normally expected for ground-floor use, but if price is not found in the provided price reference, list it as missing rather than inventing a rate.
 - Final colour/model selection is chosen later and does not block early budgeting.
+- `NII FLOOR PRODUCT PRICELIST 2023 - updated 311222.pdf` must be checked for SPC product numbers 7-12 because owner identified those as foam-backed/foam-included references.
+- If the selected SPC product already states foam/underlay is included or attached, do not add a separate foam line by default. Record it as `FOAM INCLUDED IN PRODUCT SPEC` and confirm exact model later.
+- If the selected product does not include foam, then add a separate foam/underlay line only when a price source exists; do not invent a foam rate.
 - If SPC material/skirting/profile/glue prices are old, calculate base, +5% and +10% material uplift; use +10% for safer cost estimate.
 
 These confirmations apply to this ActiveBOQ SPC scope unless owner reuses them in another job.
@@ -192,8 +194,9 @@ For customer quotation work under `ActiveBOQ/`, use: customer location/job label
 - Do not present floorplan estimates as final measured quantities.
 - Do not treat AdditionalMaterials as master list unless formally mapped/approved.
 - Do not choose vinyl when customer asked for SPC unless owner approves substitution.
-- Do not include floor levelling or existing tile hacking/removal for this ActiveBOQ SPC scope unless later evidence requires it.
-- Do not invent foam/underlay price if not found in provided price reference.
+- Do not include floor levelling or existing tile removal for this ActiveBOQ SPC scope unless later evidence requires it.
+- Do not create separate foam cost when selected SPC product already includes foam.
+- Do not invent foam/underlay price if selected product has no foam and no price source is found.
 - Do not use old AdditionalMaterials prices without marking uplift/age allowance when owner says the reference may be old.
 - Do not work in hidden branch when owner expects `main`, unless branch workflow is explicitly agreed.
 - Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
