@@ -25,6 +25,30 @@ Before every reply, prompt, audit or GitHub edit, confirm the work belongs to `n
 
 General governance style may be adapted from other projects only for safety, preservation, evidence, versioning and anti-drift. Do not copy another project's scope, paths, modules, engines, workbooks, runtime rules or business objectives.
 
+## ActiveBOQ active work folder
+
+The current active customer-pricing work is under:
+
+`ActiveBOQ/`
+
+The `ActiveBOQ/` folder is for the current extension and renovation job where the customer has supplied a floor plan and the owner needs to calculate price and prepare a customer-facing quotation.
+
+The wider repository root `neprenkha/renovation` remains the reference source for catalog, material, labour, BOQ and quotation rules. ActiveBOQ must use the root reference files, but it must not overwrite root catalog versions or reference files.
+
+Before doing quotation work in ActiveBOQ, check whether the folder contains enough evidence for:
+
+- customer/project identity or job label;
+- floor plan or drawing;
+- work area and scope;
+- single-storey or double-storey status;
+- measurements or scale basis;
+- selected package tier or intended finish level;
+- add-ons such as bathroom, wet kitchen, laundry, electrical, plumbing, aluminium/glass, cabinet or structure;
+- site risk notes;
+- required output format for customer quotation.
+
+If any required detail is missing, mark it as missing and ask only for the exact missing item. Do not invent dimensions, scope or final quotation price from an unclear drawing.
+
 ## Current source files
 
 Current V4 source names:
@@ -56,13 +80,14 @@ Use sources in this order:
 
 1. Latest explicit owner instruction.
 2. This header for workflow rules.
-3. Latest versioned catalog for prices, public wording and exclusions.
-4. `1.2 Materials.txt` for material references.
-5. `1.3 Labour.txt` for labour and installation references.
-6. README files for BOQ and quotation workflow.
-7. Deep Research only where it does not conflict.
-8. PDF/DOCX as rendered reference.
-9. Older drafts or stale branches.
+3. ActiveBOQ current job files for customer-specific scope, drawings, floor plan, measurements and site notes.
+4. Latest versioned catalog for prices, public wording and exclusions.
+5. `1.2 Materials.txt` for material references.
+6. `1.3 Labour.txt` for labour and installation references.
+7. README files for BOQ and quotation workflow.
+8. Deep Research only where it does not conflict.
+9. PDF/DOCX as rendered reference.
+10. Older drafts or stale branches.
 
 ## Versioning rule
 
@@ -130,9 +155,28 @@ Do not update this header for routine progress.
 
 ## Work continuation rule
 
-When the owner asks to update GitHub or create the next catalog version, do not stop at explanation if the safe next action is known.
+When the owner asks to update GitHub or create the next catalog version, ActiveBOQ file, BOQ, audit or quotation, do not stop at explanation if the safe next action is known.
 
 Proceed with the smallest complete safe task. If blocked, state the exact block and exact owner action required.
+
+## ActiveBOQ quotation test rule
+
+For customer quotation work under `ActiveBOQ/`, use:
+
+1. customer location and job label;
+2. house type and storey type;
+3. floor plan/drawing evidence;
+4. work area and measured/assumed size;
+5. package tier or finish level;
+6. add-ons;
+7. site risk notes;
+8. catalog version used;
+9. inclusions;
+10. exclusions;
+11. assumptions;
+12. questions still required before final quotation.
+
+Do not promise a brand/model unless written in the quotation.
 
 ## Known mistakes to avoid
 
@@ -145,9 +189,4 @@ Proceed with the smallest complete safe task. If blocked, state the exact block 
 - Do not work in a hidden branch when the owner expects visible files in `main`, unless branch workflow is explicitly agreed.
 - Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
 - Do not tell the owner V5 is fully ready if the PDF render is not yet created.
-
-## Quotation test rule
-
-After the latest catalog version is ready, quotation testing must use: location, house type, storey type, work area, rough size, package tier, add-ons, site risks, catalog version, inclusions, exclusions and required follow-up questions.
-
-The quotation must not promise a brand/model unless written in the quotation.
+- Do not treat the root catalog as the active customer job; the active customer job is under `ActiveBOQ/`.
