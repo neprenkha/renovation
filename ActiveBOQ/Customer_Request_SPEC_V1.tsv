@@ -1,0 +1,37 @@
+Spec	Description	Note
+S01-TITLE	Preliminaries, site protection and setting-out	ActiveBOQ customer renovation request; confirm floor plan, dimensions, access and protection before measurement.
+S01-OVERVIEW	Prepare site, protect existing finishes, confirm drawings and work zones	INPUT NEEDED: floor plan/drawing filename, house type, floor level and access condition.
+S01-SOURCE	Customer request source	Based on ActiveBOQ/Customer Request.txt; source file must remain unchanged.
+S01-METHOD	Use manual BOQ fallback where catalog does not cover custom interior scope	Use README - BOQ.txt workflow before takeoff; catalog V5 used only for matching guide wording.
+S02-TITLE	Hacking, minor alteration and making good	Scope for any minor arch, wall/floor opening, electrical/plumbing chase and affected finishes.
+S02-OVERVIEW	Prepare affected areas before services and cabinet/ceiling installation	INPUT NEEDED: exact hacking locations, arch details, wall type and affected finish areas.
+S03-TITLE	Plumbing relocation for washing machine	Relocate washing machine water and waste route.
+S03-OVERVIEW	Cold-water, waste and drainage route for washing machine relocation	INPUT NEEDED: existing point location, new location, route length, floor/wall hacking and drainage connection point.
+S04-TITLE	Electrical and wiring	Fan, air-conditioner, chandelier, downlight/eyeball, cabinet LED and plug point wiring.
+S04-OVERVIEW	Customer stated 7 fans, 3 air-conditioners, chandelier, downlights/eyeball, LED at cabinet, plug points and others	INPUT NEEDED: exact point count, switch grouping, DB condition, concealed/exposed route, fitting supply by owner or contractor.
+S04-QTY	Fan points	7 fan points stated by customer; confirm with floor plan room positions.
+S04-QTY	Air-conditioner points	3 air-conditioner points stated by customer; confirm horsepower, isolator route and drainage if included.
+S04-QTY	Chandelier point	1 chandelier mentioned; confirm location, ceiling support and fitting weight.
+S04-QTY	Downlights/eyeball points	Quantity not stated.
+S04-QTY	Cabinet LED points	Quantity and cabinet locations not stated.
+S04-QTY	Plug points	Quantity not stated.
+S05-TITLE	Plaster ceiling	C-box at living and flat ceiling at kitchen.
+S05-OVERVIEW	Install plaster ceiling according to area and lighting coordination	INPUT NEEDED: living C-box length/area, kitchen flat ceiling area, ceiling height, access panel requirement and lighting layout.
+S06-TITLE	Kitchen cabinet package	Base cabinet blockboard, wall cabinet melamine, porcelain/sintered countertop, quartz backsplash and minor arch.
+S06-OVERVIEW	Custom kitchen cabinet and countertop scope requires measured run and finish details	INPUT NEEDED: base cabinet length/depth/height, wall cabinet length/height, countertop length/depth/thickness, backsplash height/area and arch detail.
+S06-MATERIAL	Base cabinet	Customer requested blockboard.
+S06-MATERIAL	Wall cabinet	Customer requested melamine.
+S06-MATERIAL	Countertop	Customer requested porcelain/sintered.
+S06-MATERIAL	Backsplash	Customer requested quartz.
+S07-TITLE	TV cabinet package	Melamine with some blockboard for arch.
+S07-OVERVIEW	Custom TV cabinet requires measured width, height, depth and arch detail	INPUT NEEDED: TV wall width/height, cabinet depth, open shelf/closed door layout, lighting and backing panel requirement.
+S08-TITLE	Master bedroom cabinet and make-up table	Built-in cabinet with make-up table.
+S08-OVERVIEW	Custom bedroom cabinet requires measured run and layout	INPUT NEEDED: wardrobe/cabinet length, height, depth, door type, internal accessories, make-up table size and mirror/light requirement.
+S09-TITLE	Shoe cabinet	Custom shoe cabinet.
+S09-OVERVIEW	INPUT NEEDED: shoe cabinet width, height, depth, door/open shelf layout and location.
+S10-TITLE	Mirror and fluted/wainscoting at dining area	Dining area feature wall scope.
+S10-OVERVIEW	INPUT NEEDED: feature wall width/height, mirror size, fluted panel area, wainscoting profile, finish and whether lighting is included.
+S11-TITLE	SPC flooring at living hall	SPC flooring supply/install or install-only to living hall.
+S11-OVERVIEW	INPUT NEEDED: living hall area, existing floor condition, skirting requirement, floor leveling requirement and selected SPC thickness/type.
+S12-TITLE	Painting and final touch-up	Paint colour direction stated as Vanilla Latte / Timeless.
+S12-OVERVIEW	INPUT NEEDED: rooms/walls/ceilings included, total area, number of coats, sealer/primer need and exact colour code confirmation.
