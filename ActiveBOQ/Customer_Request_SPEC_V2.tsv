@@ -1,0 +1,39 @@
+Spec	Description	Note
+S01-TITLE	Preliminaries, floorplan check, site protection and setting-out	ActiveBOQ customer renovation request; use floor plan for early budgeting and verify on site before final quotation.
+S01-OVERVIEW	Prepare site, protect existing finishes, confirm drawings and work zones	Use `FLOORPLAN ESTIMATE` where exact size is not readable; do not edit customer original files.
+S01-SOURCE	Customer request source	Based on ActiveBOQ/Customer Request.txt; source file must remain unchanged.
+S01-METHOD	Manual BOQ fallback where catalog does not cover custom interior scope	Use README - BOQ.txt workflow before takeoff; catalog V5 used only for matching guide wording.
+S01-ESTIMATE-RULE	Reasonable terrace-house estimate rule	If exact size is missing but floor plan supports location, use logical +/- estimate and mark assumption clearly.
+S02-TITLE	Hacking, minor alteration and making good	Scope for minor arch, wall/floor opening, electrical/plumbing chase and affected finishes.
+S02-OVERVIEW	Prepare affected areas before services and cabinet/ceiling installation	FLOORPLAN ESTIMATE allowed for affected wall/route locations; final depends on site inspection.
+S03-TITLE	Plumbing relocation for washing machine	Relocate washing machine water and waste route.
+S03-OVERVIEW	Cold-water, waste and drainage route for washing machine relocation	Use floor plan to identify laundry/kitchen/yard position; route is provisional until old/new point positions are confirmed.
+S04-TITLE	Electrical and wiring	Fan, air-conditioner, chandelier, downlight/eyeball, cabinet LED and plug point wiring.
+S04-OVERVIEW	Customer stated 7 fans, 3 air-conditioners, chandelier, downlights/eyeball, cabinet LED, plug points and others	Known quantities: 7 fan points, 3 air-cond points, 1 chandelier mention. Missing downlight/eyeball, cabinet LED, plug and switch count may be estimated from floor plan then verified.
+S04-QTY	Fan points	7 fan points stated by customer; verify room positions from floor plan.
+S04-QTY	Air-conditioner points	3 air-conditioner points stated by customer; confirm horsepower, isolator route and drain requirement.
+S04-QTY	Chandelier point	1 chandelier mentioned; confirm exact living/dining location and ceiling support.
+S04-QTY	Downlights/eyeball points	FLOORPLAN ESTIMATE allowed from living/kitchen/feature ceiling layout if no lighting plan is supplied.
+S04-QTY	Cabinet LED points	FLOORPLAN ESTIMATE allowed based on kitchen/TV/wardrobe cabinet design; confirm driver/switch location.
+S04-QTY	Plug points	FLOORPLAN ESTIMATE allowed by room function; final point count must be confirmed before quotation issue.
+S05-TITLE	Plaster ceiling	C-box at living and flat ceiling at kitchen.
+S05-OVERVIEW	Install plaster ceiling according to area and lighting coordination	Use floor plan to estimate living C-box perimeter/area and kitchen flat ceiling area; final measurement required.
+S06-TITLE	Kitchen cabinet package	Base cabinet blockboard, wall cabinet melamine, porcelain/sintered countertop, quartz backsplash and minor arch.
+S06-OVERVIEW	Custom kitchen cabinet and countertop scope requires measured run and finish details	Use kitchen floor plan wall run as early estimate; typical terrace allowance may be used only if drawing dimension unclear.
+S06-MATERIAL	Base cabinet	Customer requested blockboard.
+S06-MATERIAL	Wall cabinet	Customer requested melamine.
+S06-MATERIAL	Countertop	Customer requested porcelain/sintered.
+S06-MATERIAL	Backsplash	Customer requested quartz.
+S06-ESTIMATE	Kitchen cabinet early-budget assumption	FLOORPLAN ESTIMATE: use approx. kitchen wall run; typical terrace basis 8ft-12ft base run and 6ft-10ft wall cabinet unless drawing shows otherwise.
+S07-TITLE	TV cabinet package	Melamine with some blockboard for arch.
+S07-OVERVIEW	Custom TV cabinet requires measured width, height, depth and arch detail	Use TV wall from floor plan/living room layout; typical early estimate 6ft-10ft if not dimensioned.
+S08-TITLE	Master bedroom cabinet and make-up table	Built-in cabinet with make-up table.
+S08-OVERVIEW	Custom bedroom cabinet requires measured run and layout	Use master bedroom wall from floor plan; typical early estimate 6ft-10ft wardrobe plus 3ft-4ft make-up table if not dimensioned.
+S09-TITLE	Shoe cabinet	Custom shoe cabinet.
+S09-OVERVIEW	Use entrance/foyer wall from floor plan; typical early estimate 3ft-5ft if not dimensioned.
+S10-TITLE	Mirror and fluted/wainscoting at dining area	Dining area feature wall scope.
+S10-OVERVIEW	Use dining wall from floor plan; estimate width/height from wall proportion if no detail drawing exists.
+S11-TITLE	SPC flooring at living hall	SPC flooring supply/install or install-only to living hall.
+S11-OVERVIEW	Use living hall floor area from floor plan; if dimension unclear, estimate by typical terrace living hall proportion and mark FLOORPLAN ESTIMATE.
+S12-TITLE	Painting and final touch-up	Paint colour direction stated as Vanilla Latte / Timeless.
+S12-OVERVIEW	Use room list/floor plan for wall and ceiling areas; do not assume whole house unless customer request confirms whole-house painting.
