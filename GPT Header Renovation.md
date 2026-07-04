@@ -49,6 +49,39 @@ Before doing quotation work in ActiveBOQ, check whether the folder contains enou
 
 If any required detail is missing, mark it as missing and ask only for the exact missing item. Do not invent dimensions, scope or final quotation price from an unclear drawing.
 
+## Catalog fallback and manual BOQ rule
+
+If the requested work is not fully covered by a completed catalog package, do not force it into the catalog.
+
+Use the latest catalog only for matching guide items and customer-facing inclusion wording. For items not covered by the catalog, use `README - BOQ.txt` workflow and the master lists to build a manual BOQ/spec calculation.
+
+Manual BOQ fallback is required for custom interior or renovation scopes such as kitchen cabinet, TV cabinet, bedroom cabinet, shoe cabinet, plaster ceiling, wiring points, plumbing relocation, mirror/fluted/wainscoting, SPC flooring, painting or other itemized work that is not priced as a ready catalog package.
+
+The workflow is:
+
+1. Read the customer request and floor plan/drawing in `ActiveBOQ/`.
+2. Split the job into logical S01, S02, S03 scopes following actual construction sequence.
+3. Produce SPEC A:C first according to `README - BOQ.txt`.
+4. Use exact master-list descriptions from `1.2 Materials.txt` and `1.3 Labour.txt` for takeoff rows where available.
+5. If a required material/labour item is missing from the master list, record `INPUT NEEDED` or create a new upgraded working file/report first; do not invent a master item silently.
+6. Keep customer-facing quotation separate from internal BOQ cost build-up.
+
+## Immutable source and upgrade-file rule
+
+Do not edit original customer files, old catalog versions, PDFs, DOCX, Materials, Labour, README or Deep Research unless the owner explicitly asks to revise that exact file.
+
+Customer originals such as `Customer Request.txt`, floor plans, drawings, photos and uploaded PDFs are source evidence. They must remain unchanged.
+
+Every working correction, audit, BOQ, SPEC, measurement extraction or quotation draft must be saved as a new upgrade file in `ActiveBOQ/` with a clear version suffix, for example:
+
+- `Customer_Request_Audit_V1.md`
+- `Customer_Request_SPEC_V1.tsv`
+- `ActiveBOQ_Takeoff_V1.tsv`
+- `Customer_Quotation_Draft_V1.md`
+- future corrections as V2, V3 and later.
+
+If V5 catalog needs correction, create V6. Do not edit V5 directly unless the owner explicitly instructs a direct V5 correction.
+
 ## Current source files
 
 Current V4 source names:
@@ -81,13 +114,14 @@ Use sources in this order:
 1. Latest explicit owner instruction.
 2. This header for workflow rules.
 3. ActiveBOQ current job files for customer-specific scope, drawings, floor plan, measurements and site notes.
-4. Latest versioned catalog for prices, public wording and exclusions.
-5. `1.2 Materials.txt` for material references.
-6. `1.3 Labour.txt` for labour and installation references.
-7. README files for BOQ and quotation workflow.
-8. Deep Research only where it does not conflict.
-9. PDF/DOCX as rendered reference.
-10. Older drafts or stale branches.
+4. Latest versioned catalog for matching guide prices, public wording and exclusions only where applicable.
+5. `README - BOQ.txt` when catalog does not fully cover the requested scope or manual takeoff is required.
+6. `1.2 Materials.txt` for material references.
+7. `1.3 Labour.txt` for labour and installation references.
+8. README quotation rules for output discipline.
+9. Deep Research only where it does not conflict.
+10. PDF/DOCX as rendered reference.
+11. Older drafts or stale branches.
 
 ## Versioning rule
 
@@ -183,10 +217,12 @@ Do not promise a brand/model unless written in the quotation.
 - Do not make a new version by changing only the title.
 - Do not copy vague V4 wording into a new version without clearer scope.
 - Do not leave wording such as `Basic floor finish`, `Higher allowance`, `where stated` or `Better finish allowance` without explanation.
-- Do not edit V4, PDF, DOCX, Materials, Labour, README or Deep Research when creating a new version.
+- Do not edit V4, V5, PDF, DOCX, Materials, Labour, README or Deep Research when creating a new version or working file.
+- Do not edit customer originals such as `Customer Request.txt`, drawings, floor plans, photos or uploaded PDFs.
 - Do not invent brands or exact models.
 - Do not promise cabinets, premium glass, water heater, shower screen, DB upgrade, sewer/manhole work, authority fees or structural strengthening unless listed.
 - Do not work in a hidden branch when the owner expects visible files in `main`, unless branch workflow is explicitly agreed.
 - Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
 - Do not tell the owner V5 is fully ready if the PDF render is not yet created.
 - Do not treat the root catalog as the active customer job; the active customer job is under `ActiveBOQ/`.
+- Do not force custom renovation items into catalog package pricing when manual BOQ based on `README - BOQ.txt` is more suitable.
