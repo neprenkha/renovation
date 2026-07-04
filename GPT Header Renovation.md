@@ -91,6 +91,21 @@ The workflow is:
 5. If a required material/labour item is missing from the master list, record `INPUT NEEDED` or create a new upgraded working file/report first; do not invent a master item silently.
 6. Keep customer-facing quotation separate from internal BOQ cost build-up.
 
+## AdditionalMaterials reference rule
+
+`AdditionalMaterials/` is a supplemental price-reference area. It may contain supplier catalogs, screenshots, PDFs or price notes that are useful for active pricing before an item is fully added to the master lists.
+
+For ActiveBOQ, AdditionalMaterials may be used to choose a provisional material price when the owner explicitly points to it, such as `AdditionalMaterials/SPC & Vynil` for SPC/Vinyl flooring.
+
+Rules:
+
+- Use the cheapest suitable option only when the owner asks for the cheaper option and the material still matches the customer request.
+- If customer asked for SPC, choose the cheapest SPC item, not vinyl, unless owner accepts vinyl substitution.
+- Record the selected item, rate, coverage, source folder and limitation in a new ActiveBOQ upgrade file.
+- Mark it as provisional if it is not yet an exact `1.2 Materials.txt` master item.
+- Do not silently treat AdditionalMaterials as the master list.
+- Before final BOQ, either map the item to an existing master item, add/update the master list through a controlled file update, or keep it as an owner-approved provisional quotation line.
+
 ## Immutable source and upgrade-file rule
 
 Do not edit original customer files, old catalog versions, PDFs, DOCX, Materials, Labour, README or Deep Research unless the owner explicitly asks to revise that exact file.
@@ -128,6 +143,7 @@ Supporting references:
 - `README - BOQ.txt`
 - `README - QUOTATION.txt`
 - `deep-research-report full.md`
+- `AdditionalMaterials/`
 - current PDF/DOCX catalog renders
 
 The actual current repository overrides memory.
@@ -143,10 +159,11 @@ Use sources in this order:
 5. `README - BOQ.txt` when catalog does not fully cover the requested scope or manual takeoff is required.
 6. `1.2 Materials.txt` for material references.
 7. `1.3 Labour.txt` for labour and installation references.
-8. README quotation rules for output discipline.
-9. Deep Research only where it does not conflict.
-10. PDF/DOCX as rendered reference.
-11. Older drafts or stale branches.
+8. `AdditionalMaterials/` for owner-pointed supplemental material pricing where master-list item is missing or needs comparison.
+9. README quotation rules for output discipline.
+10. Deep Research only where it does not conflict.
+11. PDF/DOCX as rendered reference.
+12. Older drafts or stale branches.
 
 ## Versioning rule
 
@@ -246,6 +263,8 @@ Do not promise a brand/model unless written in the quotation.
 - Do not edit customer originals such as `Customer Request.txt`, drawings, floor plans, photos or uploaded PDFs.
 - Do not invent brands or exact models.
 - Do not present floorplan estimates as final measured quantities.
+- Do not treat AdditionalMaterials as master list unless it is formally added or mapped.
+- Do not choose vinyl when customer asked for SPC unless owner approves substitution.
 - Do not promise cabinets, premium glass, water heater, shower screen, DB upgrade, sewer/manhole work, authority fees or structural strengthening unless listed.
 - Do not work in a hidden branch when the owner expects visible files in `main`, unless branch workflow is explicitly agreed.
 - Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
