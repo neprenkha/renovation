@@ -80,6 +80,27 @@ Rules:
 - For early budgeting, show base price, +5% and +10% option, then use the prudent +10% cost unless owner instructs otherwise.
 - Do not apply annual uplift to owner-confirmed current labour rates unless owner says the labour rate is old.
 
+## SPC and Vinyl stock-size calculation rule
+
+For general AdditionalMaterials SPC/Vinyl takeoff, calculate by supplier stock size, not by exact small pieces.
+
+Standard method when customer provides only total floor area:
+
+1. If no room dimension is available, use square-root method as a quick perimeter estimate: `side = sqrt(area sqft)`.
+2. Estimate four-side perimeter: `perimeter = side x 4`.
+3. For skirting, apply 10% wastage to perimeter and round up to full stock length. Use actual stock length from price list, for example 8ft skirting if the list says 8ft.
+4. For door/profile openings, use actual door count if known. If not known, use a logical default for the house size. For a 1044 sqft house, use up to 8 door openings as a safe standard estimate. Use 3ft per door and add 10% wastage, then round up to full profile length such as 9ft.
+5. For SPC/Vinyl boards or tiles, apply 10% wastage to floor area, divide by box coverage, and round up to full boxes.
+6. For foam/underlay, do not calculate by loose sqft if the selected SPC product already includes attached foam/underlay. Record `FOAM INCLUDED IN PRODUCT SPEC`.
+7. For ground-floor SPC, prefer the appropriate foam-backed/foam-included SPC product when the product list has that option. For upper-floor SPC, no separate foam is included by default unless product spec or site requirement says so.
+8. For glue, profile, skirting and foam sold by stock size or tub/roll/box, round up to the supplier stock unit. Do not price 1ft or a small loose quantity if the supplier sells by full piece, roll, tub or box.
+9. For Vinyl, glue is normally treated as required unless product/system says otherwise. Use stock-size glue allowance when exact glue coverage is not listed.
+10. Record whether the calculation is ground floor, upper floor, SPC, Vinyl, foam-backed, glue-down, click system, or provisional.
+
+Example reference file:
+
+`AdditionalMaterials/SPC & Vynil/1044sqft_SPC_Vinyl_Calculation_V1.md`
+
 ## SPC flooring rule for ActiveBOQ
 
 For this ActiveBOQ customer job, owner confirmed the existing living hall floor is tile.
@@ -221,6 +242,7 @@ For customer quotation work under `ActiveBOQ/`, use: customer location/job label
 - Do not present floorplan estimates as final measured quantities.
 - Do not treat AdditionalMaterials as master list unless formally mapped/approved.
 - Do not choose vinyl when customer asked for SPC unless owner approves substitution.
+- Do not price SPC, Vinyl, foam, glue, profile or skirting by loose 1ft/small loose quantity when supplier stock unit is box, piece, roll or tub.
 - Do not include floor levelling or existing tile removal for this ActiveBOQ SPC scope unless later evidence requires it.
 - Do not create separate foam cost when selected SPC product already includes foam.
 - Do not invent foam/underlay price if selected product has no foam and no price source is found.
