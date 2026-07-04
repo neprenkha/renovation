@@ -1,0 +1,22 @@
+Scope	Description	Qty	UOM	RateRM	AmountRM	Basis	Status
+S01	Preliminaries, site protection and setting-out	1	LS	500.00	500.00	Logical provisional allowance	PRICED PROVISIONAL
+S02	Minor alteration and making good	1	LS	600.00	600.00	Logical provisional allowance	PRICED PROVISIONAL
+S03	Washing-machine plumbing relocation	1	SET	850.00	850.00	Short internal relocation allowance	PRICED PROVISIONAL
+S04	Electrical wiring and installation subtotal	1	LS	6715.00	6715.00	From ActiveBOQ electrical takeoff using Labour master items	PRICED PROVISIONAL
+S05	Living C-box plaster ceiling	80	RFT	18.00	1440.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S05	Kitchen flat plaster ceiling	120	SQFT	5.00	600.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S06	Kitchen base cabinet blockboard	10	FT	400.00	4000.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S06	Kitchen wall cabinet melamine	8	FT	280.00	2240.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S06	Porcelain/sintered countertop	10	FT	450.00	4500.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S06	Quartz backsplash	25	SQFT	50.00	1250.00	Approx 10ft x 2.5ft	PRICED PROVISIONAL
+S06	Minor kitchen arch	1	SET	600.00	600.00	Small feature allowance	PRICED PROVISIONAL
+S07	TV cabinet melamine/blockboard with arch	8	FT	525.00	4200.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S08	Master bedroom cabinet	8	FT	430.00	3440.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S08	Make-up table	4	FT	350.00	1400.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S09	Shoe cabinet	4	FT	350.00	1400.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S10	Dining mirror/fluted/wainscoting feature	64	SQFT	35.00	2240.00	Approx 8ft x 8ft feature wall	PRICED PROVISIONAL
+S11	SPC package excluding optional glue	1	LS	1153.21	1153.21	SPC +10% material uplift, install labour, skirting/profile; delivery included in install labour	PRICED PROVISIONAL
+S12	Painting affected zones	900	SQFT	1.80	1620.00	Floorplan/affected-zone logic estimate	PRICED PROVISIONAL
+TOTAL	Provisional working total excluding optional glue	1	LS	38748.21	38748.21	Use rounded customer figure RM39,000	TOTAL
+OPTIONAL	Optional SPC glue if required	1	TUB	93.50	93.50	Only if selected SPC/profile system needs glue	OPTIONAL
+TOTAL_WITH_OPTIONAL_GLUE	Provisional total with optional SPC glue	1	LS	38841.71	38841.71	Use rounded customer figure still around RM39,000 unless other changes arise	TOTAL OPTIONAL
