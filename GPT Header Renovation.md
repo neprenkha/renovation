@@ -62,7 +62,7 @@ Workflow:
 5. If a required item is missing, record `INPUT NEEDED` or create a new upgrade file/report first.
 6. Keep customer quotation separate from internal cost build-up.
 
-## AdditionalMaterials reference rule
+## AdditionalMaterials reference and old-price uplift rule
 
 `AdditionalMaterials/` is a supplemental price-reference area. It may be used when owner explicitly points to it, such as `AdditionalMaterials/SPC & Vynil` for SPC/Vinyl flooring.
 
@@ -73,6 +73,9 @@ Rules:
 - Record selected item, rate, coverage, source folder and limitation in a new ActiveBOQ upgrade file.
 - Mark as provisional if not yet an exact `1.2 Materials.txt` master item.
 - Do not silently treat AdditionalMaterials as master list.
+- If the price reference may be old but is still usable for cost estimate, apply an age/inflation allowance of 5% to 10% where logical.
+- For early budgeting, show base price, +5% and +10% option, then use the prudent +10% cost unless owner instructs otherwise.
+- Do not apply annual uplift to owner-confirmed current labour rates unless owner says the labour rate is old.
 
 ## SPC flooring rule for ActiveBOQ
 
@@ -87,6 +90,7 @@ SPC pricing assumptions for this job:
 - Glue is optional only if selected system/profile needs it.
 - Foam/underlay is normally expected for ground-floor use, but if price is not found in the provided price reference, list it as missing rather than inventing a rate.
 - Final colour/model selection is chosen later and does not block early budgeting.
+- If SPC material/skirting/profile/glue prices are old, calculate base, +5% and +10% material uplift; use +10% for safer cost estimate.
 
 These confirmations apply to this ActiveBOQ SPC scope unless owner reuses them in another job.
 
@@ -190,6 +194,7 @@ For customer quotation work under `ActiveBOQ/`, use: customer location/job label
 - Do not choose vinyl when customer asked for SPC unless owner approves substitution.
 - Do not include floor levelling or existing tile hacking/removal for this ActiveBOQ SPC scope unless later evidence requires it.
 - Do not invent foam/underlay price if not found in provided price reference.
+- Do not use old AdditionalMaterials prices without marking uplift/age allowance when owner says the reference may be old.
 - Do not work in hidden branch when owner expects `main`, unless branch workflow is explicitly agreed.
 - Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
 - Do not treat root catalog as active customer job; active customer job is under `ActiveBOQ/`.
