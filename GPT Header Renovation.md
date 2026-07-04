@@ -32,15 +32,18 @@ The root repo remains the reference source for catalog, material, labour, BOQ an
 
 Before quotation work, check job label, floor plan, work area, house/storey type, measurements/scale, finish tier, add-ons, site risks and output format.
 
-## Floorplan estimate rule
+## Floorplan estimate and AI responsibility rule
 
-When customer supplied a floor plan but exact sizes are missing or unreadable, AI may use reasonable floorplan-based estimates for early budgeting:
+When customer supplied a floor plan but exact sizes are missing, unclear, or not directly extractable, AI must not keep pushing the owner to calculate every item.
 
-- derive size from visible room proportions;
+AI may use reasonable floorplan-based and terrace-house logic estimates for early budgeting:
+
+- derive size from visible room proportions where possible;
 - use typical Malaysian terrace-house proportions if applicable;
 - use practical built-in cabinet depths/heights where not specified;
+- choose suitable sizes/rates that do not look illogical for the room and scope;
 - apply `+/-` tolerance;
-- mark every estimated line as `FLOORPLAN ESTIMATE`;
+- mark every estimated line as `FLOORPLAN ESTIMATE`, `LOGICAL PROVISIONAL RATE`, or similar;
 - keep assumptions visible.
 
 Do not present estimates as final measured quantities. Final quotation remains subject to site measurement, final cabinet drawing, material confirmation and route verification.
@@ -59,7 +62,7 @@ Workflow:
 2. Split job into S01, S02, S03 scopes by actual construction sequence.
 3. Produce SPEC A:C first according to `README - BOQ.txt`.
 4. Use exact descriptions from `1.2 Materials.txt` and `1.3 Labour.txt` where available.
-5. If a required item is missing, record `INPUT NEEDED` or create a new upgrade file/report first.
+5. If a required item is missing from master lists, AI may create an ActiveBOQ provisional rate assumption file when the owner allows logical estimates.
 6. Keep customer quotation separate from internal cost build-up.
 
 ## AdditionalMaterials reference and old-price uplift rule
@@ -86,12 +89,13 @@ SPC pricing assumptions for this job:
 - No floor levelling by default because existing tile floor is assumed usable.
 - No removal of existing tile; SPC is installed over existing tile.
 - Use SPC installation labour at RM2/sqft.
+- Delivery is treated as included in the SPC installation labour for this ActiveBOQ scope unless later owner says otherwise.
 - Skirting and profile/trims can use listed AdditionalMaterials prices.
 - Glue is optional only if selected system/profile needs it.
 - Final colour/model selection is chosen later and does not block early budgeting.
 - `NII FLOOR PRODUCT PRICELIST 2023 - updated 311222.pdf` must be checked for SPC product numbers 7-12 because owner identified those as foam-backed/foam-included references.
 - If the selected SPC product already states foam/underlay is included or attached, do not add a separate foam line by default. Record it as `FOAM INCLUDED IN PRODUCT SPEC` and confirm exact model later.
-- If the selected product does not include foam, then add a separate foam/underlay line only when a price source exists; do not invent a foam rate.
+- If selected product does not include foam, add separate foam/underlay only when a price source exists; do not invent a foam rate.
 - If SPC material/skirting/profile/glue prices are old, calculate base, +5% and +10% material uplift; use +10% for safer cost estimate.
 
 These confirmations apply to this ActiveBOQ SPC scope unless owner reuses them in another job.
@@ -148,10 +152,11 @@ Actual current repository overrides memory.
 6. `1.2 Materials.txt`.
 7. `1.3 Labour.txt`.
 8. `AdditionalMaterials/` for owner-pointed supplemental material pricing.
-9. README quotation rules.
-10. Deep Research only where not conflicting.
-11. PDF/DOCX rendered reference.
-12. Older drafts or stale branches.
+9. ActiveBOQ provisional rate assumption files approved by owner logic.
+10. README quotation rules.
+11. Deep Research only where not conflicting.
+12. PDF/DOCX rendered reference.
+13. Older drafts or stale branches.
 
 ## Versioning rule
 
@@ -190,7 +195,8 @@ For customer quotation work under `ActiveBOQ/`, use: customer location/job label
 - Do not make a new version by changing only the title.
 - Do not copy vague V4 wording into a new version without clearer scope.
 - Do not edit V4, V5, PDF, DOCX, Materials, Labour, README, Deep Research or customer originals when creating working files.
-- Do not invent brands, exact models, or missing rates.
+- Do not invent brands or exact models.
+- Do not keep asking owner to calculate when logical floorplan estimate can be made and clearly marked provisional.
 - Do not present floorplan estimates as final measured quantities.
 - Do not treat AdditionalMaterials as master list unless formally mapped/approved.
 - Do not choose vinyl when customer asked for SPC unless owner approves substitution.
