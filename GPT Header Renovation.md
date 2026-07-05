@@ -54,7 +54,7 @@ If requested work is not fully covered by a completed catalog package, do not fo
 
 Use latest catalog only for matching guide items and customer-facing inclusion wording. For non-catalog items, use `README - BOQ.txt` workflow and master lists to build manual BOQ/spec calculation.
 
-Manual BOQ fallback is required for custom interior/renovation scopes such as kitchen cabinet, TV cabinet, bedroom cabinet, shoe cabinet, plaster ceiling, wiring, plumbing relocation, mirror/fluted/wainscoting, SPC flooring, painting and other itemized works.
+Manual BOQ fallback is required for custom interior/renovation scopes such as kitchen cabinet, TV cabinet, bedroom cabinet, shoe cabinet, plaster ceiling, wiring, plumbing relocation, mirror/fluted/wainscoting, flooring, painting and other itemized works.
 
 Workflow:
 
@@ -65,39 +65,62 @@ Workflow:
 5. If a required item is missing from master lists, AI may create an ActiveBOQ provisional rate assumption file when the owner allows logical estimates.
 6. Keep customer quotation separate from internal cost build-up.
 
-## AdditionalMaterials reference and old-price uplift rule
+## MISC product-reference folder rule
 
-`AdditionalMaterials/` is a supplemental price-reference area. It may be used when owner explicitly points to it, such as `AdditionalMaterials/SPC & Vynil` for SPC/Vinyl flooring.
+New material/product references for flooring should be kept under:
 
-Rules:
+`MISC/Nii Flooring SPC, Vinyl/`
 
-- Use the cheapest suitable option only when owner asks for cheaper option and material still matches customer request.
-- If customer asked for SPC, choose the cheapest SPC item, not vinyl, unless owner accepts vinyl substitution.
-- Record selected item, rate, coverage, source folder and limitation in a new ActiveBOQ upgrade file.
-- Mark as provisional if not yet an exact `1.2 Materials.txt` master item.
-- Do not silently treat AdditionalMaterials as master list.
-- If the price reference may be old but is still usable for cost estimate, apply an age/inflation allowance of 5% to 10% where logical.
-- For early budgeting, show base price, +5% and +10% option, then use the prudent +10% cost unless owner instructs otherwise.
-- Do not apply annual uplift to owner-confirmed current labour rates unless owner says the labour rate is old.
+This MISC folder is the preferred reference location for NII flooring products, SPC, Vinyl, Carpet, foam/underlay, glue, profile, skirting and future separated product folders.
 
-## SPC and Vinyl stock-size calculation rule
+Older `AdditionalMaterials/` files may remain as legacy references, but future flooring takeoff should check `MISC/Nii Flooring SPC, Vinyl/` first when the owner says updated materials are there.
 
-For general AdditionalMaterials SPC/Vinyl takeoff, calculate by supplier stock size, not by exact small pieces.
+When the owner separates product folders inside MISC, use the most specific product folder first, for example:
+
+- SPC product folder;
+- Vinyl product folder;
+- Carpet product folder;
+- Foam / underlay folder;
+- Glue folder;
+- Profile / trims folder;
+- Skirting folder.
+
+Do not treat MISC references as public selling prices by default. They are product/cost references unless the owner labels them as selling/package rates.
+
+If a MISC price reference may be old but is still usable for rough costing, apply a logical 5% to 10% uplift and show the base, +5%, and +10% options.
+
+## Floor covering stock-size calculation rule
+
+This rule applies to Carpet, Vinyl, SPC, foam/underlay, glue, skirting, profile and other flooring accessories.
+
+Calculate by supplier stock size, not by loose tiny quantities.
 
 Standard method when customer provides only total floor area:
 
 1. If no room dimension is available, use square-root method as a quick perimeter estimate: `side = sqrt(area sqft)`.
 2. Estimate four-side perimeter: `perimeter = side x 4`.
-3. For skirting, apply 10% wastage to perimeter and round up to full stock length. Use actual stock length from price list, for example 8ft skirting if the list says 8ft.
-4. For door/profile openings, use actual door count if known. If not known, use a logical default for the house size. For a 1044 sqft house, use up to 8 door openings as a safe standard estimate. Use 3ft per door and add 10% wastage, then round up to full profile length such as 9ft.
-5. For SPC/Vinyl boards or tiles, apply 10% wastage to floor area, divide by box coverage, and round up to full boxes.
-6. For foam/underlay, do not calculate by loose sqft if the selected SPC product already includes attached foam/underlay. Record `FOAM INCLUDED IN PRODUCT SPEC`.
-7. For ground-floor SPC, prefer the appropriate foam-backed/foam-included SPC product when the product list has that option. For upper-floor SPC, no separate foam is included by default unless product spec or site requirement says so.
-8. For glue, profile, skirting and foam sold by stock size or tub/roll/box, round up to the supplier stock unit. Do not price 1ft or a small loose quantity if the supplier sells by full piece, roll, tub or box.
-9. For Vinyl, glue is normally treated as required unless product/system says otherwise. Use stock-size glue allowance when exact glue coverage is not listed.
-10. Record whether the calculation is ground floor, upper floor, SPC, Vinyl, foam-backed, glue-down, click system, or provisional.
+3. Floor material: add 10% wastage to floor area, divide by box/roll coverage, and round up to the next full box/roll/stock unit.
+4. Skirting: apply 10% wastage to perimeter and round up to full stock length. Use the exact stock length in the current price list, for example 8ft or 9ft.
+5. Profile/trims at doorways and edges: use actual door count/opening count if known. If not known, use a logical default for the house size. For a 1044 sqft house, use up to 8 door openings as a safe standard estimate unless the floor plan indicates otherwise.
+6. Door profile default: use 3ft per door/opening, add 10% wastage, divide by profile stock length, and round up to full pieces.
+7. Glue: use tub/stock-size allowance. Do not price a tiny loose amount if supplier sells by full tub.
+8. Foam/underlay: use full roll/box/stock-size allowance if it is separate. Do not price loose sqft unless supplier sells by sqft.
+9. Accessories must be rounded by stock unit: full box, full piece, full tub or full roll.
+10. Record whether the calculation is Carpet, Vinyl, SPC, ground floor, upper floor, foam-backed, separate foam, glue-down, click system, or provisional.
 
-Example reference file:
+Floor covering notes:
+
+- SPC: Ground floor normally uses foam-backed / foam-included SPC when product reference has that option. If SPC product already includes foam/underlay, record `FOAM INCLUDED IN PRODUCT SPEC` and do not add separate foam cost by default. Upper floor normally does not add separate foam unless product spec, acoustic requirement, or site requirement says so.
+- Vinyl: Usually follows its system requirement. Glue-down vinyl should include glue unless product/system says otherwise. Foam is not added unless product/system specifically requires underlay.
+- Carpet: Usually needs profile/trims at edges and door transitions. Carpet usually does not use skirting by default unless the product/system or owner request says so. Carpet accessories must still be rounded to stock size.
+- If exact floor plan is available, replace the square-root method with actual room perimeter, actual doorway count, and actual edge/profile lengths.
+- If customer asks for SPC, do not substitute Vinyl or Carpet just because cheaper unless owner approves substitution.
+
+Example reference calculation:
+
+`MISC/Nii Flooring SPC, Vinyl/1044sqft_Flooring_Calculation_Template_V1.md`
+
+Legacy example reference:
 
 `AdditionalMaterials/SPC & Vynil/1044sqft_SPC_Vinyl_Calculation_V1.md`
 
@@ -111,7 +134,7 @@ SPC pricing assumptions for this job:
 - No removal of existing tile; SPC is installed over existing tile.
 - Use SPC installation labour at RM2/sqft.
 - Delivery is treated as included in the SPC installation labour for this ActiveBOQ scope unless later owner says otherwise.
-- Skirting and profile/trims can use listed AdditionalMaterials prices.
+- Skirting and profile/trims can use listed product-reference prices.
 - Glue is optional only if selected system/profile needs it.
 - Final colour/model selection is chosen later and does not block early budgeting.
 - `NII FLOOR PRODUCT PRICELIST 2023 - updated 311222.pdf` must be checked for SPC product numbers 7-12 because owner identified those as foam-backed/foam-included references.
@@ -179,7 +202,8 @@ Supporting references:
 - `README - BOQ.txt`
 - `README - QUOTATION.txt`
 - `deep-research-report full.md`
-- `AdditionalMaterials/`
+- `MISC/Nii Flooring SPC, Vinyl/`
+- `AdditionalMaterials/` as older supplemental reference
 - current PDF/DOCX catalog renders
 
 Actual current repository overrides memory.
@@ -193,12 +217,13 @@ Actual current repository overrides memory.
 5. `README - BOQ.txt` for manual takeoff.
 6. `1.2 Materials.txt`.
 7. `1.3 Labour.txt`.
-8. `AdditionalMaterials/` for owner-pointed supplemental material pricing.
-9. ActiveBOQ provisional rate assumption files approved by owner logic.
-10. README quotation rules.
-11. Deep Research only where not conflicting.
-12. PDF/DOCX rendered reference.
-13. Older drafts or stale branches.
+8. `MISC/Nii Flooring SPC, Vinyl/` for flooring product/cost references.
+9. `AdditionalMaterials/` for older owner-pointed supplemental pricing.
+10. ActiveBOQ provisional rate assumption files approved by owner logic.
+11. README quotation rules.
+12. Deep Research only where not conflicting.
+13. PDF/DOCX rendered reference.
+14. Older drafts or stale branches.
 
 ## Versioning rule
 
@@ -240,13 +265,14 @@ For customer quotation work under `ActiveBOQ/`, use: customer location/job label
 - Do not invent brands or exact models.
 - Do not keep asking owner to calculate when logical floorplan estimate can be made and clearly marked provisional.
 - Do not present floorplan estimates as final measured quantities.
-- Do not treat AdditionalMaterials as master list unless formally mapped/approved.
-- Do not choose vinyl when customer asked for SPC unless owner approves substitution.
-- Do not price SPC, Vinyl, foam, glue, profile or skirting by loose 1ft/small loose quantity when supplier stock unit is box, piece, roll or tub.
+- Do not treat MISC or AdditionalMaterials as master list unless formally mapped/approved.
+- Do not choose Vinyl or Carpet when customer asked for SPC unless owner approves substitution.
+- Do not price Carpet, SPC, Vinyl, foam, glue, profile or skirting by loose 1ft/small loose quantity when supplier stock unit is box, piece, roll or tub.
+- Do not add carpet skirting by default unless product/system or owner says so.
 - Do not include floor levelling or existing tile removal for this ActiveBOQ SPC scope unless later evidence requires it.
 - Do not create separate foam cost when selected SPC product already includes foam.
 - Do not invent foam/underlay price if selected product has no foam and no price source is found.
-- Do not use old AdditionalMaterials prices without marking uplift/age allowance when owner says the reference may be old.
+- Do not use old MISC or AdditionalMaterials prices without marking uplift/age allowance when owner says the reference may be old.
 - Do not present a cost estimate as customer selling price without explicit markup/margin calculation.
 - Do not work in hidden branch when owner expects `main`, unless branch workflow is explicitly agreed.
 - Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
