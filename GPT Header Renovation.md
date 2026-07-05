@@ -50,17 +50,30 @@ If owner gives exact drawing dimensions after a rough estimate, those dimensions
 
 Do not present estimates as final measured quantities. Final quotation remains subject to site measurement, final cabinet drawing, material confirmation and route verification.
 
-## Current ActiveBOQ kitchen drawing correction
+## Current ActiveBOQ drawing corrections
 
-For the current original ActiveBOQ customer job, owner corrected the kitchen drawing basis:
+For the current original ActiveBOQ customer job, owner corrected these drawing dimensions:
 
 - house type is rumah berkembar / semi-detached, not a small terrace assumption;
-- back kitchen wall: 3962mm;
-- side kitchen wall / usable side run: 5485mm;
-- L-shape maximum table top / base cabinet run: 5485mm + 3962mm - 3ft door allowance;
-- calculated maximum L-shape run is about 28ft.
+- kitchen L-shape: 3062mm + 5485mm full-height / full usable kitchen run;
+- corrected kitchen L-shape run is about 28ft;
+- living hall / TV / SPC area: 9755mm x 6096mm;
+- master bedroom area: 5792mm x 6096mm;
+- living hall/SPC area has about 5 door/opening transitions from the drawing.
 
-For this customer, do not keep the old 10ft base cabinet and 10ft countertop assumption. Use the corrected L-shape drawing basis for base cabinet, countertop and backsplash. Wall cabinet should be logically estimated from the same kitchen layout and can be adjusted after final cabinet drawing.
+For this customer, do not keep the old 10ft base cabinet, 10ft countertop, 8ft TV cabinet or 180sqft SPC living hall assumptions. Use the corrected drawing basis for kitchen, TV cabinet, master bedroom cabinet/make-up table, shoe cabinet and SPC calculation.
+
+Current provisional quantity logic:
+
+- kitchen base cabinet and countertop: 28ft L-shape;
+- kitchen wall cabinet: 28ft full-run allowance unless final cabinet drawing reduces it;
+- kitchen backsplash: 28ft x 2.5ft = about 70sqft;
+- TV cabinet: use a larger living-room logical allowance, currently 12ft;
+- master bedroom cabinet: use 10ft wardrobe and 5ft make-up table provisional allowance;
+- shoe cabinet: use 5ft provisional allowance;
+- SPC living hall: calculate from 9755mm x 6096mm, about 640sqft;
+- SPC skirting: use actual rectangular perimeter, deduct known door openings if they break the skirting line, add 10% wastage, then round up to stock length;
+- SPC profile: 5 doors x 3ft, add 10% wastage, then round up to full profile pieces.
 
 ## Catalog fallback and manual BOQ rule
 
@@ -112,9 +125,9 @@ Calculate by supplier stock size, not by loose tiny quantities.
 Standard method when customer provides only total floor area:
 
 1. If no room dimension is available, use square-root method as a quick perimeter estimate: `side = sqrt(area sqft)`.
-2. Estimate four-side perimeter: `perimeter = side x 4`.
+2. If actual rectangular dimensions are available, use actual area and actual perimeter instead of square-root estimate.
 3. Floor material: add 10% wastage to floor area, divide by box/roll coverage, and round up to the next full box/roll/stock unit.
-4. Skirting: apply 10% wastage to perimeter and round up to full stock length. Use the exact stock length in the current price list, for example 8ft or 9ft.
+4. Skirting: use actual perimeter where available. If door/opening count is known and the openings break the skirting line, deduct door/opening width before wastage. Then add 10% wastage and round up to full stock length.
 5. Profile/trims at doorways and edges: use actual door count/opening count if known. If not known, use a logical default for the house size. For a 1044 sqft house, use up to 8 door openings as a safe standard estimate unless the floor plan indicates otherwise.
 6. Door profile default: use 3ft per door/opening, add 10% wastage, divide by profile stock length, and round up to full pieces.
 7. Glue: use tub/stock-size allowance. Do not price a tiny loose amount if supplier sells by full tub.
@@ -146,7 +159,7 @@ SPC pricing assumptions for this job:
 
 - No floor levelling by default because existing tile floor is assumed usable.
 - No removal of existing tile; SPC is installed over existing tile.
-- Use SPC installation labour at RM2/sqft.
+- Use SPC installation labour at RM2/sqft unless owner gives another rate for the job.
 - Delivery is treated as included in the SPC installation labour for this ActiveBOQ scope unless later owner says otherwise.
 - Skirting and profile/trims can use listed product-reference prices.
 - Glue is optional only if selected system/profile needs it.
@@ -278,7 +291,7 @@ For customer quotation work under `ActiveBOQ/`, use: customer location/job label
 - Do not edit V4, V5, PDF, DOCX, Materials, Labour, README, Deep Research or customer originals when creating working files.
 - Do not invent brands or exact models.
 - Do not keep asking owner to calculate when logical floorplan estimate can be made and clearly marked provisional.
-- Do not ignore owner-provided drawing dimensions such as the current kitchen 3962mm + 5485mm L-shape correction.
+- Do not ignore owner-provided drawing dimensions such as the current kitchen 3062mm + 5485mm L-shape correction, living hall 9755mm x 6096mm, master bedroom 5792mm x 6096mm, or SPC five-door profile/skirting correction.
 - Do not treat a semi-detached/rumah berkembar drawing as a small terrace-house assumption after owner correction.
 - Do not present floorplan estimates as final measured quantities.
 - Do not treat MISC or AdditionalMaterials as master list unless formally mapped/approved.
