@@ -36,17 +36,31 @@ Before quotation work, check job label, floor plan, work area, house/storey type
 
 When customer supplied a floor plan but exact sizes are missing, unclear, or not directly extractable, AI must not keep pushing the owner to calculate every item.
 
-AI may use reasonable floorplan-based and terrace-house logic estimates for early budgeting:
+AI may use reasonable floorplan-based and terrace/semi-D logic estimates for early budgeting:
 
 - derive size from visible room proportions where possible;
-- use typical Malaysian terrace-house proportions if applicable;
+- use the actual house type from drawing or owner correction, for example terrace, semi-detached/rumah berkembar, bungalow or apartment;
 - use practical built-in cabinet depths/heights where not specified;
 - choose suitable sizes/rates that do not look illogical for the room and scope;
 - apply `+/-` tolerance;
-- mark every estimated line as `FLOORPLAN ESTIMATE`, `LOGICAL PROVISIONAL RATE`, or similar;
+- mark every estimated line as `FLOORPLAN ESTIMATE`, `DRAWING-DIMENSION CORRECTION`, `LOGICAL PROVISIONAL RATE`, or similar;
 - keep assumptions visible.
 
+If owner gives exact drawing dimensions after a rough estimate, those dimensions override earlier typical-size assumptions. Recalculate the affected scope immediately and create a new ActiveBOQ upgrade file. Do not keep the old terrace-size assumption when the drawing or owner confirms the house is semi-detached/rumah berkembar or has larger available wall runs.
+
 Do not present estimates as final measured quantities. Final quotation remains subject to site measurement, final cabinet drawing, material confirmation and route verification.
+
+## Current ActiveBOQ kitchen drawing correction
+
+For the current original ActiveBOQ customer job, owner corrected the kitchen drawing basis:
+
+- house type is rumah berkembar / semi-detached, not a small terrace assumption;
+- back kitchen wall: 3962mm;
+- side kitchen wall / usable side run: 5485mm;
+- L-shape maximum table top / base cabinet run: 5485mm + 3962mm - 3ft door allowance;
+- calculated maximum L-shape run is about 28ft.
+
+For this customer, do not keep the old 10ft base cabinet and 10ft countertop assumption. Use the corrected L-shape drawing basis for base cabinet, countertop and backsplash. Wall cabinet should be logically estimated from the same kitchen layout and can be adjusted after final cabinet drawing.
 
 ## Catalog fallback and manual BOQ rule
 
@@ -264,6 +278,8 @@ For customer quotation work under `ActiveBOQ/`, use: customer location/job label
 - Do not edit V4, V5, PDF, DOCX, Materials, Labour, README, Deep Research or customer originals when creating working files.
 - Do not invent brands or exact models.
 - Do not keep asking owner to calculate when logical floorplan estimate can be made and clearly marked provisional.
+- Do not ignore owner-provided drawing dimensions such as the current kitchen 3962mm + 5485mm L-shape correction.
+- Do not treat a semi-detached/rumah berkembar drawing as a small terrace-house assumption after owner correction.
 - Do not present floorplan estimates as final measured quantities.
 - Do not treat MISC or AdditionalMaterials as master list unless formally mapped/approved.
 - Do not choose Vinyl or Carpet when customer asked for SPC unless owner approves substitution.
