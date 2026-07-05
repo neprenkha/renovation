@@ -1,0 +1,25 @@
+Scope	Description	Qty	UOM	RateRM	AmountRM	Basis	Status
+S01	Preliminaries, site protection and setting-out	1	LS	500.00	500.00	Logical provisional allowance	PRICED PROVISIONAL
+S02	Minor alteration and making good	1	LS	600.00	600.00	Logical provisional allowance	PRICED PROVISIONAL
+S03	Washing-machine plumbing relocation	1	SET	850.00	850.00	Short internal relocation allowance	PRICED PROVISIONAL
+S04	Electrical wiring and installation subtotal	1	LS	6715.00	6715.00	From ActiveBOQ electrical takeoff using Labour master items	PRICED PROVISIONAL
+S05	Living C-box plaster ceiling	80	RFT	18.00	1440.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S05	Kitchen flat plaster ceiling	120	SQFT	5.00	600.00	Floorplan/terrace logic estimate	PRICED PROVISIONAL
+S06	Kitchen base cabinet blockboard	28	FT	400.00	11200.00	DRAWING-DIMENSION CORRECTION: 3062mm + 5485mm = 8547mm = 28.04ft, rounded 28ft	PRICED PROVISIONAL
+S06	Kitchen wall cabinet melamine full-run allowance	28	FT	280.00	7840.00	DRAWING-DIMENSION CORRECTION: owner stated L-shape full height/full usable run; final shop drawing to confirm	PRICED PROVISIONAL
+S06	Porcelain/sintered countertop	28	FT	450.00	12600.00	DRAWING-DIMENSION CORRECTION: countertop follows corrected 28ft L-shape base run	PRICED PROVISIONAL
+S06	Quartz backsplash	70	SQFT	50.00	3500.00	DRAWING-DIMENSION CORRECTION: 28ft x 2.5ft backsplash height allowance	PRICED PROVISIONAL
+S06	Minor kitchen arch	1	SET	600.00	600.00	Small feature allowance	PRICED PROVISIONAL
+S07	TV cabinet melamine/blockboard with arch	12	FT	525.00	6300.00	DRAWING-DIMENSION CORRECTION: living area 9755mm x 6096mm; larger TV wall allowance	PRICED PROVISIONAL
+S08	Master bedroom cabinet	10	FT	430.00	4300.00	DRAWING-DIMENSION CORRECTION: master bedroom 5792mm x 6096mm	PRICED PROVISIONAL
+S08	Make-up table	5	FT	350.00	1750.00	DRAWING-DIMENSION CORRECTION: larger master bedroom allowance	PRICED PROVISIONAL
+S09	Shoe cabinet	5	FT	350.00	1750.00	LOGICAL PROVISIONAL RATE: suitable semi-D entrance allowance	PRICED PROVISIONAL
+S10	Dining mirror/fluted/wainscoting feature	64	SQFT	35.00	2240.00	Approx 8ft x 8ft feature wall	PRICED PROVISIONAL
+S11	SPC package excluding optional glue	1	LS	3737.58	3737.58	DRAWING-DIMENSION CORRECTION: living hall 9755mm x 6096mm = 640.09sqft, 30 SPC boxes, 13 skirting pcs, 2 profile pcs, install labour included	PRICED PROVISIONAL
+S12	Painting affected zones	900	SQFT	1.80	1620.00	Floorplan/affected-zone logic estimate	PRICED PROVISIONAL
+TOTAL	Provisional working total excluding optional glue	1	LS	68142.58	68142.58	Dimension corrections applied: kitchen full-run wall cabinet, TV 12ft, master 10ft+5ft, shoe 5ft, SPC actual living hall	TOTAL
+OPTIONAL	Optional SPC glue if required	1	TUB	93.50	93.50	Only if selected SPC/profile system needs glue	OPTIONAL
+TOTAL_WITH_OPTIONAL_GLUE	Provisional total with optional SPC glue	1	LS	68236.08	68236.08	Optional glue does not materially change rounded selling figure	TOTAL OPTIONAL
+SELLING_10_PERCENT	Selling estimate with 10% markup on cost	1	LS	74956.84	74956.84	Practical figure RM75,000	SELLING OPTION
+SELLING_15_PERCENT	Selling estimate with 15% markup on cost	1	LS	78363.97	78363.97	Practical figure RM78,500 / RM79,000	SELLING OPTION
+SELLING_20_PERCENT	Selling estimate with 20% markup on cost	1	LS	81771.10	81771.10	Practical figure RM82,000	SELLING OPTION
