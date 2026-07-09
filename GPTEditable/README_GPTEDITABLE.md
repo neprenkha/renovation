@@ -14,7 +14,7 @@ This is the canonical editable copy of the renovation GPT header. When a permane
 GPT Header Renovation.md
 ```
 
-Do not rely only on an addendum file when the owner correction proves a general workflow/header failure. The canonical header itself must be updated in the same session when GitHub is accessible.
+Do not rely only on an addendum file, tracker file, job note, or chat correction when the owner correction proves a general workflow/header failure. The canonical header itself must be updated in the same session when GitHub is accessible.
 
 ## Owner local header
 
@@ -27,6 +27,10 @@ GPTRenovationHeader.txt
 When GPT is asked to provide this file for download, GPT must provide the full cumulative replacement header, not a short summary and not a patch-only update.
 
 The downloadable owner header must preserve the useful current rules from the prior header and add the new rule cleanly. Do not remove unrelated valid sections just to shorten the file.
+
+If a GitHub governance/header update is made and the owner local `GPTRenovationHeader.txt` is available in the chat, GPT must also produce the full updated owner-copy replacement in the same response. Do not leave the owner header stale while claiming GitHub governance is updated.
+
+If the owner says the uploaded/local header must also update, that is a governance failure if GPT only updated GitHub. GPT must immediately produce a full updated owner-copy replacement and strengthen this README/header workflow if needed.
 
 ## Editable reference addendum
 
@@ -70,6 +74,28 @@ A line may be marked `SUPPLIER QUOTE NEEDED` for later commercial confirmation, 
 
 Use `PROVISIONAL` only for real unresolved design/source conflicts, drawing unreadability, or owner scope decisions that cannot be resolved from existing material. The exact reason must be written.
 
+## Authorised allowance rule
+
+When owner says `100%`, `siap sepenuhnya`, `ikut spec/drawing pelanggan`, or `99.9% means fail`, GPT must distinguish between:
+
+```text
+Unsupported/random allowance = FAIL / HOLD
+Authorised/customer/drawing/README/owner-confirmed allowance = CAN BE FINAL current BOQ cost basis
+```
+
+An authorised allowance may be used as the current BOQ cost basis when:
+
+- it comes from customer instruction, drawing/spec note, `README - BOQ.txt`, owner-confirmed decision, root master/reference file, approved addendum, supplier quote, or clearly documented drawing-derived full allowance;
+- SPEC A:C explains that the allowance is intentionally adopted as the current BOQ cost basis;
+- Block 1-3 use the full allowance quantity, not the minimum quantity;
+- Wastage/Buffer follows README format, including `0` where the Usage Qty is already a full purchase/full allowance quantity;
+- the row note says `CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS - CLOSED FOR CURRENT BOQ COST` or equivalent;
+- undercost/overprice/double-count/markup checks are recorded.
+
+GPT must not reject a SXX merely because the word `allowance`, `basis`, or `full allowance` appears. The issue is whether the allowance is authorised and closed for the current BOQ cost stage.
+
+Random unsupported allowance cannot be treated as 100% drawing/spec completion.
+
 ## Drawing-spec SXX completion gate
 
 Working-cost completion, workbook paste readiness, drawing-spec measured completion, and customer selling price are separate gates.
@@ -87,15 +113,15 @@ A SXX may have a working-cost paste file but still fail the drawing-spec measure
 
 When owner asks for `100%`, `siap sepenuhnya`, or `ikut spec drawing pelanggan`, GPT must not claim completion from assumed quantities, default allowances, owner-directed placeholder quantities, GitHub file existence, binary/base64 fetch, or blob SHA alone.
 
-`DRAWING-SPEC MEASURED COMPLETE` requires the relevant drawing/source to be rendered, visually inspected, or reliably extracted enough to support the quantity/spec lines.
+`DRAWING-SPEC MEASURED COMPLETE` requires the relevant drawing/source to be rendered, visually inspected, or reliably extracted enough to support the quantity/spec lines, unless the owner/customer/drawing/README has supplied or accepted a full allowance basis for the current BOQ cost stage.
 
-If a required drawing cannot be read/rendered/extracted, GPT must mark:
+If a required drawing cannot be read/rendered/extracted and no authorised allowance is available, GPT must mark:
 
 ```text
-HOLD - DRAWING SPEC VERIFICATION REQUIRED
+HOLD - DRAWING SPEC / AUTHORISED ALLOWANCE VERIFICATION REQUIRED
 ```
 
-and must not open the next SXX as if the current SXX is 100% drawing-spec complete. Existing paste files must be labelled `WORKING-COST ONLY` if they are not drawing-derived measured outputs.
+and must not open the next SXX as if the current SXX is 100% drawing/spec complete.
 
 If earlier SXX files were already labelled complete but later review shows they were only working-cost/default allowance, GPT must immediately update the tracker and affected gates before continuing.
 
@@ -125,7 +151,8 @@ Required correction workflow:
 3. correct the double count / undercount / rate status / markup note;
 4. update the SXX tracker;
 5. update any overall summary if it already exists;
-6. only then continue to the current SXX.
+6. update the canonical header and owner local header if the issue proves a general governance/header failure;
+7. only then continue to the current SXX.
 
 Do not wait until the end of the project to fix a known contradiction.
 
@@ -199,7 +226,7 @@ Every takeoff line must record enough detail to be rechecked later:
 - wastage;
 - buffer/contingency if any;
 - material/labour/addendum reference;
-- status such as measured, drawing-derived, owner-corrected, muktamad working-cost basis, supplier quote needed, selling rate used or conflict.
+- status such as measured, drawing-derived, owner-corrected, muktamad working-cost basis, authorised full allowance basis, supplier quote needed, selling rate used or conflict.
 
 If a line cannot be audited later, it is not a complete takeoff line.
 
@@ -225,11 +252,12 @@ If the correction is general/permanent, GPT must update the relevant governance 
 GPTEditable/GPT Header Renovation.md
 GPT Header Renovation.md
 GPTEditable/README_GPTEDITABLE.md   (if GPTEditable usage is affected)
+GPTRenovationHeader.txt             (full owner-copy replacement when uploaded/requested/available)
 ```
 
 If GitHub is not accessible, GPT must mark the change as `PENDING GITHUB UPDATE`, provide the full updated owner-copy header when asked, and then update GitHub as soon as access is available later.
 
-A chat apology alone is not enough when the mistake shows the header or workflow guard failed. A separate addendum file alone is not enough when the canonical header itself needs strengthening.
+A chat apology alone is not enough when the mistake shows the header or workflow guard failed. A separate addendum file alone is not enough when the canonical header itself needs strengthening. Updating GitHub but leaving the owner local header stale is also incomplete when the owner header is available.
 
 ## Not a project workspace
 
