@@ -1,0 +1,30 @@
+Paste to S11!A:C - SPEC
+Spec	Description	Note
+S11-TITLE	Doors, windows, aluminium/glazing, louvres and ventilation/opening fixtures	Current BOQ 100% cost basis from repeated check of rendered/text-extracted floor plan, window schedule and door schedule.
+S11-STATUS	COMPLETE FOR NEXT SXX - CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS	Margin/profit/customer selling price is not included and will be calculated later.
+S11-SOURCE	Use `Surau Plan Roof Plan Bldg Tender_Constn.pdf`, `Surau Juasseh sections and elevations tender_constn 1.pdf`, and `01-SURAU JERUSSALAM LP-R02 Layout1.pdf`.	Rendered/text-extracted source checked before costing.
+S11-DOOR-SPEC	D1 900x2400 solid timber door; D2 2300x2400 powder coated aluminium sliding door with 10mm clear tempered glass; D3 1000x2400 solid timber door.	Door schedule checked.
+S11-WINDOW-SPEC	W1 900x1200 top hung powder coated aluminium window with 8mm clear glass; W2 2280x2400 and W3 750x2400 Breezeway Altair adjustable glass louvres with tempered glass panels.	Window schedule checked.
+S11-COUNT	Final count basis: D1 qty 4; D2 qty 3; D3 qty 3; W1 qty 2; W2 qty 5; W3 qty 2.	W4 qty 2, W5 qty 3, W6 qty 1 recorded no-cost opening only; BS1 qty 7 excluded to S10.
+S11-COSTCHECK	Undercost/overprice/double-count check done.	Includes door/window/louvre supply, ironmongery/sealant/sundries, direct labour, specialist installation and opening access/protection. S10/S12 scope excluded. No markup included.
+S11-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S11!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: D1 solid timber door 900x2400 to detail. Quantity from door schedule and plan labels. Includes frame/ironmongery/finish allowance so not leaf-only.	S11-B1-001	Solid Timber Door 900 x 2400 Supply Allowance with Frame Ironmongery and Finish (Current Working Cost Per set)	SET	4	0	950.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: D3 solid timber door 1000x2400 to detail. Quantity from door schedule and plan labels. Includes frame/ironmongery/finish allowance so not leaf-only.	S11-B1-002	Solid Timber Door 1000 x 2400 Supply Allowance with Frame Ironmongery and Finish (Current Working Cost Per set)	SET	3	0	1050.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: D2 powder coated aluminium sliding doors with 10mm clear tempered glass. CALC NOTE: 3 x 2.300m x 2.400m = 16.56m2.	S11-B1-003	Powder Coated Aluminium Sliding Door with 10mm Clear Tempered Glass Supply Allowance (Current Working Cost Per m2)	M2	16.56	0	520.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: W1 top hung powder coated aluminium window with 8mm clear glass. CALC NOTE: 2 x 0.900m x 1.200m = 2.16m2.	S11-B1-004	Top Hung Powder Coated Aluminium Window with 8mm Clear Glass Supply Allowance (Current Working Cost Per m2)	M2	2.16	0	360.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: W2/W3 Breezeway Altair adjustable glass louvres with tempered glass panels. CALC NOTE: W2 5 x 2.280m x 2.400m = 27.36m2; W3 2 x 0.750m x 2.400m = 3.60m2; total 30.96m2.	S11-B1-005	Breezeway Altair Adjustable Glass Louvre with Tempered Glass Panels Supply Allowance (Current Working Cost Per m2)	M2	30.96	0	800.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: screws, anchors, sealant, flashing trim, glazing setting blocks, touch-up and small accessories across door/window/louvre scope.	S11-B1-006	Door Window Ironmongery Sealant Flashing and Fixing Sundries Allowance (Current Working Cost Per lot)	LOT	1	0	2500.00
+
+Paste to S11!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: main contractor setout, coordination, checking, QA and opening interface work. Specialist installation separate under Block 3.	S11-B2-001	Labour - Skilled Worker (Per MH)	MH	80	0	22.50
+NO MARKUP - ROOT COST. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: material handling, opening protection, cleanup and installation support. Specialist installation separate under Block 3.	S11-B2-002	Labour - General Helper (Per MH)	MH	80	0	16.25
+
+Paste to S11!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: installation of D1/D3 solid timber door/frame/ironmongery. CALC NOTE: D1 qty 4 + D3 qty 3 = 7 sets.	S11-B3-001	Solid Timber Door Frame Ironmongery and Door Leaf Installation Labour Allowance (Current Working Cost Per set)	SET	7	0	250.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: installation of D2 aluminium sliding doors, W1 aluminium windows and W2/W3 adjustable glass louvres. CALC NOTE: 16.56 + 2.16 + 30.96 = 49.68m2.	S11-B3-002	Aluminium Door Window and Adjustable Glass Louvre Installation Labour Allowance (Current Working Cost Per m2)	M2	49.68	0	110.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: opening installation access, temporary protection, handling, packing and adjustment. Does not duplicate S10 wall-access scaffold.	S11-B3-003	Door Window Opening Access Handling and Protection Allowance (Current Working Cost Per lot)	LOT	1	0	850.00
