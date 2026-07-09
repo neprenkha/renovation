@@ -6,7 +6,7 @@ Repository: `neprenkha/renovation`
 
 This header is a standalone handover and governance file for ACTIVEBOQ / Mix BOQ renovation catalog, BOQ and quotation work. It must be understandable by the owner, a new AI session, QS, ID, contractor, or future reviewer.
 
-When the owner pastes this header into another AI session or gives it with the latest catalog PDF, that reader must understand the versioning rule, source order, customer-facing catalog intent, quotation method and safety boundaries.
+When the owner pastes this header into another AI session or gives it with the latest catalog PDF, that reader must understand the versioning rule, source order, customer-facing catalog intent, quotation method, quotation/costing sequence, owner-copy header method and safety boundaries.
 
 ## Canonical editable header location
 
@@ -25,6 +25,41 @@ GPT Header Renovation.md
 remains a visible repository header/reference. If both files exist, the editable folder copy and root header must be kept aligned in the same session whenever owner changes a permanent general rule.
 
 `GPTEditable/` is for GPT-editable governance files only. It is not a project/customer work folder.
+
+## Owner local header full-copy rule
+
+The owner's local start-work file is:
+
+```text
+GPTRenovationHeader.txt
+```
+
+When GPT is asked to provide a downloadable owner header, the output must be a full cumulative replacement file, not a shortened summary, not a patch, and not only the newly added section.
+
+The downloadable `GPTRenovationHeader.txt` must preserve all useful existing rules from the previous owner header and add the new/changed rules in the correct section. GPT must not delete unrelated old rules simply to make the header shorter.
+
+If a correction is made in the GitHub canonical header, GPT must also provide a complete downloadable owner-copy header when the owner asks, so the owner can replace the old local `GPTRenovationHeader.txt` without manually hunting for a patch.
+
+If GitHub is not attached when a permanent/general rule is discovered, GPT must mark the change as `PENDING GITHUB UPDATE`, produce the full updated owner-copy header if asked, and then update the canonical GitHub files as soon as GitHub access is available in a later reply.
+
+## Correction-triggered governance update rule
+
+When the owner corrects GPT because GPT violated workflow, shortened a required header, skipped a required source, touched the wrong area, mixed projects, created an unsafe instruction, or repeated a preventable mistake, GPT must treat the correction as a possible governance/header failure.
+
+If the correction is general/permanent and not only a one-off job detail, GPT must update the relevant governance files in the same session:
+
+```text
+GPTEditable/GPT Header Renovation.md
+GPT Header Renovation.md
+GPTEditable/README_GPTEDITABLE.md   (if the correction affects how GPTEditable itself must be used)
+GPTRenovationHeader.txt             (owner downloadable full replacement when requested)
+```
+
+GPT must not wait for the owner to explicitly say "update header" when the mistake proves that the existing header did not prevent the failure. A chat apology alone is not enough.
+
+Header updates must be clean replacements of the affected rule section, not contradictory overlapping bullets. The update must preserve unrelated sections exactly in meaning and must not shorten the header by removing older valid rules.
+
+This rule was added after GPT produced a shortened downloadable `GPTRenovationHeader_UPDATED.txt` that was not safe as a replacement for the owner's full local header.
 
 ## Browser reply timestamp rule
 
