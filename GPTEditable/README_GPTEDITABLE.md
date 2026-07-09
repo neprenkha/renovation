@@ -98,6 +98,43 @@ Required correction workflow:
 
 Do not wait until the end of the project to fix a known contradiction.
 
+## BOQ.xlsm paste-ready output rule
+
+Audit/takeoff files are not the same as owner paste files.
+
+For every SXX that must be pasted into `*BOQ.xlsm`, GPT must produce a separate paste-ready `.txt` file or copy block that follows `README - BOQ.txt` exactly.
+
+The valid paste targets are:
+
+```text
+Paste to SXX!A:C - SPEC
+Paste to SXX!E:K - Materials Block
+Paste to SXX!P:V - Labour Block
+Paste to SXX!AA:AG - Service Block
+```
+
+The target header must be outside and immediately above each TSV block. The target header must not be included inside the TSV data.
+
+The TSV data must contain only the workbook input columns:
+
+```text
+SPEC A:C:
+Spec	Description	Note
+
+Block 1 E:K:
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+
+Block 2 P:V:
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+
+Block 3 AA:AG:
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+```
+
+GPT must not include audit-only columns, total columns, formula columns, GitHub status columns, source-drawing columns, raw/deduction/net columns, or long review tables inside BOQ.xlsm paste blocks.
+
+If an audit/takeoff file has those extra columns, GPT must clearly say it is for audit/reference only and must also provide the separate `BOQXLSM_PASTE_READY` file for owner paste.
+
 ## Drawing/spec source rule
 
 Active job `Drawing/` folders contain customer/source specifications and are not optional background material.
@@ -143,17 +180,9 @@ For Surau Nilai, use owner-corrected `Lot 20093` as the governing working lot un
 
 ## SXX copy-paste output rule
 
-For BOQ costing, every SXX output intended for spreadsheet use must be produced as `.txt` tab-delimited content that can be copied into `.xls` / Excel in sequence:
+For BOQ costing, every SXX output intended for spreadsheet use must be produced as `.txt` tab-delimited content that can be copied into `.xls` / Excel in the exact `README - BOQ.txt` paste target format.
 
-```text
-SPEC A:C
-Block 1 material/product
-Block 2 labour/plant/rental
-Block 3 subcontract/specialist/service
-summary/status/gate
-```
-
-Markdown files may be used for notes/control, but the actual BOQ paste output must be `.txt` when owner is preparing workbook-style costing.
+Markdown files may be used for notes/control and audit files may include extra columns, but the actual owner paste output must be a separate BOQ.xlsm paste-ready `.txt` file or block using only the workbook input columns.
 
 ## Correction-triggered updates
 
