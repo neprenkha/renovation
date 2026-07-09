@@ -1,0 +1,27 @@
+Paste to S02!A:C - SPEC
+Spec	Description	Note
+S02-TITLE	ESCP and temporary erosion/sediment control	Temporary erosion and sediment control before/during early site disturbance for Surau Nilai / SURAU JURESSALAM.
+S02-OVERVIEW	Temporary silt fence/perimeter sediment control, sandbag check/inlet protection, temporary drain/check-dam consumables, installation labour and ESCP maintenance/inspection allowance.	MUKTAMAD WORKING-COST BASIS. Customer markup/gross margin not included. Do not double count with S01 hoarding.
+S02-SOURCE	Use `SJ_01ESCP-LP-01-S0-00.pdf`, `1.2 Materials.txt`, `1.3 Labour.txt`, GPTEditable addendum references and current web/current-market check.	CALC NOTE: ESCP drawing is the main S02 source. Owner directed S02 to be completed now; if later drawing/SXX changes line length/point count, create correction version before continuing affected summary.
+S02-CROSSCHECK	S01 hoarding and S02 silt fence are separate systems for current S02 costing.	CALC NOTE: S01 = site enclosure/preliminaries. S02 = sediment control/filter/perimeter protection. If overlap is later found, correct affected SXX immediately.
+S02-QTY	Temporary silt fence working length is locked at 50m with 5% material wastage.	OWNER-DIRECTED FINAL CURRENT S02 BASIS: workbook material block uses Usage Qty 50 and Wastage/Buffer 0.05 so formula produces 52.50m material quantity. Installation labour uses 50m with Wastage/Buffer 0.
+S02-QTY	Sandbag/check/inlet protection is locked at 24 filled units.	OWNER-DIRECTED FINAL CURRENT S02 BASIS: 3 control points x 8 filled sandbags each = 24 PCS.
+S02-QTY	Temporary drain/check-dam consumables use 1 lot allowance.	OWNER-DIRECTED FINAL CURRENT S02 BASIS: small ESCP consumables only; permanent drains are excluded and will be priced in later drainage SXX.
+S02-QTY	ESCP maintenance/inspection uses 2 visits.	OWNER-DIRECTED FINAL CURRENT S02 BASIS: initial post-install adjustment + post-heavy-rain/early earthwork check. Do not duplicate with S01 site coordination.
+S02-MARKUP	All S02 rates are no-markup working cost rates unless line note says otherwise.	Customer selling price must be produced later through separate markup/gross margin calculation.
+S02-USER-INPUT	Owner requires S02 to be completed now, not left hanging, with no NIL/blank required lines and clear markup status.	S02 output is BOQ.xlsm paste-ready using README - BOQ.txt paste ranges. Later contradictions require correction version, not delay now.
+
+Paste to S02!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: 50m x 1.05 = 52.50m workbook quantity. Owner-directed final current S02 basis; if later source contradicts, revise S02 as new version before affected summary proceeds.	S02-B1-001	ESCP Silt Fence Geotextile and Timber Stake Material (Current Working Cost Per m)	M	50	0.05	12.00
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: 3 temporary control points x 8 filled sandbags each = 24 PCS. Do not duplicate under permanent drainage.	S02-B1-002	ESCP Sandbag Sediment Control Filled Unit (Current Working Cost)	PCS	24	0	6.50
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: temporary ESCP consumables only; permanent drains/checkpits/outfall stay in later drainage SXX.	S02-B1-003	ESCP Temporary Drain and Check Dam Consumable Allowance (Current Working Cost)	LOT	1	0	350.00
+
+Paste to S02!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: installation labour uses raw installed length 50m; material wastage is already handled in Block 1.	S02-B2-001	ESCP Silt Fence Installation Labour (Current Working Cost Per m)	M	50	0	8.00
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: install/place 24 filled sandbags for temporary check/inlet protection.	S02-B2-002	ESCP Sandbag and Inlet Protection Installation Labour (Current Working Cost Per PCS)	PCS	24	0	2.00
+
+Paste to S02!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: 2 ESCP inspection/maintenance visits; separate from S01 site coordination and not customer selling price.	S02-B3-001	ESCP Maintenance and Inspection Allowance (Current Working Cost Per Visit)	VISIT	2	0	180.00
