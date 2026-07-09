@@ -44,22 +44,24 @@ If GitHub is not attached when a permanent/general rule is discovered, GPT must 
 
 ## Correction-triggered governance update rule
 
-When the owner corrects GPT because GPT violated workflow, shortened a required header, skipped a required source, touched the wrong area, mixed projects, created an unsafe instruction, or repeated a preventable mistake, GPT must treat the correction as a possible governance/header failure.
+When the owner corrects GPT because GPT violated workflow, shortened a required header, skipped a required source, touched the wrong area, mixed projects, created an unsafe instruction, forgot to update governance, or repeated a preventable mistake, GPT must treat the correction as a possible governance/header failure.
 
 If the correction is general/permanent and not only a one-off job detail, GPT must update the relevant governance files in the same session:
 
 ```text
 GPTEditable/GPT Header Renovation.md
 GPT Header Renovation.md
-GPTEditable/README_GPTEDITABLE.md   (if the correction affects how GPTEditable itself must be used)
+GPTEditable/README_GPTEDITABLE.md   (if the correction affects GPTEditable or governance usage)
 GPTRenovationHeader.txt             (owner downloadable full replacement when requested)
 ```
 
-GPT must not wait for the owner to explicitly say "update header" when the mistake proves that the existing header did not prevent the failure. A chat apology alone is not enough.
+GPT must not wait for the owner to explicitly say `update header` when the mistake proves that the existing header did not prevent the failure. A chat apology, local addendum, tracker note, or job-specific note alone is not enough.
 
-Header updates must be clean replacements of the affected rule section, not contradictory overlapping bullets. The update must preserve unrelated sections exactly in meaning and must not shorten the header by removing older valid rules.
+Header updates must be direct clean replacements or clean additions inside the canonical header itself. Do not only create a separate addendum file and leave the canonical header unchanged when the correction is permanent/general.
 
-This rule was added after GPT produced a shortened downloadable `GPTRenovationHeader_UPDATED.txt` that was not safe as a replacement for the owner's full local header.
+Header updates must preserve unrelated sections in meaning and must not shorten the header by removing older valid rules. If the current mistake was caused by vague wording, strengthen the exact gate so the same workflow failure is blocked next time.
+
+This rule was originally added after GPT produced a shortened downloadable `GPTRenovationHeader_UPDATED.txt` that was not safe as a replacement for the owner's full local header, and was strengthened again after S02/S04 workflow errors showed that addendum-only updates were not visible enough.
 
 ## Browser reply timestamp rule
 
@@ -224,7 +226,7 @@ Workflow:
 
 ## Sequential SXX costing, wastage, buffer and MH productivity rule
 
-For any BOQ or quotation job that uses S01-SXX, GPT must cost one SXX at a time in construction sequence. Do not open the next SXX costing file until the current SXX is either `COMPLETE FOR NEXT SXX` or `RESERVED WITH REASON`.
+For any BOQ or quotation job that uses S01-SXX, GPT must cost one SXX at a time in construction sequence. Do not open the next SXX costing file until the current SXX is either `COMPLETE FOR NEXT SXX`, `WORKING-COST COMPLETE BUT DRAWING-SPEC HOLD`, or `RESERVED WITH REASON`.
 
 Each SXX cost file must complete these gates before moving to the next SXX:
 
@@ -239,13 +241,80 @@ Each SXX cost file must complete these gates before moving to the next SXX:
 9. round purchase quantities to practical supplier stock units after wastage, for example full bag, full sheet, full length, full box, full roll, full trip, full m3 or full piece;
 10. record manpower-hour/productivity basis where labour is not a fixed master-list package rate, including crew size, expected output per day/hour or total man-hours;
 11. mark missing master-list items, missing rates, missing specifications and supplier-needed items in the SXX file, not by inventing final rates silently;
-12. state whether the SXX total is `WORKING COST`, `PROVISIONAL COST`, `SELLING RATE USED`, or `CUSTOMER SELLING PRICE`.
+12. state whether the SXX total is `WORKING COST`, `PROVISIONAL COST`, `SELLING RATE USED`, or `CUSTOMER SELLING PRICE`;
+13. state separately whether the SXX is `DRAWING-SPEC MEASURED COMPLETE`, `WORKING-COST BASIS ONLY`, or `HOLD - DRAWING SPEC VERIFICATION REQUIRED`.
 
 For large construction projects such as Surau Nilai, the default order is:
 
 `Deep Read Register -> Scope Sequence -> S01 SPEC + Cost -> S01 Check -> S02 SPEC + Cost -> S02 Check -> continue until final Summary`.
 
 A total project price may be reported only from completed SXX totals plus clearly labelled reserved/provisional allowances. Do not claim a final overall price while major SXX scopes remain unread, unmeasured or unpriced.
+
+## Drawing-spec SXX completion gate
+
+When owner asks for a SXX to be `100%`, `siap sepenuhnya`, or `ikut spec drawing pelanggan`, GPT must not treat a working-cost allowance as drawing-spec completion.
+
+For every SXX, GPT must keep four statuses separate:
+
+```text
+WORKING-COST BASIS COMPLETE
+BOQ.XLSM PASTE READY
+DRAWING-SPEC MEASURED COMPLETE
+CUSTOMER SELLING PRICE COMPLETE
+```
+
+A SXX may be working-cost complete and paste-ready, but still not drawing-spec measured complete.
+
+`DRAWING-SPEC MEASURED COMPLETE` may be used only when the relevant drawing/spec was actually rendered, visually inspected, or reliably extracted enough to support the quantity/spec lines. File existence, filename match, GitHub base64 fetch, binary blob SHA, old memory, or a default/locked allowance is not enough.
+
+If a required drawing cannot be rendered/read/extracted in the active tool/session, GPT must mark:
+
+```text
+HOLD - DRAWING SPEC VERIFICATION REQUIRED
+```
+
+and must not start the next SXX as if the current SXX is 100% drawing-spec complete. GPT may keep existing working-cost paste files as `WORKING-COST ONLY`, but must not present them as final measured drawing-spec output.
+
+If an earlier SXX was already marked complete but later review shows it was only working-cost/default allowance, GPT must immediately create a tracker correction that reclassifies that SXX. Do not continue later SXX work until the active drawing-spec gate is clear or the owner explicitly accepts a `WORKING-COST ONLY` path.
+
+This rule was strengthened after S01-S04 Surau Nilai were at risk of being labelled 100% while their PDFs had not all been rendered/visually measured.
+
+## BOQ.xlsm paste-ready output rule
+
+Audit/takeoff files are not the same as owner workbook paste files.
+
+For every SXX that must be pasted into `*BOQ.xlsm`, GPT must produce a separate paste-ready `.txt` file or copy block that follows `README - BOQ.txt` exactly.
+
+The valid paste targets are:
+
+```text
+Paste to SXX!A:C - SPEC
+Paste to SXX!E:K - Materials Block
+Paste to SXX!P:V - Labour Block
+Paste to SXX!AA:AG - Service Block
+```
+
+The target header must be outside and immediately above each TSV block. The target header must not be included inside the TSV data.
+
+The TSV data must contain only the workbook input columns:
+
+```text
+SPEC A:C:
+Spec	Description	Note
+
+Block 1 E:K:
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+
+Block 2 P:V:
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+
+Block 3 AA:AG:
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+```
+
+GPT must not include audit-only columns, total columns, formula columns, GitHub status columns, source-drawing columns, raw/deduction/net columns, or long review tables inside BOQ.xlsm paste blocks.
+
+If an audit/takeoff file has those extra columns, GPT must clearly say it is for audit/reference only and must also provide the separate `BOQXLSM_PASTE_READY` file for owner paste.
 
 ## MISC product-reference folder rule
 
