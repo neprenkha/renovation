@@ -1,0 +1,29 @@
+Spec	Description	Note
+S10-RECHECK-TITLE	S10 repeated drawing/spec verification before cost takeoff	Repeated check was done before S10 costing and before opening S11.
+S10-RECHECK-STATUS	PASS - S10 may be taken off on current BOQ 100% cost basis	The target 100% is current BOQ cost basis from drawing/spec/authorised full allowance. Customer selling price/margin is separate.
+S10-100PERCENT-TARGET	100% target for this S10 gate	Current BOQ cost basis complete: source drawings checked, authorised full allowance basis used, Block 1-3 completed, undercost/overprice/double-count/markup checks recorded. 99.9% or unsupported/random allowance is HOLD.
+S10-SOURCE-1	Surau Plan Roof Plan Bldg Tender_Constn.pdf	Rendered and text-extracted. Relevant visible source: floor plan, room layout, facing bricks labels, facing brick lighting and ventilation screen labels, cement screen blocks, high level lighting/ventilation openings above brickwall, door/window/BS1 schedule, finishes legend.
+S10-SOURCE-2	Surau Juasseh sections and elevations tender_constn 1.pdf	Rendered and text-extracted. Relevant source: north/east/west/south elevations, sections A-A/B-B/C-C, facing bricks, cement screen blocks, facing brick lighting and ventilation screen, high level lighting and ventilation opening above brickwall, wall note for selected Taiwan kiln bricks/fairface construction/sealant.
+S10-SOURCE-3	01-SURAU JERUSSALAM LP-R02 Layout1.pdf	Rendered and checked for structural boundary only. S10 excludes S05 ground beams and S08 columns/RC roof beams.
+S10-WALL-SPEC	Selected Taiwan kiln bricks supplied in pallets and protected; all brickwork neat and cleaned of slurry fairface construction with architect-approved mock-up.	From sections/elevations wall note.
+S10-SEALANT-SPEC	All brickwork and breeze blocks unless plastered protected with 3 coats of Sissons matt waterproof silicon sealant inside and outside.	Included as material + application labour full allowance.
+S10-SCREEN-SPEC	Facing brick lighting/ventilation screens and cement screen blocks included.	Plan/elevations show these screen elements. BS1 schedule shows lighting/ventilation opening by brick screen with average opening of 50% per panel.
+S10-AREA-BASIS	Full allowance wall/screen/sealant basis	Facing/fairface brickwork net allowance 245m2; common/plastered walling substrate 110m2; facing brick ventilation screen 40m2; cement screen blocks 35m2; sealant both-side/full-face allowance 640m2. These quantities are drawing-derived full allowances, not minimum quantities.
+S10-EXCLUSIONS	Excluded scopes	S05 footing/stump/ground beam, S08 columns/RC roof beams, S09 roof framing/covering/rainwater goods, S11 doors/windows/glazing if next, S12 plaster/paint/tile finishes and sanitary fixtures, S22 ground drainage/longkang.
+S10-UNDERCOST	PASS	S10 is not priced as brick-only. It includes facing/fairface brickwork, common/plastered wall substrate, brick ventilation screens, cement screen blocks, sealant material, mortar/ties/lintels/sills/sundries, direct labour, specialist labour and wall-access scaffolding.
+S10-OVERPRICE	PASS WITH NOTE	Openings/deductions are built into full net allowances. RC structure, roof and finishing scopes are excluded to avoid overprice/double count.
+S10-DOUBLECOUNT	PASS	No duplicate with S05/S08/S09/S11/S12/S22.
+S10-MARKUP	PASS	No customer markup/gross margin included.
+S10-GATE	S10 recheck gate	PASS - create S10 takeoff audit V1, S10 BOQ.xlsm paste-ready V1 and tracker V22. S11 may start only after those files are committed.
+
+CheckID	CheckItem	Result	Action
+S10-RC-001	Floor plan rendered/text extracted	PASS	Use Surau Plan Roof Plan Bldg Tender_Constn.pdf.
+S10-RC-002	Sections/elevations rendered/text extracted	PASS	Use Surau Juasseh sections and elevations tender_constn 1.pdf.
+S10-RC-003	Wall material note checked	PASS	Use selected Taiwan kiln bricks / fairface construction / architect mock-up basis.
+S10-RC-004	Sealant note checked	PASS	Include 3 coats Sissons matt waterproof silicon sealant inside/outside where not plastered.
+S10-RC-005	Screen block and ventilation screen checked	PASS	Include facing brick lighting/ventilation screen and cement screen blocks.
+S10-RC-006	Door/window/opening schedule checked	PASS	Use full net allowance after openings; S11 doors/windows excluded.
+S10-RC-007	Duplicate with structural SXX checked	PASS	Exclude S05 and S08 structural RC.
+S10-RC-008	Duplicate with S09 checked	PASS	Exclude roof framing/cover/rainwater goods.
+S10-RC-009	Duplicate with finishes checked	PASS	Exclude plaster/paint/tile final finishes to S12 unless wall note requires fairface sealant in S10.
+S10-RC-010	100% / 99.9% gate checked	PASS	No unsupported/random allowance. Authorised full allowance basis closed for current BOQ cost.
