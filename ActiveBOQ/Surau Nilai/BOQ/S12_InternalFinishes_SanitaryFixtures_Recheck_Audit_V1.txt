@@ -1,0 +1,134 @@
+# S12 Internal Finishes and Sanitary Final Fixtures — Recheck Audit V1
+
+Generated MYT: 2026-07-10 07:31
+
+## Purpose
+
+Repeated careful verification before S12 costing and before opening S13.
+
+Target used:
+
+```text
+100% CURRENT BOQ COST BASIS
+99.9% is not a pass
+Customer selling price / margin is separate and not part of this gate unless owner asks for selling price
+```
+
+## Header compliance
+
+Latest uploaded owner header checked:
+
+```text
+GPTRenovationHeader.txt
+Generated MYT: 2026-07-10 07:00
+```
+
+Relevant rules applied:
+
+```text
+13 Sequential SXX costing gate
+13B Drawing/spec and auditable takeoff rule
+13C BOQ.xlsm paste-ready output rule
+13D Drawing-spec SXX completion gate
+13E Authorised allowance / 100% current BOQ cost basis rule
+```
+
+## Source drawings checked
+
+```text
+Surau Plan Roof Plan Bldg Tender_Constn.pdf
+Surau Juasseh sections and elevations tender_constn 1.pdf
+Surau Sanitary Plumbing Schematic 1.pdf
+Surau Sewerage Schematic 1.pdf
+S06 rough-in files for duplicate boundary
+S10 walling files for duplicate boundary
+S11 door/window/glazing files for duplicate boundary
+```
+
+## Drawing/spec facts recorded
+
+```text
+Ceiling finish PC: Seamless joint plasterboard ceiling with KCC emulsion paint or approved equivalent.
+Wall finish PP: Plastered and KCC emulsion paint or approved equivalent.
+Wall finish CT: Ceramic tiles supplied by ID, installed by main contractor.
+Floor finish PT: 300 x 600mm porcelain floor tile supplied by ID, installed by main contractor.
+Floor finish CT: Ceramic tiles supplied by ID, installed by main contractor.
+Floor finish C: Carpet with underlay supplied and installed by ID over cement render and two coats of Sissons silicone sealant by main contractor.
+Tile note: all wall tiles and floor tiles to be applied with G88 bonding agent and Bondplus cement grout bonder to S.O approval or approved equivalent.
+Sanitary note: refer to ID toilet details for finishes and sanitary fittings position.
+```
+
+## S12 scope included
+
+```text
+PC plasterboard ceiling and KCC paint
+PP plaster and KCC emulsion paint finish
+PT/CT tile installation consumables and installation labour, with tile supply by ID excluded where drawing says supplied by ID
+C carpet substrate by main contractor: cement render and two coats Sissons silicone sealant only; carpet and underlay supplied/installed by ID excluded
+final WC / basin / taps / grating / sanitary accessories
+sanitary final installation, testing and commissioning
+finishing protection, cleaning and handover touch-up
+```
+
+## S12 exclusions / duplicate prevention
+
+```text
+S06 under-slab plumbing rough-in excluded
+S10 wall substrate/brickwork/facing brick/screen block excluded
+S10 brickwork/breeze-block sealant excluded where already counted for brickwork
+S11 doors/windows/glazing/louvres excluded
+ID-supplied tile/carpet material excluded where drawing states supplied by ID
+loose partition supplied by ID excluded
+shoe racks supplied by ID excluded
+built-in kitab racks to ID details excluded unless owner later includes ID scope
+water tank / pump / external rainwater harvesting / external drainage excluded to later MEP/drainage SXX
+customer selling price / markup excluded
+```
+
+## Quantity basis
+
+| Item | Quantity basis | S12 current BOQ quantity |
+|---|---|---:|
+| PC ceiling | Covered internal room/finish-area full allowance from plan room areas | 232.63 m2 |
+| PP plaster/KCC paint wall finish | Internal plastered/painted wall full allowance after S10 wall substrate and openings | 360.00 m2 |
+| PT/CT tile installation consumables | PT floor allowance 100m2 + CT floor/wall allowance 175m2 | 275.00 m2 |
+| C carpet substrate by main contractor | Main prayer/muslimah/muslimin carpet substrate full allowance | 98.50 m2 |
+| WC final fixture | WC labels counted from plan | 5 sets |
+| Basin final fixture | B/basin labels and toilet layouts full allowance | 4 sets |
+| Tap final fixture | Tap/feet-wash/ablution visible points full allowance | 15 points |
+| Floor trap/grating final cover | FT/sump/grating final cover allowance excluding external drainage | 10 points |
+| Sanitary final accessories | Full lot allowance | 1 lot |
+```
+
+## Strict 100 checklist
+
+| Check | Result | Note |
+|---|---|---|
+| Drawing/spec source checked | PASS | Floor plan/finishes legend, sections/elevations and sanitary source checked. |
+| Ceiling finish spec checked | PASS | PC plasterboard ceiling with KCC emulsion paint. |
+| Wall finish spec checked | PASS | PP plaster/KCC paint and CT tile installation rule checked. |
+| Floor finish spec checked | PASS | PT porcelain tile, CT ceramic tile and C carpet substrate rule checked. |
+| Tile supplied-by-ID note handled | PASS | Tile material supply excluded; main contractor install/consumables included. |
+| Carpet supplied-by-ID note handled | PASS | Carpet/underlay by ID excluded; cement render and Sissons sealant by main contractor included. |
+| Sanitary final fixture position/count checked | PASS | WC, basin, tap, grating and accessories included from plan/sanitary basis. |
+| S06 duplicate prevention | PASS | Rough-in pipe/fixture sleeves excluded. |
+| S10 duplicate prevention | PASS | Wall substrate/brickwork excluded. |
+| S11 duplicate prevention | PASS | Doors/windows/glazing excluded. |
+| ID supplied loose items | PASS | Loose partition, shoe racks and ID-built items excluded until owner includes ID scope. |
+| Block 1 complete | PASS | Ceiling, paint/plaster, tile consumables, carpet substrate and sanitary material included. |
+| Block 2 complete | PASS | Ceiling, wall, tile, carpet substrate and sanitary installation labour included. |
+| Block 3 complete | PASS | Protection/cleaning, testing/commissioning and finishing tools/services included. |
+| Markup check | PASS | No customer markup applied. |
+| 100% / 99.9% gate | PASS | No unsupported/random allowance or hanging S12 cost line remains for current BOQ cost basis. |
+
+## Decision
+
+```text
+S12 STRICT 100% CURRENT BOQ COST BASIS: PASS
+S12 BOQ.XLSM PASTE FILE: READY - USE V1
+S13 START ALLOWED: YES
+```
+
+## Header update decision
+
+No new header update is required for S12 because the uploaded `GPTRenovationHeader.txt` already contains the 100% SXX gate, drawing/spec gate, authorised allowance rule and paste-ready output rule needed for this correction.
