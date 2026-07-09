@@ -1,304 +1,524 @@
-# GPT Header Renovation
+# GPT RENOVATION HEADER — OWNER COPY / START-WORK REMINDER
 
-## Purpose and audience
+Repository:
+neprenkha/renovation
 
-Repository: `neprenkha/renovation`
-
-This header is a standalone handover and governance file for ACTIVEBOQ / Mix BOQ renovation catalog, BOQ and quotation work. It must be understandable by the owner, a new AI session, QS, ID, contractor, or future reviewer.
-
-When the owner pastes this header into another AI session or gives it with the latest catalog PDF, that reader must understand the versioning rule, source order, customer-facing catalog intent, quotation method, quotation/costing sequence, owner-copy header method and safety boundaries.
-
-## Canonical editable header location
-
-The repository-level GPT governance/header may be edited only through the canonical editable copy under:
-
-```text
+Canonical GitHub governance/header:
 GPTEditable/GPT Header Renovation.md
-```
-
-The root file:
-
-```text
 GPT Header Renovation.md
-```
 
-remains a visible repository header/reference. If both files exist, the editable folder copy and root header must be kept aligned in the same session whenever owner changes a permanent general rule.
+GPTEditable governance guide:
+GPTEditable/README_GPTEDITABLE.md
+
+Purpose:
+This file is the owner's local/pasted full header for starting renovation / ActiveBOQ / Mix BOQ work in ChatGPT.
+Use this when GitHub is not yet attached, when starting a new chat, or when GPT begins to drift.
+
+This owner-copy header must be treated as a full cumulative replacement file.
+Do not shorten it into a summary.
+Do not output only a patch.
+Do not delete old valid rules when adding a new rule.
+
+This header preserves the old Cursor-header discipline, but the active work method is now GitHub-first.
+Cursor shell/file-system execution is not the default workflow for this header.
+
+====================================================================
+0) MANDATORY REPLY FORMAT
+====================================================================
+
+Every browser/chat reply for this renovation project must start near the top with Malaysia time:
+
+[MYT: YYYY-MM-DD HH:mm]
+
+Use Malaysia timezone:
+Asia/Kuala_Lumpur
+
+Do not omit MYT time/date in work replies.
+
+Reply style:
+- direct;
+- scope-controlled;
+- no unrelated suggestions;
+- no broad options unless owner asks;
+- no hidden branch / PR workflow unless owner explicitly asks;
+- if blocked, state exact block and exact owner action required;
+- if GitHub is not attached, remind owner to attach/select GitHub before claiming repository edits.
+
+====================================================================
+1) FIRST CHECK — IS GITHUB ATTACHED?
+====================================================================
+
+Before doing any repository edit, GPT must check whether GitHub is linked/selected and whether it can access:
+
+https://github.com/neprenkha/renovation
+
+If GitHub is NOT attached or GPT cannot access the repo, GPT must say clearly:
+
+"GitHub is not attached/accessible in this chat. Please share or select the GitHub repository `neprenkha/renovation` before I edit files. I can continue discussion/capture rules temporarily, but GitHub updates must be marked PENDING until access is available."
+
+GPT must NOT pretend that it updated GitHub if GitHub is not accessible.
+
+If discussion continues without GitHub:
+- capture changes as `PENDING GITHUB UPDATE`;
+- do not claim files were changed;
+- do not invent commits;
+- when GitHub becomes available, update the correct canonical files.
+
+If a permanent/general rule is captured while GitHub is unavailable, then later GitHub becomes accessible in the same or later reply, GPT must update the GitHub canonical files without waiting for owner to repeat the same instruction.
+
+====================================================================
+2) PROJECT IDENTITY
+====================================================================
+
+This header belongs only to:
+
+neprenkha/renovation
+
+Do not mix this with:
+- neprenkha/BOQ
+- LBHub
+- ONEBOT
+- ACCOUNT
+- any unrelated project or repo
+
+If the visible repo, branch, file names, or task do not match `neprenkha/renovation`, stop and warn owner before doing anything.
+
+Before every reply, audit, GitHub edit, or generated file, GPT must confirm internally:
+- repository is `neprenkha/renovation`;
+- active workspace is correct;
+- source/read-only folders are clear;
+- output folder is allowed.
+
+====================================================================
+3) CANONICAL EDITABLE HEADER RULE
+====================================================================
+
+The editable GPT governance file is:
+
+GPTEditable/GPT Header Renovation.md
+
+The visible root header is:
+
+GPT Header Renovation.md
+
+When a permanent/general renovation workflow rule changes:
+1. update `GPTEditable/GPT Header Renovation.md`;
+2. keep root `GPT Header Renovation.md` aligned;
+3. update `GPTEditable/README_GPTEDITABLE.md` if the rule affects how GPTEditable/header governance must be used;
+4. do not only create a local/customer README and forget the general header.
 
 `GPTEditable/` is for GPT-editable governance files only. It is not a project/customer work folder.
 
-## Owner local header full-copy rule
+====================================================================
+4) OWNER LOCAL HEADER FULL-COPY RULE
+====================================================================
 
-The owner's local start-work file is:
+Owner local start header:
 
-```text
 GPTRenovationHeader.txt
-```
 
-When GPT is asked to provide a downloadable owner header, the output must be a full cumulative replacement file, not a shortened summary, not a patch, and not only the newly added section.
+When GPT is asked to provide `GPTRenovationHeader.txt` for download, GPT must provide a FULL cumulative replacement file.
 
-The downloadable `GPTRenovationHeader.txt` must preserve all useful existing rules from the previous owner header and add the new/changed rules in the correct section. GPT must not delete unrelated old rules simply to make the header shorter.
+GPT must NOT:
+- make the owner header shorter by deleting unrelated old rules;
+- output a summary-only header;
+- output only the new patch section;
+- expect owner to manually search where to paste a patch;
+- assume owner will compare two versions and merge by hand.
 
-If a correction is made in the GitHub canonical header, GPT must also provide a complete downloadable owner-copy header when the owner asks, so the owner can replace the old local `GPTRenovationHeader.txt` without manually hunting for a patch.
+GPT must:
+- keep all useful valid existing rules;
+- add new general/permanent rules into the correct section;
+- remove or replace only conflicting wording;
+- keep the final header non-contradictory;
+- provide a downloadable full `.txt` file when owner asks;
+- make the file safe for owner to download and replace the old local `GPTRenovationHeader.txt`;
+- use the owner's latest full local header as the base when producing a downloadable owner replacement, not a shorter GitHub canonical header or reconstructed summary;
+- compare line count/byte size against the previous full owner header where possible; if the new replacement becomes materially shorter, GPT must explain exactly which duplicate/conflicting wording was removed or treat it as unsafe and rebuild it from the previous full header.
 
-If GitHub is not attached when a permanent/general rule is discovered, GPT must mark the change as `PENDING GITHUB UPDATE`, produce the full updated owner-copy header if asked, and then update the canonical GitHub files as soon as GitHub access is available in a later reply.
+This rule exists because previous GPT replies produced shortened replacement files, including `GPTRenovationHeader_UPDATED.txt` and a later drawing-spec replacement, which were unsafe as replacements for the full owner header.
 
-## Correction-triggered governance update rule
+====================================================================
+5) CORRECTION-TRIGGERED HEADER UPDATE RULE
+====================================================================
 
-When the owner corrects GPT because GPT violated workflow, shortened a required header, skipped a required source, touched the wrong area, mixed projects, created an unsafe instruction, forgot to update governance, or repeated a preventable mistake, GPT must treat the correction as a possible governance/header failure.
+When owner corrects GPT because GPT:
+- violated workflow;
+- shortened a required header;
+- skipped a required source;
+- touched or planned the wrong scope;
+- mixed projects;
+- created unsafe instruction;
+- forgot to update governance;
+- repeated a preventable mistake;
+- gave a rule that contradicts existing header;
+- made a downloadable replacement file that is incomplete;
 
-If the correction is general/permanent and not only a one-off job detail, GPT must update the relevant governance files in the same session:
+GPT must treat the correction as a possible header/governance failure.
 
-```text
+If the correction is general/permanent and not only a one-off job detail, GPT must update the relevant governance files in the same session when GitHub is accessible:
+
 GPTEditable/GPT Header Renovation.md
 GPT Header Renovation.md
-GPTEditable/README_GPTEDITABLE.md   (if the correction affects GPTEditable or governance usage)
-GPTRenovationHeader.txt             (owner downloadable full replacement when requested)
-```
+GPTEditable/README_GPTEDITABLE.md   if GPTEditable usage/header workflow is affected
+GPTRenovationHeader.txt             full downloadable owner replacement when owner asks or replacement is needed
 
-GPT must not wait for the owner to explicitly say `update header` when the mistake proves that the existing header did not prevent the failure. A chat apology, local addendum, tracker note, or job-specific note alone is not enough.
+GPT must not wait for owner to explicitly say "update header" if the mistake proves that the header/workflow guard failed.
 
-Header updates must be direct clean replacements or clean additions inside the canonical header itself. Do not only create a separate addendum file and leave the canonical header unchanged when the correction is permanent/general.
+A chat apology alone is not enough. A project-specific tracker note, local note or addendum file alone is also not enough when the correction is permanent/general. The actual canonical headers must be updated directly.
 
-Header updates must preserve unrelated sections in meaning and must not shorten the header by removing older valid rules. If the current mistake was caused by vague wording, strengthen the exact gate so the same workflow failure is blocked next time.
+Header updates must:
+- preserve unrelated valid rules;
+- replace conflicting rule sections cleanly;
+- not append overlapping contradictory bullets;
+- not shorten the header by deleting old valid rules;
+- state the new prevention rule clearly enough to stop the same mistake next time;
+- update the owner downloadable `GPTRenovationHeader.txt` as a full cumulative replacement when owner asks or when a local replacement is needed;
+- use the prior full owner header as the base for owner downloads, not a shorter canonical GitHub file, unless owner explicitly wants a condensed header.
 
-This rule was originally added after GPT produced a shortened downloadable `GPTRenovationHeader_UPDATED.txt` that was not safe as a replacement for the owner's full local header, and was strengthened again after S02/S04 workflow errors showed that addendum-only updates were not visible enough.
+If the owner points out that a replacement header is smaller or appears to have lost content, GPT must treat that as another correction-triggered header failure and immediately rebuild from the previous full owner header.
 
-## Browser reply timestamp rule
+====================================================================
+6) OLD CURSOR HEADER DISCIPLINE — PRESERVED FOR GPT/GITHUB
+====================================================================
 
-Every browser/chat reply for this renovation project must show Malaysia date/time near the top:
+The old Cursor-header discipline still applies conceptually:
 
-`MYT: YYYY-MM-DD HH:mm`
+- read the active header before work;
+- respect exact workspace root;
+- do not drift outside scope;
+- do not touch unrelated files;
+- do not create loose scattered outputs;
+- do not claim completion without checking the actual files;
+- preserve owner corrections as rules when they are permanent/general;
+- if an old rule fails to prevent a mistake, strengthen the header;
+- one clean complete action per turn where possible;
+- no broad destructive cleanup;
+- no delete/rename/move of source files unless owner specifically approves exact path movement.
 
-Use Malaysia timezone `Asia/Kuala_Lumpur`.
+Difference now:
+- GPT works through GitHub when attached;
+- no local Windows path or Cursor shell command is the default;
+- no Cursor execution prompt is needed unless owner explicitly asks for Cursor/Codex workflow;
+- GitHub edits must stay inside the active repo path and active workspace folder.
 
-## Project identity guard
+====================================================================
+7) ACTIVEBOQ STRUCTURE
+====================================================================
 
-This header belongs only to `neprenkha/renovation`.
+`ActiveBOQ/` is a parent folder for many separate customers, sites and BOQ jobs.
 
-Before every reply, prompt, audit or GitHub edit, confirm the work belongs to `neprenkha/renovation`. If the request, permission screen, repository, file names or task point to `neprenkha/BOQ`, LBHub, Enginuity, ONEBOT, ACCOUNT or another project, stop first and warn the owner. Do not silently mix headers, files, rules, branches or project authority.
+It is NOT one customer/site workspace.
 
-## ActiveBOQ parent-folder and active workspace rule
+Each job must live in its own folder:
 
-`ActiveBOQ/` is a parent folder for many separate customers, sites and BOQ jobs. It is not itself one customer/site workspace.
+ActiveBOQ/<customer-or-site-name>/
 
-When the owner names a workspace such as:
-
-```text
+Examples:
 ActiveBOQ/Surau Nilai/
 ActiveBOQ/+60 13-731 9262 - fahrurrazy fr/
-```
 
-GPT must treat that exact folder as the hard write boundary.
+When owner says the workspace is a specific folder, GPT must treat that exact folder as the hard write boundary.
 
-Do not write generated project files directly under:
+Example:
+If owner says:
 
-```text
-ActiveBOQ/
-```
+ActiveBOQ/Surau Nilai
 
-Do not write into another customer/site folder.
+GPT may write only inside:
 
-The root repo remains the reference source for catalog, material, labour, BOQ and quotation rules. ActiveBOQ job folders may use root reference files but must not overwrite root catalog versions or reference files.
+ActiveBOQ/Surau Nilai/
 
-Before quotation work, check job label, floor plan, work area, house/storey type, measurements/scale, finish tier, add-ons, site risks and output format.
+GPT must NOT write in:
+- ActiveBOQ/
+- ActiveBOQ/other-customer/
+- repository root
+- other unrelated folders
 
-Earlier wording that treated `ActiveBOQ/` as the current customer-pricing job is superseded: the active job is now the specific child folder named by owner.
+Generated job files must not be placed directly under `ActiveBOQ/`.
 
-## Standard ActiveBOQ job folder layout
+====================================================================
+8) STANDARD JOB FOLDER LAYOUT
+====================================================================
 
-For each customer/site folder, use this structure where applicable:
+Inside each customer/site folder, use this structure where applicable:
 
-```text
 GPT_CONTROL/
 Takeoff_Work/
 BOQ/
 BOQ_work/
 Drawing/
 OriginalFile/
-```
 
-Folder roles:
+Folder purpose:
+- GPT_CONTROL/   = local job notes, file maps, temporary job-specific reminders
+- Takeoff_Work/  = measurement notes, takeoff details, corrections, assumptions
+- BOQ/           = customer estimate, quotation draft, BOQ, supplier files, final outputs
+- BOQ_work/      = intermediate/generated work files
+- Drawing/       = uploaded PDFs/drawings, READ-ONLY
+- OriginalFile/  = owner original/source files, READ-ONLY
 
-| Folder | Purpose | GPT write rule |
-|---|---|---|
-| `GPT_CONTROL/` | Local notes, file maps, job-specific reminders if needed | Can write, but general rules must update this header |
-| `Takeoff_Work/` | Measurement notes, takeoff detail, correction logs, assumptions | Can write |
-| `BOQ/` | Customer estimate, quotation draft, BOQ, supplier files and final outputs | Can write |
-| `BOQ_work/` | Intermediate work files | Can write, but do not auto-delete |
-| `Drawing/` | Uploaded PDFs/drawings | Read-only |
-| `OriginalFile/` | Owner original/source files | Read-only |
+General permanent rules must go back to:
+GPTEditable/GPT Header Renovation.md
+GPT Header Renovation.md
+GPTEditable/README_GPTEDITABLE.md if GPTEditable/header workflow is affected
 
-Job-specific README/header files are allowed only as local notes. They must not replace this repository-level header. Any permanent/general rule learned from any job must be copied back into `GPT Header Renovation.md` / `GPTEditable/GPT Header Renovation.md` in the same session.
+Do not leave generated job files scattered directly under `ActiveBOQ/`.
 
-## Read-only and editable file authority
+====================================================================
+9) READ-ONLY RULE
+====================================================================
 
 Default read-only unless owner explicitly says otherwise:
-
 - all `Drawing/` folders;
 - all `OriginalFile/` folders;
+- customer original PDFs, photos, floor plans, request files;
 - old version files such as V1, V2, V3 etc.;
-- root reference files such as Materials, Labour, README-BOQ, quotation README, price references, PDF/DOCX catalog renders, old catalog versions and owner source files.
+- Materials, Labour, README-BOQ, README quotation, price references;
+- PDF/DOCX catalog renders;
+- old catalog versions and owner source files;
+- root/shared reference files unless owner explicitly asks to edit that exact file.
 
-Default editable/work-output folders are only the GPT-created work folders inside the active workspace, such as `Takeoff_Work/`, `BOQ/`, `BOQ_work/`, and `GPT_CONTROL/`.
+GPT must not edit, rename, move, overwrite, reorganize, or delete read-only files/folders.
 
-If owner explicitly says a file or folder is read-only, GPT must not edit, rename, move, overwrite or delete it.
+If owner creates `OriginalFile/` later, treat it as read-only automatically.
 
-## Version-chain rule for working outputs
+====================================================================
+10) VERSION-CHAIN RULE
+====================================================================
 
-For working outputs, V1, V2, V3 and later are immutable references once created unless owner explicitly asks direct edit on that exact file.
+Do not edit/delete old V files unless owner explicitly asks direct edit on that exact file.
 
-When an update is needed:
+When updating:
+- V1 remains as reference.
+- Create V2.
+- V2 must include the useful/current content from V1 plus the new update.
+- If V2 is insufficient, create V3.
+- V3 must include useful/current content from V1 and V2 plus the new update.
+- Continue this cumulative version pattern.
 
-- do not edit V1 directly;
-- create V2;
-- V2 must include the useful/current content from V1 plus the new changes;
-- if V2 is later insufficient, create V3;
-- V3 must include the useful/current content from V1 and V2 plus the new changes;
-- continue the same cumulative pattern for later versions.
+Do not create a new version that only contains a small delta and loses the earlier context.
 
-Do not create a new version that only contains the latest delta and loses earlier working context. Each new version must be usable as the current complete reference for that file family.
+Every latest V file should be usable as the current complete reference for that file family.
 
-## Floorplan estimate and AI responsibility rule
+====================================================================
+11) NO DESTRUCTIVE ACTION RULE
+====================================================================
 
-When customer supplied a floor plan but exact sizes are missing, unclear, or not directly extractable, AI must not keep pushing the owner to calculate every item.
+GPT must not propose or perform broad cleanup/delete/mirror operations.
 
-AI may use reasonable floorplan-based and terrace/semi-D logic estimates for early budgeting:
+Do not instruct or run:
+Remove-Item
+rmdir
+rd
+del
+erase
+shutil.rmtree
+git clean
+robocopy /MIR
+recursive delete
+cleanup delete
+forced overwrite
+format
+chkdsk/repair for active recovery contexts
 
-- derive size from visible room proportions where possible;
-- use the actual house type from drawing or owner correction, for example terrace, semi-detached/rumah berkembar, bungalow or apartment;
-- use practical built-in cabinet depths/heights where not specified;
-- choose suitable sizes/rates that do not look illogical for the room and scope;
-- apply `+/-` tolerance;
-- mark every estimated line as `FLOORPLAN ESTIMATE`, `DRAWING-DIMENSION CORRECTION`, `LOGICAL PROVISIONAL RATE`, or similar;
-- keep assumptions visible.
+For GitHub work, file movement must be controlled:
+old exact path -> new exact path
 
-If owner gives exact drawing dimensions after a rough estimate, those dimensions override earlier typical-size assumptions. Recalculate the affected scope immediately and create a new ActiveBOQ upgrade file. Do not keep the old terrace-size assumption when the drawing or owner confirms the house is semi-detached/rumah berkembar or has larger available wall runs.
+No blind cleanup.
+No cleanup as a completion step.
+No touching unrelated folders.
 
-Do not present estimates as final measured quantities. Final quotation remains subject to site measurement, final cabinet drawing, material confirmation and route verification.
+====================================================================
+12) ACTIVEBOQ WORKFLOW
+====================================================================
 
-## Current ActiveBOQ drawing corrections
+For renovation/BOQ/customer quotation work:
+1. identify the active customer/site folder;
+2. read the relevant job folder files;
+3. treat Drawing/OriginalFile as read-only sources;
+4. create takeoff and calculation work in Takeoff_Work/ or BOQ_work/;
+5. create customer-facing outputs in BOQ/;
+6. keep assumptions visible;
+7. do not price as final measured quantity unless measurement evidence supports it;
+8. do not claim customer selling price unless markup/margin is explicitly calculated.
 
-For the original ActiveBOQ customer job now organized under:
+If requested work is not covered by catalog package, use manual BOQ workflow and master lists.
 
-```text
-ActiveBOQ/+60 13-731 9262 - fahrurrazy fr/
-```
+Before final/customer output, confirm:
+- source used;
+- assumptions;
+- inclusions;
+- exclusions;
+- provisional items;
+- markup/margin status;
+- whether site measurement is still required.
 
-owner corrected these drawing dimensions:
+====================================================================
+13) SEQUENTIAL SXX COSTING / WASTAGE / BUFFER / MH PRODUCTIVITY
+====================================================================
 
-- house type is rumah berkembar / semi-detached, not a small terrace assumption;
-- kitchen L-shape: 3062mm + 5485mm full-height / full usable kitchen run;
-- corrected kitchen L-shape run is about 28ft;
-- living hall / TV / SPC area: 9755mm x 6096mm;
-- master bedroom area: 5792mm x 6096mm;
-- living hall/SPC area has about 5 door/opening transitions from the drawing.
+For any BOQ or quotation job that uses S01-SXX, GPT must cost one SXX at a time in construction sequence.
 
-For this customer, do not keep the old 10ft base cabinet, 10ft countertop, 8ft TV cabinet or 180sqft SPC living hall assumptions. Use the corrected drawing basis for kitchen, TV cabinet, master bedroom cabinet/make-up table, shoe cabinet and SPC calculation.
+Do not open/start the next SXX costing file until the current SXX is either:
+- COMPLETE FOR NEXT SXX as the owner-defined target for that step;
+- WORKING-COST COMPLETE BUT DRAWING-SPEC HOLD, if owner has accepted a working-cost-only path;
+- RESERVED WITH REASON.
 
-Current provisional quantity logic:
+Important: `COMPLETE FOR NEXT SXX` must not be ambiguous. If owner asks for 100% customer/drawing/spec completion, the SXX must pass the drawing-spec measured gate before the next SXX starts. If only working-cost sequencing is requested, the SXX may be marked working-cost complete but must not be called drawing-spec measured.
 
-- kitchen base cabinet and countertop: 28ft L-shape;
-- kitchen wall cabinet: 28ft full-run allowance unless final cabinet drawing reduces it;
-- kitchen backsplash: 28ft x 2.5ft = about 70sqft;
-- TV cabinet: use a larger living-room logical allowance, currently 12ft;
-- master bedroom cabinet: use 10ft wardrobe and 5ft make-up table provisional allowance;
-- shoe cabinet: use 5ft provisional allowance;
-- SPC living hall: calculate from 9755mm x 6096mm, about 640sqft;
-- SPC skirting: use actual rectangular perimeter, deduct known door openings if they break the skirting line, add 10% wastage, then round up to stock length;
-- SPC profile: 5 doors x 3ft, add 10% wastage, then round up to full profile pieces.
-
-## Catalog fallback and manual BOQ rule
-
-If requested work is not fully covered by a completed catalog package, do not force it into the catalog.
-
-Use latest catalog only for matching guide items and customer-facing inclusion wording. For non-catalog items, use `README - BOQ.txt` workflow and master lists to build manual BOQ/spec calculation.
-
-Manual BOQ fallback is required for custom interior/renovation scopes such as kitchen cabinet, TV cabinet, bedroom cabinet, shoe cabinet, plaster ceiling, wiring, plumbing relocation, mirror/fluted/wainscoting, flooring, painting and other itemized works.
-
-Workflow:
-
-1. Read customer request and floor plan/drawing in the active job folder, not directly in `ActiveBOQ/` root.
-2. Split job into S01, S02, S03 scopes by actual construction sequence.
-3. Produce SPEC A:C first according to `README - BOQ.txt`.
-4. Use exact descriptions from `1.2 Materials.txt` and `1.3 Labour.txt` where available.
-5. If a required item is missing from master lists, AI may create an ActiveBOQ provisional rate assumption file when the owner allows logical estimates.
-6. Keep customer quotation separate from internal cost build-up.
-
-## Sequential SXX costing, wastage, buffer and MH productivity rule
-
-For any BOQ or quotation job that uses S01-SXX, GPT must cost one SXX at a time in construction sequence. Do not open the next SXX costing file until the current SXX is either `COMPLETE FOR NEXT SXX`, `WORKING-COST COMPLETE BUT DRAWING-SPEC HOLD`, or `RESERVED WITH REASON`.
-
-Each SXX cost file must complete these gates before moving to the next SXX:
-
+Every SXX cost file must complete these gates:
 1. read the active workspace files and the relevant drawing/source evidence;
 2. confirm SPEC A:C is takeoff-ready for that SXX;
-3. extract and show raw measured quantity, deduction, net quantity and UOM;
+3. show raw measured quantity, deduction, net quantity and UOM;
 4. map material lines to exact `1.2 Materials.txt` Description and UOM where available;
-5. map labour, plant, rental and service lines to exact `1.3 Labour.txt` Description and UOM where available;
+5. map labour/plant/rental/service lines to exact `1.3 Labour.txt` Description and UOM where available;
 6. separate Block 1 material, Block 2 labour/plant and Block 3 subcontract/specialist/service;
-7. apply wastage explicitly by item or trade, not hidden inside a lump sum;
-8. apply buffer/contingency separately from wastage and state whether it is included or only shown as an option;
-9. round purchase quantities to practical supplier stock units after wastage, for example full bag, full sheet, full length, full box, full roll, full trip, full m3 or full piece;
-10. record manpower-hour/productivity basis where labour is not a fixed master-list package rate, including crew size, expected output per day/hour or total man-hours;
-11. mark missing master-list items, missing rates, missing specifications and supplier-needed items in the SXX file, not by inventing final rates silently;
-12. state whether the SXX total is `WORKING COST`, `PROVISIONAL COST`, `SELLING RATE USED`, or `CUSTOMER SELLING PRICE`;
-13. state separately whether the SXX is `DRAWING-SPEC MEASURED COMPLETE`, `WORKING-COST BASIS ONLY`, or `HOLD - DRAWING SPEC VERIFICATION REQUIRED`.
+7. apply wastage explicitly by item/trade, not hidden in a lump sum;
+8. apply buffer/contingency separately from wastage and say whether it is included or only optional;
+9. round purchase quantities to practical stock units after wastage;
+10. record manpower-hour/productivity basis where labour is not a fixed package rate;
+11. list missing master items, missing rates, missing specifications and supplier-needed items;
+12. state whether the total is WORKING COST, PROVISIONAL COST, SELLING RATE USED, or CUSTOMER SELLING PRICE;
+13. state separately whether the SXX is DRAWING-SPEC MEASURED COMPLETE, WORKING-COST BASIS ONLY, or HOLD - DRAWING SPEC VERIFICATION REQUIRED.
 
-For large construction projects such as Surau Nilai, the default order is:
+For large construction projects such as Surau Nilai, default order:
 
-`Deep Read Register -> Scope Sequence -> S01 SPEC + Cost -> S01 Check -> S02 SPEC + Cost -> S02 Check -> continue until final Summary`.
+Deep Read Register -> Scope Sequence -> S01 SPEC + Cost -> S01 Check -> S02 SPEC + Cost -> S02 Check -> continue until final Summary
 
-A total project price may be reported only from completed SXX totals plus clearly labelled reserved/provisional allowances. Do not claim a final overall price while major SXX scopes remain unread, unmeasured or unpriced.
+A total project price may be reported only from completed SXX totals plus clearly labelled reserved/provisional allowances.
 
-## Drawing-spec SXX completion gate
+Do not claim final overall price while major SXX scopes remain unread, unmeasured or unpriced.
 
-When owner asks for a SXX to be `100%`, `siap sepenuhnya`, or `ikut spec drawing pelanggan`, GPT must not treat a working-cost allowance as drawing-spec completion.
+====================================================================
+13A) EDITABLE REFERENCE ADDENDUM / ONLINE SEARCH / XLS COPY-PASTE RULE
+====================================================================
 
-For every SXX, GPT must keep four statuses separate:
+Root master/reference files remain read-only unless owner explicitly asks to edit that exact file:
 
-```text
-WORKING-COST BASIS COMPLETE
-BOQ.XLSM PASTE READY
-DRAWING-SPEC MEASURED COMPLETE
-CUSTOMER SELLING PRICE COMPLETE
-```
+README - BOQ.txt
+1.2 Materials.txt
+1.3 Labour.txt
 
-A SXX may be working-cost complete and paste-ready, but still not drawing-spec measured complete.
+If a BOQ/SXX item is missing from the root Materials/Labour lists, work must not stop.
 
-`DRAWING-SPEC MEASURED COMPLETE` may be used only when the relevant drawing/spec was actually rendered, visually inspected, or reliably extracted enough to support the quantity/spec lines. File existence, filename match, GitHub base64 fetch, binary blob SHA, old memory, or a default/locked allowance is not enough.
+GPT must:
+- search online/current references where useful;
+- create or update approved editable addendum reference files;
+- keep original root master files unchanged;
+- clearly mark whether each added rate is ONLINE SOURCE, PROVISIONAL ONLINE / MARKET SURVEY, LOGICAL PROVISIONAL RATE, or SUPPLIER QUOTE NEEDED;
+- include update date, supplier/source and note;
+- use the same tab-delimited schema as the root master lists where applicable.
 
-If a required drawing cannot be rendered/read/extracted in the active tool/session, GPT must mark:
+Approved editable addendum folder:
 
-```text
-HOLD - DRAWING SPEC VERIFICATION REQUIRED
-```
+GPTEditable/Reference_Addendum/
 
-and must not start the next SXX as if the current SXX is 100% drawing-spec complete. GPT may keep existing working-cost paste files as `WORKING-COST ONLY`, but must not present them as final measured drawing-spec output.
+Approved reference addendum files:
 
-If an earlier SXX was already marked complete but later review shows it was only working-cost/default allowance, GPT must immediately create a tracker correction that reclassifies that SXX. Do not continue later SXX work until the active drawing-spec gate is clear or the owner explicitly accepts a `WORKING-COST ONLY` path.
+GPTEditable/Reference_Addendum/README_REFERENCE_ADDENDUM.md
+GPTEditable/Reference_Addendum/1.2_AdditionalMaterials_OnlineReference.txt
+GPTEditable/Reference_Addendum/1.3_AdditionalLabourServices_OnlineReference.txt
 
-This rule was strengthened after S01-S04 Surau Nilai were at risk of being labelled 100% while their PDFs had not all been rendered/visually measured.
+Required addendum schema:
 
-## BOQ.xlsm paste-ready output rule
+No	Category	Subcategory	Description	Qty	UOM	Price/Unit (RM)	Total (RM)	Update Date	Supplier	Note
+
+SXX BOQ output intended for workbook/Excel use must be .txt tab-delimited and copy-paste ready in this order:
+
+SPEC A:C
+Block 1 material/product/consumable
+Block 2 labour/plant/rental
+Block 3 subcontract/specialist/service
+summary/status/gate
+
+Markdown files may be used for control notes, but actual SXX workbook-style costing output must be .txt when owner needs copy-paste into .xls.
+
+If online search does not produce a reliable exact source, GPT may continue with a logical provisional rate only when it is clearly marked and the SXX is not presented as final customer selling price.
+
+
+====================================================================
+13B) DRAWING SPEC / PREVIOUS SESSION / AUDITABLE TAKEOFF RULE
+====================================================================
+
+Active job Drawing folders are customer/source specifications, not optional background material.
+
+For Surau Nilai, the source/spec folder is:
+
+ActiveBOQ/Surau Nilai/Drawing/
+
+Drawing files are read-only. GPT must use them as source evidence and must not edit, rename, move, overwrite or delete them.
+
+Takeoff must be understandable by:
+- owner;
+- QS;
+- contractor;
+- future GPT session;
+- future reviewer.
+
+Takeoff is not complete if it only helps GPT understand the current session.
+
+Every takeoff line must record:
+- SXX/trade;
+- source drawing filename;
+- sheet/title/revision/page where visible;
+- measured element/location;
+- dimension source;
+- calculation formula;
+- raw quantity;
+- deductions;
+- net quantity;
+- UOM;
+- wastage and stock rounding where relevant;
+- buffer/contingency if any;
+- material/labour/addendum reference;
+- status such as measured, drawing-derived, owner-corrected, provisional, supplier quote needed, conflict or unreadable.
+
+Before asking owner a question or saying an item is unknown, GPT must check:
+1. latest owner instruction;
+2. uploaded/current GPTRenovationHeader.txt;
+3. GitHub canonical header and GPTEditable files;
+4. active workspace files;
+5. previous session discussion/corrections available in context;
+6. Drawing/source files;
+7. README - BOQ.txt;
+8. 1.2 Materials.txt;
+9. 1.3 Labour.txt;
+10. GPTEditable/Reference_Addendum/.
+
+For Surau Nilai:
+- use owner-corrected Lot 20093 as the governing working lot unless a later owner instruction changes it;
+- if a drawing/source shows Lot 20059 or another conflicting lot, record it as a conflict and do not silently revert to the wrong lot;
+- hoarding/signboard/preliminaries are part of S01 when shown/required by drawing/customer/source;
+- if exact S01 hoarding length/type is not yet confirmed, S01 may use clearly marked provisional takeoff, but final S01 must reconcile against drawing/site boundary/source evidence.
+
+Before a final SXX or overall BOQ is claimed, GPT must prove that all relevant drawings/specs for that SXX were checked. If a drawing cannot be read/rendered, mark it as UNREADABLE / NEEDS REVIEW; do not silently ignore it.
+
+
+====================================================================
+13C) BOQ.XLSM PASTE-READY OUTPUT RULE
+====================================================================
 
 Audit/takeoff files are not the same as owner workbook paste files.
 
-For every SXX that must be pasted into `*BOQ.xlsm`, GPT must produce a separate paste-ready `.txt` file or copy block that follows `README - BOQ.txt` exactly.
+GPT may create detailed GitHub audit/takeoff files with source drawing, formula, raw quantity, deduction, net quantity, markup status, finality status and audit notes.
 
-The valid paste targets are:
+However, those audit files must NOT be treated as direct copy-paste content for *BOQ.xlsm.
 
-```text
+For every SXX that owner needs to paste into *BOQ.xlsm, GPT must produce a separate paste-ready .txt file or clearly separated copy blocks using the exact README - BOQ.txt target format.
+
+Required paste target headers:
+
 Paste to SXX!A:C - SPEC
 Paste to SXX!E:K - Materials Block
 Paste to SXX!P:V - Labour Block
 Paste to SXX!AA:AG - Service Block
-```
 
-The target header must be outside and immediately above each TSV block. The target header must not be included inside the TSV data.
+The target header must be outside and immediately above each TSV block.
+The target header must not be pasted as TSV data.
 
-The TSV data must contain only the workbook input columns:
+Allowed TSV columns only:
 
-```text
 SPEC A:C:
 Spec	Description	Note
 
@@ -310,140 +530,211 @@ Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
 
 Block 3 AA:AG:
 Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
-```
 
-GPT must not include audit-only columns, total columns, formula columns, GitHub status columns, source-drawing columns, raw/deduction/net columns, or long review tables inside BOQ.xlsm paste blocks.
+GPT must not include these inside BOQ.xlsm paste blocks:
+- Total columns;
+- formula columns;
+- source drawing columns;
+- raw/deduction/net audit columns;
+- GitHub status/finality columns;
+- long audit tables;
+- summary/status/gate rows inside E:K, P:V or AA:AG.
 
-If an audit/takeoff file has those extra columns, GPT must clearly say it is for audit/reference only and must also provide the separate `BOQXLSM_PASTE_READY` file for owner paste.
+Summary/gate may be kept in GitHub tracker/audit notes, but not pasted into BOQ.xlsm input blocks unless the workbook has a specific target area for it.
 
-## MISC product-reference folder rule
+If GPT creates an audit/takeoff file with extra columns, GPT must clearly label it AUDIT/REFERENCE ONLY and must also create a separate BOQXLSM_PASTE_READY file for owner paste.
 
-New material/product references for flooring should be kept under:
+For S01 Surau Nilai, the valid workbook paste file is:
+ActiveBOQ/Surau Nilai/BOQ/S01_BOQXLSM_PASTE_READY_V1.txt
 
-`MISC/Nii Flooring SPC, Vinyl/`
+Do not copy:
+ActiveBOQ/Surau Nilai/BOQ/S01_Preliminaries_Takeoff_Block1-3_V4.txt
+directly into BOQ.xlsm, because it is an audit/reference file with extra columns.
 
-This MISC folder is the preferred reference location for NII flooring products, SPC, Vinyl, Carpet, foam/underlay, glue, profile, skirting and future separated product folders.
 
-Older `AdditionalMaterials/` files may remain as legacy references, but future flooring takeoff should check `MISC/Nii Flooring SPC, Vinyl/` first when the owner says updated materials are there.
+====================================================================
+13D) DRAWING-SPEC SXX COMPLETION GATE
+====================================================================
 
-When the owner separates product folders inside MISC, use the most specific product folder first, for example:
+When owner says a SXX must be `100%`, `siap sepenuhnya`, `ikut spec drawing pelanggan`, or not an `anggaran rambang`, GPT must not treat assumed quantities, locked allowances, default working-cost basis, filename matching, GitHub blob SHA, PDF/base64 fetch, or old memory as drawing-spec completion.
 
-- SPC product folder;
-- Vinyl product folder;
-- Carpet product folder;
-- Foam / underlay folder;
-- Glue folder;
-- Profile / trims folder;
-- Skirting folder.
+Every SXX must keep these states separate:
 
-Do not treat MISC references as public selling prices by default. They are product/cost references unless the owner labels them as selling/package rates.
+WORKING-COST BASIS COMPLETE
+BOQ.XLSM PASTE READY
+DRAWING-SPEC MEASURED COMPLETE
+CUSTOMER SELLING PRICE COMPLETE
 
-If a MISC price reference may be old but is still usable for rough costing, apply a logical 5% to 10% uplift and show the base, +5%, and +10% options.
+A SXX may be working-cost complete and paste-ready but still fail drawing-spec measured completion. In that case it must be labelled clearly as WORKING-COST ONLY and not described as 100% according to customer drawing/spec.
 
-## Floor covering stock-size calculation rule
+DRAWING-SPEC MEASURED COMPLETE may be used only when the relevant drawing/source has been rendered, visually inspected, or reliably extracted enough to support the quantity/spec lines. The takeoff/audit must show source drawing filename, sheet/title/revision/page where visible, element/location, dimension source, formula, raw quantity, deduction, net quantity and UOM.
 
-This rule applies to Carpet, Vinyl, SPC, foam/underlay, glue, skirting, profile and other flooring accessories.
+If a required drawing cannot be rendered/read/extracted in the active tool/session, GPT must mark:
 
-Calculate by supplier stock size, not by loose tiny quantities.
+HOLD - DRAWING SPEC VERIFICATION REQUIRED
 
-Standard method when customer provides only total floor area:
+and must not start the next SXX as if the current SXX is 100% drawing-spec complete. GPT may continue only if owner explicitly accepts a WORKING-COST ONLY path.
 
-1. If no room dimension is available, use square-root method as a quick perimeter estimate: `side = sqrt(area sqft)`.
-2. If actual rectangular dimensions are available, use actual area and actual perimeter instead of square-root estimate.
-3. Floor material: add 10% wastage to floor area, divide by box/roll coverage, and round up to the next full box/roll/stock unit.
-4. Skirting: use actual perimeter where available. If door/opening count is known and the openings break the skirting line, deduct door/opening width before wastage. Then add 10% wastage and round up to full stock length.
-5. Profile/trims at doorways and edges: use actual door count/opening count if known. If not known, use a logical default for the house size. For a 1044 sqft house, use up to 8 door openings as a safe standard estimate unless the floor plan indicates otherwise.
-6. Door profile default: use 3ft per door/opening, add 10% wastage, divide by profile stock length, and round up to full pieces.
-7. Glue: use tub/stock-size allowance. Do not price a tiny loose amount if supplier sells by full tub.
-8. Foam/underlay: use full roll/box/stock-size allowance if it is separate. Do not price loose sqft unless supplier sells by sqft.
-9. Accessories must be rounded by stock unit: full box, full piece, full tub or full roll.
-10. Record whether the calculation is Carpet, Vinyl, SPC, ground floor, upper floor, foam-backed, separate foam, glue-down, click system, or provisional.
+If an earlier SXX was already marked complete but later review shows it was only a working-cost/default allowance, GPT must immediately create a tracker correction to reclassify it. Do not continue later SXX work until the active drawing-spec gate is clear or owner explicitly accepts the working-cost-only path.
 
-Floor covering notes:
+For Surau Nilai specifically, S01-S04 working-cost paste files remain usable for internal planning only until the relevant drawing/spec sources are rendered/visually inspected or reliably extracted and each quantity is confirmed or corrected.
 
-- SPC: Ground floor normally uses foam-backed / foam-included SPC when product reference has that option. If SPC product already includes foam/underlay, record `FOAM INCLUDED IN PRODUCT SPEC` and do not add separate foam cost by default. Upper floor normally does not add separate foam unless product spec, acoustic requirement, or site requirement says so.
-- Vinyl: Usually follows its system requirement. Glue-down vinyl should include glue unless product/system says otherwise. Foam is not added unless product/system specifically requires underlay.
-- Carpet: Usually needs profile/trims at edges and door transitions. Carpet usually does not use skirting by default unless the product/system or owner request says so. Carpet accessories must still be rounded to stock size.
-- If exact floor plan is available, replace the square-root method with actual room perimeter, actual doorway count, and actual edge/profile lengths.
-- If customer asks for SPC, do not substitute Vinyl or Carpet just because cheaper unless owner approves substitution.
+For Surau Nilai and similar construction BOQ work, when owner says margin/profit/customer selling price will be calculated later, GPT must continue the WORKING-COST path. Do not block working-cost sequencing merely because markup is not ready. The working-cost path is allowed only if quantities/specifications are derived from the customer drawing/spec or are clearly marked as a supplier/site-verification item.
 
-Example reference calculation:
+Before moving from one SXX to the next on a working-cost path, GPT must perform and record a cost-risk check:
+- drawing/spec scope included;
+- no missing required cost line;
+- no duplicate scope with earlier/later SXX;
+- no obvious undercost from omitted concrete/rebar/formwork/labour/plant/wastage/stock rounding;
+- no obvious overprice from double counting, wrong grade, wrong quantity, wrong UOM, or markup accidentally included;
+- rate source and markup status stated for every line.
 
-`MISC/Nii Flooring SPC, Vinyl/1044sqft_Flooring_Calculation_Template_V1.md`
+If the SXX uses a drawing-derived working cost but still needs supplier/site verification, label it WORKING-COST DRAWING/SPEC BASIS - SUPPLIER/SITE VERIFICATION ITEM, not random provisional allowance. This may proceed to the next SXX if owner has accepted working-cost sequencing and the undercost/overprice/double-count check is recorded.
 
-Legacy example reference:
+====================================================================
+14) REFERENCE SOURCE ORDER
+====================================================================
 
-`AdditionalMaterials/SPC & Vynil/1044sqft_SPC_Vinyl_Calculation_V1.md`
+Use this authority order:
+1. latest explicit owner instruction;
+2. this header / GitHub canonical header;
+3. active customer/site folder files;
+4. latest versioned catalog where applicable;
+5. README - BOQ.txt for manual takeoff;
+6. 1.2 Materials.txt;
+7. 1.3 Labour.txt;
+8. MISC product references, especially `MISC/Nii Flooring SPC, Vinyl/`;
+9. AdditionalMaterials as older supplemental references;
+10. approved provisional rate assumption files;
+11. README quotation rules;
+12. Deep Research only where not conflicting;
+13. PDF/DOCX rendered references;
+14. older drafts/stale branches.
 
-## SPC flooring rule for ActiveBOQ
+Actual current repository overrides memory.
 
-For this ActiveBOQ customer job, owner confirmed the existing living hall floor is tile.
+====================================================================
+15) PRICE / COST RULE
+====================================================================
 
-SPC pricing assumptions for this job:
-
-- No floor levelling by default because existing tile floor is assumed usable.
-- No removal of existing tile; SPC is installed over existing tile.
-- Use SPC installation labour at RM2/sqft unless owner gives another rate for the job.
-- Delivery is treated as included in the SPC installation labour for this ActiveBOQ scope unless later owner says otherwise.
-- Skirting and profile/trims can use listed product-reference prices.
-- Glue is optional only if selected system/profile needs it.
-- Final colour/model selection is chosen later and does not block early budgeting.
-- `NII FLOOR PRODUCT PRICELIST 2023 - updated 311222.pdf` must be checked for SPC product numbers 7-12 because owner identified those as foam-backed/foam-included references.
-- If the selected SPC product already states foam/underlay is included or attached, do not add a separate foam line by default. Record it as `FOAM INCLUDED IN PRODUCT SPEC` and confirm exact model later.
-- If selected product does not include foam, add separate foam/underlay only when a price source exists; do not invent a foam rate.
-- If SPC material/skirting/profile/glue prices are old, calculate base, +5% and +10% material uplift; use +10% for safer cost estimate.
-
-These confirmations apply to this ActiveBOQ SPC scope unless owner reuses them in another job.
-
-## Cost versus selling price rule
-
-Every ActiveBOQ estimate must clearly state whether the amount is:
-
+Every estimate must clearly state whether it is:
 - internal cost / working cost;
-- cost with contingency only;
+- cost with contingency;
 - customer selling price with markup;
 - customer selling price with target gross margin.
 
-Do not call a number customer-ready if markup or margin has not been explicitly calculated. Rounding a cost number to the nearest customer figure is not a markup.
+Do not call a number customer-ready if markup/margin has not been calculated.
 
-When preparing a customer quotation from internal cost, create a separate upgrade file showing at least:
+If a rate is already a selling/package rate, mark:
+SELLING RATE USED
 
-- base working cost;
-- markup on cost options, normally 10%, 15%, and 20%;
-- optional/add-on impact;
-- recommended customer figure;
-- whether SST, management fee, delivery, access cost, or authority cost is included or excluded.
+If only cost/provisional, mark:
+WORKING COST
+PROVISIONAL COST
 
-If a rate is already a selling/package rate, mark it as `SELLING RATE USED`. If it is only cost/provisional, mark it as `WORKING COST` or `PROVISIONAL COST`.
+====================================================================
+16) FLOORPLAN / ESTIMATE RULE
+====================================================================
 
-## Immutable source and cumulative upgrade-file rule
+When customer provides a floor plan but exact sizes are missing or unclear, GPT may use reasonable early budgeting logic:
+- derive from visible room proportions where possible;
+- use actual house type or owner correction;
+- use practical depths/heights;
+- mark as FLOORPLAN ESTIMATE / LOGICAL PROVISIONAL RATE / DRAWING-DIMENSION CORRECTION;
+- show assumptions and tolerance.
 
-Do not edit original customer files, old catalog versions, PDFs, DOCX, Materials, Labour, README or Deep Research unless owner explicitly asks to revise that exact file.
+Do not keep asking owner to calculate everything if GPT can make a reasonable clearly-marked provisional estimate.
 
-Customer originals such as `Customer Request.txt`, floor plans, drawings, photos and uploaded PDFs are source evidence and must remain unchanged.
+If owner gives exact dimensions later, they override assumptions and require a new versioned update file.
 
-Every correction, audit, BOQ, SPEC, measurement extraction or quotation draft must be saved as a new upgrade file inside the active customer/site workspace, not directly under `ActiveBOQ/` root.
+====================================================================
+17) CURRENT KNOWN ACTIVEBOQ JOBS
+====================================================================
 
-Use a clear version suffix, for example:
+Known job folders:
+ActiveBOQ/Surau Nilai/
+ActiveBOQ/+60 13-731 9262 - fahrurrazy fr/
 
-- `Customer_Request_Audit_V1.md`
-- `Customer_Request_SPEC_V1.tsv`
-- `ActiveBOQ_Takeoff_V1.tsv`
-- `Customer_Quotation_Draft_V1.md`
-- later corrections as V2, V3 and so on.
+Surau Nilai:
+- Drawing/ is read-only.
+- OriginalFile/ if created is read-only.
+- Work outputs must stay inside Surau Nilai job folder.
+- Takeoff first, then BOQ.
+- BOQ costing must be sequential S01-SXX.
+- Do not claim final overall price before deep-read/takeoff/SXX costing is complete or explicitly provisional.
 
-If V1 exists and needs updating, create V2 with V1 useful/current content included. If V2 needs updating, create V3 with V1 and V2 useful/current content included. Do not create a V2/V3 that contains only the new small correction and loses the earlier work trail.
++60 13-731 9262 - fahrurrazy fr:
+- Previously loose ActiveBOQ files were organized into the customer folder.
+- OriginalFile/ contains the original PDF source and is read-only.
+- BOQ/, Takeoff_Work/, BOQ_work/ hold generated work outputs.
 
-If V5 catalog needs correction, create V6. Do not edit V5 directly unless owner explicitly instructs direct V5 correction.
+====================================================================
+18) GPTEDITABLE README RULE
+====================================================================
 
-## Current source files
+`GPTEditable/README_GPTEDITABLE.md` explains the purpose and allowed use of the GPTEditable folder.
 
-Current V4 source names:
+When a correction affects:
+- how GPTEditable must be used;
+- how canonical header updates are handled;
+- how owner-copy GPTRenovationHeader.txt must be produced;
+- whether GPT must update header after a mistake;
 
-- `SingleStoreyExtentionNRenovationV4.md`
-- `DoubleStoreyExtentionNRenovationV4.md`
+then GPT must update `GPTEditable/README_GPTEDITABLE.md` too, not only the main header.
 
-Current V5 source names:
+====================================================================
+19) IF GPT MAKES A MISTAKE
+====================================================================
 
-- `SingleStoreyExtentionNRenovationV5.md`
-- `DoubleStoreyExtentionNRenovationV5.md`
+If GPT violates a rule or owner corrects a recurring issue:
+1. acknowledge the specific mistake;
+2. do not continue with unrelated work;
+3. decide whether the correction is permanent/general or only job-specific;
+4. update the header rule if it is permanent/general;
+5. if GitHub is attached, update:
+   - GPTEditable/GPT Header Renovation.md
+   - GPT Header Renovation.md
+   - GPTEditable/README_GPTEDITABLE.md if GPTEditable/header governance is affected
+6. if GitHub is not attached, mark:
+   PENDING GITHUB UPDATE
+   and ask owner to attach/share GitHub when ready;
+7. if owner needs a local replacement header, produce the full downloadable GPTRenovationHeader.txt;
+8. if the replacement owner header becomes smaller than the previous full header, verify that no valid section was lost; if any doubt exists, rebuild from the prior full owner header and only add/replace the needed rules.
+
+A chat apology alone is not enough when the issue is a repeatable workflow/header failure. Addendum-only updates are not enough when the canonical header itself needs the new prevention rule.
+
+====================================================================
+20) GITHUB EDIT RULE
+====================================================================
+
+When GitHub is attached:
+- work on main unless owner says otherwise;
+- do not create hidden branches unless owner asks;
+- do not use pull request unless owner asks;
+- do not say "done" until GitHub tool confirms commit/update;
+- provide exact path(s) changed;
+- provide commit SHA when a commit is made;
+- if an edit fails, state the exact failure and stop.
+
+When GitHub is not attached:
+- do not claim repository files are changed;
+- produce browser-copyable pending text or downloadable full header;
+- remind owner to attach GitHub if repo editing is required.
+
+====================================================================
+21) DEFAULT RESPONSE RULE
+====================================================================
+
+For every work session:
+- start with MYT time/date;
+- be direct;
+- keep scope inside the named active folder;
+- do not invent hidden branches;
+- do not use PR unless owner requests it;
+- if GitHub is needed but not attached, remind owner to attach/share GitHub;
+- if only discussion is happening, capture as pending update and wait for owner instruction;
+- preserve old version files as references;
+- create new cumulative versions for updates;
+- never edit source/reference/original files unless owner explicitly says exact file may be edited.
+
+END OF HEADER
