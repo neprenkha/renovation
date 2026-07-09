@@ -187,6 +187,31 @@ Workflow:
 5. If a required item is missing from master lists, AI may create an ActiveBOQ provisional rate assumption file when the owner allows logical estimates.
 6. Keep customer quotation separate from internal cost build-up.
 
+## Sequential SXX costing, wastage, buffer and MH productivity rule
+
+For any BOQ or quotation job that uses S01-SXX, GPT must cost one SXX at a time in construction sequence. Do not open the next SXX costing file until the current SXX is either `COMPLETE FOR NEXT SXX` or `RESERVED WITH REASON`.
+
+Each SXX cost file must complete these gates before moving to the next SXX:
+
+1. read the active workspace files and the relevant drawing/source evidence;
+2. confirm SPEC A:C is takeoff-ready for that SXX;
+3. extract and show raw measured quantity, deduction, net quantity and UOM;
+4. map material lines to exact `1.2 Materials.txt` Description and UOM where available;
+5. map labour, plant, rental and service lines to exact `1.3 Labour.txt` Description and UOM where available;
+6. separate Block 1 material, Block 2 labour/plant and Block 3 subcontract/specialist/service;
+7. apply wastage explicitly by item or trade, not hidden inside a lump sum;
+8. apply buffer/contingency separately from wastage and state whether it is included or only shown as an option;
+9. round purchase quantities to practical supplier stock units after wastage, for example full bag, full sheet, full length, full box, full roll, full trip, full m3 or full piece;
+10. record manpower-hour/productivity basis where labour is not a fixed master-list package rate, including crew size, expected output per day/hour or total man-hours;
+11. mark missing master-list items, missing rates, missing specifications and supplier-needed items in the SXX file, not by inventing final rates silently;
+12. state whether the SXX total is `WORKING COST`, `PROVISIONAL COST`, `SELLING RATE USED`, or `CUSTOMER SELLING PRICE`.
+
+For large construction projects such as Surau Nilai, the default order is:
+
+`Deep Read Register -> Scope Sequence -> S01 SPEC + Cost -> S01 Check -> S02 SPEC + Cost -> S02 Check -> continue until final Summary`.
+
+A total project price may be reported only from completed SXX totals plus clearly labelled reserved/provisional allowances. Do not claim a final overall price while major SXX scopes remain unread, unmeasured or unpriced.
+
 ## MISC product-reference folder rule
 
 New material/product references for flooring should be kept under:
@@ -318,96 +343,3 @@ Current V5 source names:
 
 - `SingleStoreyExtentionNRenovationV5.md`
 - `DoubleStoreyExtentionNRenovationV5.md`
-- `V5_CHANGE_REPORT.md`
-- `V5_CUSTOMER_ANSWER.md`
-
-Supporting references:
-
-- `1.2 Materials.txt`
-- `1.3 Labour.txt`
-- `README - BOQ.txt`
-- `README - QUOTATION.txt`
-- `deep-research-report full.md`
-- `MISC/Nii Flooring SPC, Vinyl/`
-- `AdditionalMaterials/` as older supplemental reference
-- current PDF/DOCX catalog renders
-
-Actual current repository overrides memory.
-
-## Source order
-
-1. Latest explicit owner instruction.
-2. This header for workflow rules.
-3. ActiveBOQ current job folder files.
-4. Latest versioned catalog where applicable.
-5. `README - BOQ.txt` for manual takeoff.
-6. `1.2 Materials.txt`.
-7. `1.3 Labour.txt`.
-8. `MISC/Nii Flooring SPC, Vinyl/` for flooring product/cost references.
-9. `AdditionalMaterials/` for older owner-pointed supplemental pricing.
-10. ActiveBOQ provisional rate assumption files approved by owner logic.
-11. README quotation rules.
-12. Deep Research only where not conflicting.
-13. PDF/DOCX rendered reference.
-14. Older drafts or stale branches.
-
-## Versioning rule
-
-Do not overwrite, delete, rename or move old catalog versions. Old versions are references.
-
-Every meaningful catalog update must create a new versioned file using the same front name and next version number. Future versions continue as V6, V7 and later.
-
-## Catalog and PDF delivery rule
-
-A public catalog version is not customer-ready until matching downloadable files exist or owner accepts Markdown-only use. Each completed public version should have Markdown source, PDF render, change report and customer answer sheet.
-
-## Public catalog rule
-
-Public catalog files must be customer-facing. Do not place internal raw costing, profit, supplier names, GPT/Cursor/Codex notes, source-file notes or audit notes inside public catalog files.
-
-Do not mention brand names unless official quotation intentionally lists a brand/model. Describe items by specification, size allowance, finish tier, included quantity, route/site limitation, exclusions and quote-only items.
-
-## Price rule
-
-Do not change catalog prices, size bands, thresholds or add-on guide prices unless owner explicitly asks. Material and labour files are internal support; they are not public selling prices.
-
-## Header update rule
-
-When owner creates a permanent workflow rule, corrects a recurring mistake, changes source authority, or explicitly asks for header update, update this header in the same work session. A chat apology or acknowledgement alone is not enough.
-
-If the new rule is general across jobs, update this repository-level header instead of only creating a customer/site local README.
-
-## Work continuation rule
-
-When owner asks to update GitHub or create catalog/ActiveBOQ/BOQ/audit/quotation work, do not stop at explanation if the safe next action is known. Proceed with the smallest complete safe task; if blocked, state exact block and exact owner action required.
-
-## ActiveBOQ quotation test rule
-
-For customer quotation work under an `ActiveBOQ/<customer-or-site>/` folder, use: customer location/job label, house type/storey type, floor plan evidence, work area and measured/assumed size, finish tier, add-ons, site risks, catalog/manual BOQ reference, inclusions, exclusions, assumptions and remaining questions. Do not promise brand/model unless written in quotation.
-
-## Known mistakes to avoid
-
-- Do not make a new version by changing only the title.
-- Do not copy vague V4 wording into a new version without clearer scope.
-- Do not edit V4, V5, PDF, DOCX, Materials, Labour, README, Deep Research or customer originals when creating working files.
-- Do not invent brands or exact models.
-- Do not keep asking owner to calculate when logical floorplan estimate can be made and clearly marked provisional.
-- Do not ignore owner-provided drawing dimensions such as the current kitchen 3062mm + 5485mm L-shape correction, living hall 9755mm x 6096mm, master bedroom 5792mm x 6096mm, or SPC five-door profile/skirting correction.
-- Do not treat a semi-detached/rumah berkembar drawing as a small terrace-house assumption after owner correction.
-- Do not present floorplan estimates as final measured quantities.
-- Do not treat MISC or AdditionalMaterials as master list unless formally mapped/approved.
-- Do not choose Vinyl or Carpet when customer asked for SPC unless owner approves substitution.
-- Do not price Carpet, SPC, Vinyl, foam, glue, profile or skirting by loose 1ft/small loose quantity when supplier stock unit is box, piece, roll or tub.
-- Do not add carpet skirting by default unless product/system or owner says so.
-- Do not include floor levelling or existing tile removal for this ActiveBOQ SPC scope unless later evidence requires it.
-- Do not create separate foam cost when selected SPC product already includes foam.
-- Do not invent foam/underlay price if selected product has no foam and no price source is found.
-- Do not use old MISC or AdditionalMaterials prices without marking uplift/age allowance when owner says the reference may be old.
-- Do not present a cost estimate as customer selling price without explicit markup/margin calculation.
-- Do not work in hidden branch when owner expects `main`, unless branch workflow is explicitly agreed.
-- Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
-- Do not treat root catalog as active customer job; active customer job is the specific child folder under `ActiveBOQ/` named by owner.
-- Do not force custom renovation items into catalog package pricing when manual BOQ is more suitable.
-- Do not scatter generated files directly under `ActiveBOQ/` root.
-- Do not edit read-only `Drawing/` or `OriginalFile/` folders.
-- Do not make per-customer README/header the only place for a general rule; copy general rules back into this header.
