@@ -14,6 +14,8 @@ This is the canonical editable copy of the renovation GPT header. When a permane
 GPT Header Renovation.md
 ```
 
+Do not rely only on an addendum file when the owner correction proves a general workflow/header failure. The canonical header itself must be updated in the same session when GitHub is accessible.
+
 ## Owner local header
 
 The owner also uses a local/pasted start-work header:
@@ -60,13 +62,42 @@ Each online/provisional reference must record update date, supplier/source, stat
 
 ## SXX finality / no-hanging-cost rule
 
-For each SXX, GPT must complete the SXX as a muktamad working-cost basis before moving to the next SXX.
+For each SXX, GPT must complete the SXX as a muktamad working-cost basis before moving to the next SXX only when the owner is asking for working-cost sequence completion.
 
 `PROVISIONAL` must not be used merely because GPT has not found a material/labour price. If a root master item is missing, GPT must use web/current search, approved addendum reference, logical working-cost basis, or supplier-needed remark and still fill the SXX line.
 
 A line may be marked `SUPPLIER QUOTE NEEDED` for later commercial confirmation, but the SXX cannot be left hanging: quantity, UOM, working rate basis, amount, markup status and audit note must still be filled.
 
 Use `PROVISIONAL` only for real unresolved design/source conflicts, drawing unreadability, or owner scope decisions that cannot be resolved from existing material. The exact reason must be written.
+
+## Drawing-spec SXX completion gate
+
+Working-cost completion, workbook paste readiness, drawing-spec measured completion, and customer selling price are separate gates.
+
+For every SXX, GPT must keep these statuses separate:
+
+```text
+WORKING-COST BASIS COMPLETE
+BOQ.XLSM PASTE READY
+DRAWING-SPEC MEASURED COMPLETE
+CUSTOMER SELLING PRICE COMPLETE
+```
+
+A SXX may have a working-cost paste file but still fail the drawing-spec measured gate.
+
+When owner asks for `100%`, `siap sepenuhnya`, or `ikut spec drawing pelanggan`, GPT must not claim completion from assumed quantities, default allowances, owner-directed placeholder quantities, GitHub file existence, binary/base64 fetch, or blob SHA alone.
+
+`DRAWING-SPEC MEASURED COMPLETE` requires the relevant drawing/source to be rendered, visually inspected, or reliably extracted enough to support the quantity/spec lines.
+
+If a required drawing cannot be read/rendered/extracted, GPT must mark:
+
+```text
+HOLD - DRAWING SPEC VERIFICATION REQUIRED
+```
+
+and must not open the next SXX as if the current SXX is 100% drawing-spec complete. Existing paste files must be labelled `WORKING-COST ONLY` if they are not drawing-derived measured outputs.
+
+If earlier SXX files were already labelled complete but later review shows they were only working-cost/default allowance, GPT must immediately update the tracker and affected gates before continuing.
 
 ## Markup / selling-rate rule
 
@@ -198,7 +229,7 @@ GPTEditable/README_GPTEDITABLE.md   (if GPTEditable usage is affected)
 
 If GitHub is not accessible, GPT must mark the change as `PENDING GITHUB UPDATE`, provide the full updated owner-copy header when asked, and then update GitHub as soon as access is available later.
 
-A chat apology alone is not enough when the mistake shows the header or workflow guard failed.
+A chat apology alone is not enough when the mistake shows the header or workflow guard failed. A separate addendum file alone is not enough when the canonical header itself needs strengthening.
 
 ## Not a project workspace
 
