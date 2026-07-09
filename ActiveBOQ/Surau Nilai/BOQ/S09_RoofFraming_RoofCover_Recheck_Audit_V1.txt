@@ -1,0 +1,30 @@
+Spec	Description	Note
+S09-RECHECK-TITLE	S09 repeated drawing/spec verification before cost takeoff	Repeated check was done before S09 costing and before opening S10.
+S09-RECHECK-STATUS	PASS - S09 may be taken off on current BOQ 100% cost basis	The target 100% is current BOQ cost basis from drawing/spec/authorised full allowance, not customer selling price.
+S09-SOURCE-1	Roof Framing.pdf	Rendered and visually inspected. Relevant visible drawings: FIRST LEVEL ROOF FRAMING, SECOND LEVEL ROOF FRAMING, THIRD LEVEL ROOF FRAMING. Notes: all GI rafters and associated roof supporting purlins to be plain GI and not coloured type; exposed mild steel beams and columns to be painted with anti-rust primer and three coats approved micaceous paint.
+S09-SOURCE-2	Roof Framing 1.pdf	Rendered and visually inspected. Same roof framing content used as repeated/duplicate check against Roof Framing.pdf.
+S09-SOURCE-3	Surau Plan Roof Plan Bldg Tender_Constn.pdf	Rendered and visually inspected. Relevant visible source: roof plan, RWDP labels, rainwater goods note and roof plan geometry.
+S09-SOURCE-4	Surau Juasseh sections and elevations tender_constn 1.pdf	Rendered and text-extracted. Relevant visible/text source: insulated metal roofing (POWIN or equivalent) on GI steel battens & rafters to Engineer's details, 30 degree and 45 degree roof slopes, main/intermediate/top roof levels.
+S09-100PERCENT-TARGET	Target means S09 Block 1-3 are not hanging and are closed for current BOQ cost basis.	Customer selling price/margin remains separate and is not part of this 100% target.
+S09-AUTHORISED-ALLOWANCE	S09 uses drawing-derived full allowance basis, not minimum quantity and not random allowance.	The roof framing/covering drawings do not provide every shop-fabrication member size, but the drawings specify the roof system, roof levels, roof material standard, slopes and rainwater goods. README/owner rule allows full allowance basis when it is recorded as final current BOQ cost basis.
+S09-ROOF-AREA-BASIS	Roof surface full allowance: 390m2.	Derived from rendered roof plan/framing multi-level roof geometry, S07 building/slab basis, 30/45 degree roof slopes, hipped roof planes, laps, cutting and full-allowance rounding. This is intentionally not a minimum area.
+S09-FRAMING-SCOPE	Included: GI rafters, associated roof supporting purlins/battens, insulated metal roofing, ridge/hip/valley flashing/capping, fascia/barge/eaves trim, fasteners/sealant, rainwater gutter/RWDP, anti-rust/micaceous paint for exposed steel, installation labour and roof access/lifting allowance.	The roof framing note and section/elevation notes support these inclusions.
+S09-EXCLUSIONS	Excluded: S08 RC roof beams/columns, S12 internal ceilings/finishes, S20 electrical/lightning protection if later split, S22 ground drainage/longkang, roof water tanks/pump/final plumbing connection.	Prevents double count with previous and later SXX scopes.
+S09-SCAFFOLD-CHECK	S08 scaffold/jack/U-head was for RC elevated beam/column support/access. S09 uses separate roof access/edge safety/lifting allowance, not a duplicate of S08 RC formwork support.	This avoids undercost for roof works without double-counting the S08 scaffold/jack line.
+S09-UNDERCOST	PASS.	Roof is not priced as roofing sheet only. S09 includes framing, roof covering, flashing/capping, trims, rainwater goods, fasteners/sealants, protective paint, labour and access/lifting.
+S09-OVERPRICE	PASS WITH NOTE.	RC roof beams excluded to S08; roof drainage ground connection excluded to S22; ceilings/finishes excluded to later finishes.
+S09-DOUBLECOUNT	PASS.	No duplicate with S08 RC beams/columns, S07 slab/apron, S12 ceiling/finishes, S22 drainage.
+S09-MARKUP	PASS.	No customer markup/gross margin included.
+S09-GATE	S09 recheck gate	PASS - create S09 takeoff audit V1, S09 BOQ.xlsm paste-ready V1 and tracker V21. S10 may start only after those files are committed.
+
+CheckID	CheckItem	Result	Action
+S09-RC-001	Roof framing drawings rendered and visually inspected	PASS	Use Roof Framing.pdf and Roof Framing 1.pdf.
+S09-RC-002	Roof plan / RWDP source checked	PASS	Use Surau Plan Roof Plan Bldg Tender_Constn.pdf.
+S09-RC-003	Sections/elevations checked for roof material/slope	PASS	Use Surau Juasseh sections and elevations tender_constn 1.pdf.
+S09-RC-004	Roof covering specification	PASS	Use insulated metal roofing (POWIN or equivalent).
+S09-RC-005	Roof framing specification	PASS	Use GI steel battens/rafters/purlins; plain GI not coloured type.
+S09-RC-006	Roof slope basis	PASS	30 degree and 45 degree roof slopes are recorded.
+S09-RC-007	Rainwater goods	PASS	Include Everplast rainwater goods at roof level; exclude ground drains.
+S09-RC-008	S08 duplicate check	PASS	Exclude RC roof beams/columns and use only roof frame/covering scope.
+S09-RC-009	100% target meaning	PASS	Closed current BOQ cost basis, not final selling price.
+S09-RC-010	Allowance authority	PASS	Full allowance is drawing/README/owner accepted, not unsupported random allowance.
