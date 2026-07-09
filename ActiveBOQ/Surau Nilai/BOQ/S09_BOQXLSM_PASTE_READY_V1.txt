@@ -1,0 +1,31 @@
+Paste to S09!A:C - SPEC
+Spec	Description	Note
+S09-TITLE	Roof framing, roof structure and roof covering interface	Current BOQ 100% cost basis from repeated check of rendered roof framing, roof plan and section/elevation drawings.
+S09-STATUS	COMPLETE FOR NEXT SXX - CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS	Margin/profit/customer selling price is not included and will be calculated later.
+S09-SOURCE	Use `Roof Framing.pdf`, `Roof Framing 1.pdf`, `Surau Plan Roof Plan Bldg Tender_Constn.pdf`, and `Surau Juasseh sections and elevations tender_constn 1.pdf`.	Rendered from owner uploaded Drawing.zip in this chat and repeatedly checked before costing.
+S09-ROOF-SPEC	Insulated metal roofing (POWIN or equivalent) on GI steel battens/rafters; all GI rafters and associated roof supporting purlins to be plain GI and not coloured type.	Source: roof framing note and sections/elevations.
+S09-AREA	Roof surface full allowance: 390m2.	Drawing-derived full allowance from multi-level roof framing/roof plan, 30/45 degree slopes, hips/valleys, laps/cutting and full-allowance rounding. This is not minimum quantity.
+S09-SCOPE	Includes GI roof frame, insulated roofing, flashing/capping, trims, rainwater goods, RWDP, fasteners/sealants, exposed steel paint, labour, specialist installation and roof access/lifting.	Excludes S08 RC beams/columns, S12 ceiling/finishes, S22 ground drainage/longkang and final water tank/plumbing connection.
+S09-COSTCHECK	Undercost/overprice/double-count check done.	Roof is not priced as sheet-only. No random allowance. Authorised drawing/README/owner full allowance is closed for current BOQ cost. No markup included.
+S09-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S09!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: insulated metal roofing (POWIN or equivalent), all roof levels and roof planes. Full allowance includes slope/laps/cutting, not minimum quantity.	S09-B1-001	Insulated Metal Roofing POWIN or Equivalent Supply Allowance (Current Working Cost Per m2)	M2	390	0	95.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: GI rafters, associated roof supporting purlins and battens across all roof levels. Plain GI, not coloured type.	S09-B1-002	GI Rafters Purlins and Battens Supply Allowance (Current Working Cost Per m2 roof area)	M2	390	0	42.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: ridges, hips, valleys, roof junctions and capping points from multi-level hipped roof geometry.	S09-B1-003	Roof Ridge Hip Valley Flashing and Capping Allowance (Current Working Cost Per m)	M	155	0	28.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: roof perimeter, barge/fascia/eaves and roof breaks.	S09-B1-004	Roof Fascia Barge Eaves Edge Trim Allowance (Current Working Cost Per m)	M	110	0	25.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: roof rainwater goods/gutter lines; Everplast brand or architect approval. Ground drain/longkang excluded to drainage SXX.	S09-B1-005	Everplast Rainwater Gutter Allowance (Current Working Cost Per m)	M	95	0	22.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: RWDP roof rainwater discharge points. Ground connection/drainage excluded to drainage SXX.	S09-B1-006	RWDP Downpipe Set Allowance (Current Working Cost Per point)	POINT	4	0	180.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: screws, clips, sealant, saddles, end caps and small roof accessories. Prevents sheet-only undercost.	S09-B1-007	Roofing Screws Clips Sealant Saddles and End Caps Allowance (Current Working Cost Per lot)	LOT	1	0	1800.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: anti-rust primer and three coats approved micaceous paint for exposed steel, as drawing note requires.	S09-B1-008	Anti-Rust Primer and Micaceous Paint for Exposed Steel Allowance (Current Working Cost Per lot)	LOT	1	0	1800.00
+
+Paste to S09!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: main contractor coordination, checking, setting-out support, roof edge coordination and QA. Specialist installation separate under Block 3.	S09-B2-001	Labour - Skilled Worker (Per MH)	MH	80	0	22.50
+NO MARKUP - ROOT COST. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: material handling/support, roof accessory support, cleanup and coordination assistance. Specialist installation separate under Block 3.	S09-B2-002	Labour - General Helper (Per MH)	MH	64	0	16.25
+
+Paste to S09!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: specialist installation of GI roof frame, insulated roof covering, accessories, capping and rainwater goods.	S09-B3-001	Metal Roofing Framing and Covering Installation Specialist Labour Allowance (Current Working Cost Per m2)	M2	390	0	38.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: roof installation access, lifting, edge safety and handling allowance. Does not duplicate S08 RC scaffold/jack support.	S09-B3-002	Roof Access Edge Safety and Lifting Equipment Allowance (Current Working Cost Per lot)	LOT	1	0	1200.00
