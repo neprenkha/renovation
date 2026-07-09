@@ -1,0 +1,28 @@
+Paste to S08!A:C - SPEC
+Spec	Description	Note
+S08-TITLE	Columns, RC frame / roof beams and superstructure structural RC	Working-cost drawing/spec basis from repeated check of rendered roof beam, internal roof beam and layout drawings.
+S08-STATUS	WORKING-COST DRAWING/SPEC BASIS - COMPLETE FOR NEXT SXX	Margin/profit/customer selling price is not included and will be calculated later.
+S08-SOURCE	Use `01-SURAU JERUSSALAM LP-R02 Layout1.pdf`, `06-SURAU JURESSALAM ROOF BEAM DETAIL-R01 Model.pdf`, and `07-SURAU JURESSALAM INT RF BEAM DETAIL-R01 Model.pdf`.	Rendered from owner uploaded Drawing.zip in this chat and repeatedly checked before costing.
+S08-CONCRETE-SPEC	G25 concrete for columns and beams.	General notes/schedule checked. S05 ground beams and S07 slabs are excluded.
+S08-COLUMN-SPEC	Column schedule basis: C1/C3 125x125, 4T12 main bar, R6 ties. Working count basis: 38 above-ground column locations, 3.0m height allowance.	S05 already carried stump/column starter/footing scope; S08 carries above-ground column portion only.
+S08-BEAM-SPEC	Roof beams RF1-RF21 and internal roof beams IRB1/IRB2 groups checked from rendered roof layout and detail sheets.	RF beam working length basis 121.20m at 125x300. IRB working length basis 57.60m using 125x350 average to reduce undercost.
+S08-COSTCHECK	Undercost/overprice/double-count check done.	Includes G25 concrete, rebar, formwork, labour, concrete placing, scaffolding bays and jack/U-head support. Excludes S05/S07/S09 scopes. No markup included.
+S08-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S08!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: above-ground columns, RF roof beams and IRB internal roof beams. CALC NOTE: columns 1.781m3 + RF beams 4.545m3 + IRB beams 2.520m3 = 8.85m3 x 1.05 = 9.293m3. Excludes S05 ground beams and S07 slab.	S08-B1-001	Ready Mix Concrete G25 (Per m3)	M3	8.85	0.05	365.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: C1/C3 4T12 columns with R6 ties plus RF/IRB beam reinforcement. CALC NOTE: 1600kg x 1.05 = 1680kg. Supplier/BBS verification item, not random allowance.	S08-B1-002	Reinforcement Steel Bar Supply Allowance (Current Working Cost Per kg)	KG	1600	0.05	3.80
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: column faces plus roof/intermediate beam sides/soffits. CALC NOTE: 190m2 x 1.10 = 209m2. Excludes S05 ground beam and S07 slab formwork.	S08-B1-003	Formwork Plywood Timber and Release Oil Material Allowance (Current Working Cost Per m2)	M2	190	0.10	35.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: spacers, chairs, tie wire, curing and small consumables for RC column/beam pour.	S08-B1-004	Ground Slab Pour Screed Joint and Curing Consumable Allowance (Current Working Cost Per lot)	LOT	1	0	650.00
+
+Paste to S08!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: column and roof/intermediate beam setout, formwork, rebar fixing supervision, concrete placement and QA.	S08-B2-001	Labour - Skilled Worker (Per MH)	MH	160	0	22.50
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: material handling, formwork/rebar/concrete assistance, staging support and curing assistance.	S08-B2-002	Labour - General Helper (Per MH)	MH	128	0	16.25
+
+Paste to S08!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: concrete placing access for elevated columns/roof beams. Supplier quote can replace later.	S08-B3-001	Concrete Pump / Placing Access Allowance (Current Working Cost Per Lot)	LOT	1	0	1200.00
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: temporary access/support for elevated columns and roof beams. Refundable deposit excluded.	S08-B3-002	Scaffolding Bay Set (Used) 1.7m(H) x 0.9m(W) incl 1 Platform (Per Month). Deposit RM195/set refundable.	SET	24	0	45.00
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: temporary beam formwork support / jack and U-head allowance. Refundable deposit excluded.	S08-B3-003	Scaffolding Jack + U-Head Set (Used) 600mm (2 Jack Base + 2 U-Head) (Per Month). Deposit RM40/set refundable.	SET	24	0	20.00
