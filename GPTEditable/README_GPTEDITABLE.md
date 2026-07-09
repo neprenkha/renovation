@@ -58,6 +58,49 @@ No	Category	Subcategory	Description	Qty	UOM	Price/Unit (RM)	Total (RM)	Update Da
 
 Each online/provisional reference must record update date, supplier/source, status and note. If online search does not produce a reliable exact source, GPT may use a logical provisional reference but must mark it clearly as `PROVISIONAL ONLINE / MARKET SURVEY` or `LOGICAL PROVISIONAL RATE`.
 
+## Drawing/spec source rule
+
+Active job `Drawing/` folders contain customer/source specifications and are not optional background material.
+
+For Surau Nilai, the drawing/spec source folder is:
+
+```text
+ActiveBOQ/Surau Nilai/Drawing/
+```
+
+Drawing files are read-only. GPT must use them as source evidence for takeoff and must not edit, rename, move, overwrite or delete them.
+
+Before finalising any SXX or overall BOQ, GPT must show which drawing/source files were checked for that SXX. If a drawing cannot be read/rendered, mark it clearly as `UNREADABLE / NEEDS REVIEW`; do not silently ignore it.
+
+## Auditable takeoff rule
+
+Takeoff must be understandable by owner, QS, contractor, future GPT sessions and future reviewers. It is not only a private understanding for the current chat.
+
+Every takeoff line must record enough detail to be rechecked later:
+
+- SXX/trade;
+- source drawing filename;
+- sheet/title/revision/page where visible;
+- measured element/location;
+- dimension source;
+- formula;
+- raw quantity;
+- deductions;
+- net quantity;
+- UOM;
+- wastage;
+- buffer/contingency if any;
+- material/labour/addendum reference;
+- status such as measured, drawing-derived, owner-corrected, provisional, supplier quote needed or conflict.
+
+If a line cannot be audited later, it is not a complete takeoff line.
+
+## Previous-session / owner-correction rule
+
+Before asking the owner a question or saying an item is unknown, GPT must check previous discussion/context, current header, GitHub governance, active workspace files, drawings, README, material/labour lists and addendum files.
+
+For Surau Nilai, use owner-corrected `Lot 20093` as the governing working lot unless a later owner instruction changes it. If a drawing or older source shows another lot number, record it as a conflict; do not silently revert to the wrong lot.
+
 ## SXX copy-paste output rule
 
 For BOQ costing, every SXX output intended for spreadsheet use must be produced as `.txt` tab-delimited content that can be copied into `.xls` / Excel in sequence:
