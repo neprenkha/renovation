@@ -1,0 +1,37 @@
+Spec	Description	Note
+S03-TITLE	Site clearing, earthwork, cut/fill and platform formation	Earthwork and platform preparation after preliminaries/ESCP and before bridge, substructure, slab and permanent drainage/road works.
+S03-OVERVIEW	Includes site clearing, rough strip/level, cut/fill shaping, imported soil backfill allowance, final trimming and backhoe-assisted platform formation.	MUKTAMAD WORKING-COST BASIS. Customer markup/gross margin not included.
+S03-SOURCE-DRAWING	SJ_01EW-CS-01-S0-00.pdf; SJ_01EW-DT-01-S0-00.pdf; SJ_01EW-LP-01-S0-00.pdf	Primary S03 earthwork source set from project drawing register/tracker.
+S03-SOURCE-SUPPORT	Surau Site Plan Tender_Constn.pdf; Survey Tapak Surau Juassewh Sentosa.pdf	Supporting source for site relation/levels/boundary. Use owner-corrected Lot 20093 as governing working lot unless owner later changes it.
+S03-SOURCE-REFERENCE	README - BOQ.txt; 1.2 Materials.txt; 1.3 Labour.txt; GPTEditable/Reference_Addendum/	Root master files are read-only and treated as unmarked cost/reference rates unless line states otherwise.
+S03-CROSS-SXX	Exclude S01, S02, S04, S07, S22 and S24 scopes from S03.	S03 excludes preliminaries/hoarding/ESCP, crossing bridge, slab hardcore, permanent drainage, road base, premix and parking works. Later overlap requires immediate affected-SXX correction.
+S03-QTY-BASIS	Imported soil backfill locked at 2 trips.	OWNER-DIRECTED CURRENT FINAL BASIS. Soil Backfill (10-Wheel Truck) from 1.2 Materials.txt is used for current S03 working cost.
+S03-QTY-BASIS	Backhoe hire locked at 1 day.	OWNER-DIRECTED CURRENT FINAL BASIS. Backhoe Hire - Standard (Per Day) from 1.3 Labour.txt is used for clearing/cut-fill/platform formation.
+S03-QTY-BASIS	Skilled worker locked at 8 MH and general helper locked at 16 MH.	OWNER-DIRECTED CURRENT FINAL BASIS. Labour is for level/grade control, hand trimming, clearing assistance and spot works. No separate labour buffer.
+S03-MARKUP	All S03 rates are no-markup working cost rates unless line note says otherwise.	Customer selling price must be produced later through separate markup/gross margin calculation.
+S03-USER-INPUT	Owner requires every SXX to be completed once as far as possible, with repeated preflight checks before output so work is not repeated like S02.	S03 uses one-pass preflight and final current working-cost basis. Later contradictions require correction version, not delay now.
+S03-FINALITY	100% COMPLETE FOR NEXT SXX - MUKTAMAD WORKING-COST BASIS	No NIL/blank required lines. S04 may start after S03 tracker update.
+S03-PRICE-STATUS	WORKING COST / NO CUSTOMER MARKUP	Customer selling price requires separate markup/gross margin file.
+
+TakeoffID	Block	Category	Subcategory	Description	SourceDrawingOrReference	MeasuredElementLocation	DimensionSource	Formula	RawQty	Deduction	NetQty	UOM	WastageOrAllowance	RoundedChargeQty	RateRM	AmountRM	UpdateDate	SupplierOrReference	MarkupStatus	FinalityStatus	AuditNote
+S03-B1-001	Block 1	Aggregates	Sand & Aggregates	Soil Backfill (10-Wheel Truck)	SJ_01EW drawings + 1.2 Materials.txt	Imported fill/backfill for earthwork/platform formation	Owner-directed current final S03 basis	2 trips x RM450/trip	2.00	0.00	2.00	TRIP	0% full truck trip basis	2.00	450.00	900.00	2026-07-10	1.2 Materials.txt	NO MARKUP - ROOT COST	100% COMPLETE FOR NEXT SXX	Exact root description and UOM used. This excludes road base, slab hardcore and permanent drainage material.
+S03-B1-SUBTOTAL	Block 1	SUMMARY	Block 1 subtotal	Material subtotal	Calculated	Block 1 subtotal	900	1.00	0.00	1.00	LOT	Not applicable	1.00	900.00	900.00	2026-07-10	Calculated	NO MARKUP - WORKING COST	100% COMPLETE FOR NEXT SXX	Block 1 subtotal.
+
+TakeoffID	Block	Category	Subcategory	Description	SourceDrawingOrReference	MeasuredElementLocation	DimensionSource	Formula	RawQty	Deduction	NetQty	UOM	WastageOrAllowance	RoundedChargeQty	RateRM	AmountRM	UpdateDate	SupplierOrReference	MarkupStatus	FinalityStatus	AuditNote
+S03-B2-001	Block 2	Labour	Skilled	Labour - Skilled Worker (Per MH)	SJ_01EW drawings + 1.3 Labour.txt	Level/grade control, machine guidance and final checking	Owner-directed current final S03 basis	8 MH x RM22.50/MH	8.00	0.00	8.00	MH	0% labour buffer	8.00	22.50	180.00	2026-07-10	1.3 Labour.txt	NO MARKUP - ROOT COST	100% COMPLETE FOR NEXT SXX	Exact root description and UOM used.
+S03-B2-002	Block 2	Labour	Helper	Labour - General Helper (Per MH)	SJ_01EW drawings + 1.3 Labour.txt	Manual clearing assistance, hand trim and spot works	Owner-directed current final S03 basis	16 MH x RM16.25/MH	16.00	0.00	16.00	MH	0% labour buffer	16.00	16.25	260.00	2026-07-10	1.3 Labour.txt	NO MARKUP - ROOT COST	100% COMPLETE FOR NEXT SXX	Exact root description and UOM used.
+S03-B2-SUBTOTAL	Block 2	SUMMARY	Block 2 subtotal	Labour subtotal	Calculated	Block 2 subtotal	180 + 260	1.00	0.00	1.00	LOT	Not applicable	1.00	440.00	440.00	2026-07-10	Calculated	NO MARKUP - WORKING COST	100% COMPLETE FOR NEXT SXX	Block 2 subtotal.
+
+TakeoffID	Block	Category	Subcategory	Description	SourceDrawingOrReference	MeasuredElementLocation	DimensionSource	Formula	RawQty	Deduction	NetQty	UOM	WastageOrAllowance	RoundedChargeQty	RateRM	AmountRM	UpdateDate	SupplierOrReference	MarkupStatus	FinalityStatus	AuditNote
+S03-B3-001	Block 3	Rental	Plant & Machinery	Backhoe Hire - Standard (Per Day)	SJ_01EW drawings + 1.3 Labour.txt	Site clearing, cut/fill shaping and platform formation	Owner-directed current final S03 basis	1 day x RM750/day	1.00	0.00	1.00	DAY	0% service buffer	1.00	750.00	750.00	2026-07-10	1.3 Labour.txt	NO MARKUP - ROOT COST	100% COMPLETE FOR NEXT SXX	Exact root description and UOM used. S01 mobilisation is not duplicated.
+S03-B3-SUBTOTAL	Block 3	SUMMARY	Block 3 subtotal	Plant/rental subtotal	Calculated	Block 3 subtotal	750	1.00	0.00	1.00	LOT	Not applicable	1.00	750.00	750.00	2026-07-10	Calculated	NO MARKUP - WORKING COST	100% COMPLETE FOR NEXT SXX	Block 3 subtotal.
+
+SummaryID	Description	Formula	AmountRM	Status	MarkupStatus	Note
+S03-SUM-001	Block 1 subtotal	900	900.00	100% COMPLETE FOR NEXT SXX	NO MARKUP	Material.
+S03-SUM-002	Block 2 subtotal	180 + 260	440.00	100% COMPLETE FOR NEXT SXX	NO MARKUP	Labour.
+S03-SUM-003	Block 3 subtotal	750	750.00	100% COMPLETE FOR NEXT SXX	NO MARKUP	Backhoe/plant hire.
+S03-SUM-004	Base working cost	900 + 440 + 750	2090.00	MUKTAMAD WORKING-COST BASIS	NO MARKUP	Base S03 working cost. No NIL/blank lines.
+S03-SUM-005	Optional 10% contingency	2090 x 10%	209.00	OPTIONAL BUFFER	NOT MARKUP	Separate from wastage. Not customer profit markup.
+S03-SUM-006	Working cost with contingency	2090 + 209	2299.00	WORKING COST WITH CONTINGENCY	NO CUSTOMER MARKUP	Use only when owner wants safer S03 allowance.
+S03-SUM-007	Customer selling price	Separate markup/gross margin file required	0.00	NOT READY	MARKUP NOT APPLIED	Customer quotation cannot use base working cost as selling price without explicit markup/margin.
+S03-GATE	S03 takeoff/costing gate	Spec A:C + Block 1-3 completed; no NIL; markup status stated; one-pass preflight completed	0.00	COMPLETE FOR NEXT SXX - 100% MUKTAMAD WORKING COST	NO MARKUP	S04 may start. Later contradiction/double count triggers affected-SXX correction version before affected summary/customer total is used.
