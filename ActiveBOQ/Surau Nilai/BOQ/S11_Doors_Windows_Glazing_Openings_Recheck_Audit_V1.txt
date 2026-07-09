@@ -1,0 +1,29 @@
+Spec	Description	Note
+S11-RECHECK-TITLE	S11 repeated drawing/spec verification before cost takeoff	Repeated check was done before S11 costing and before opening S12.
+S11-RECHECK-STATUS	PASS - S11 may be taken off on current BOQ 100% cost basis	The target 100% is current BOQ cost basis from drawing/spec/authorised full allowance. Customer selling price/margin is separate.
+S11-100PERCENT-TARGET	100% target for this S11 gate	Current BOQ cost basis complete: source drawings checked, authorised full allowance basis used, Block 1-3 completed, undercost/overprice/double-count/markup checks recorded. 99.9% or unsupported/random allowance is HOLD.
+S11-SOURCE-1	Surau Plan Roof Plan Bldg Tender_Constn.pdf	Rendered and text-extracted. Relevant visible source: floor plan, window schedule, door schedule, door/window labels, high-level opening labels, BS1 brick screen schedule.
+S11-SOURCE-2	Surau Juasseh sections and elevations tender_constn 1.pdf	Rendered and checked for elevations/opening context. Used to confirm opening locations and avoid double count with S10 masonry/screen and S12 finishes.
+S11-SOURCE-3	01-SURAU JERUSSALAM LP-R02 Layout1.pdf	Rendered and checked for structural boundary only. S11 excludes S08 structural columns/RC roof beams and S10 masonry walls.
+S11-DOOR-SCHEDULE	Door schedule checked	D1: 900x2400 solid timber door to detail. D2: 2300x2400 powder coated aluminium sliding doors with 10mm clear tempered glass glazing to manufacturer's specification. D3: 1000x2400 solid timber door to detail.
+S11-WINDOW-SCHEDULE	Window schedule checked	W1: 900x1200 top hung powder coated aluminium framed window with 8mm clear glass glazing. W2: 2280x2400 Breezeway Altair adjustable glass louvres with tempered glass panels. W3: 750x2400 Breezeway Altair adjustable glass louvres with tempered glass panels. W4/W5/W6: high level lighting and ventilation opening only with no windows. BS1: brick screen ventilation opening.
+S11-COUNT-BASIS	Drawing count basis from plan labels after excluding schedule-table labels	D1 qty 4; D2 qty 3; D3 qty 3; W1 qty 2; W2 qty 5; W3 qty 2; W4 qty 2 no window; W5 qty 3 no window; W6 qty 1 no window; BS1 qty 7 excluded to S10 brick screen.
+S11-AREA-BASIS	Full quantity basis	D2 aluminium sliding glass door area 16.56m2. W1 top hung aluminium window area 2.16m2. W2/W3 adjustable louvre area 30.96m2. Solid timber doors counted by set.
+S11-EXCLUSIONS	Excluded scopes	W4/W5/W6 opening-only labels have no window supply in S11. BS1 brick screen was included in S10. S10 masonry openings/walls excluded. S12 plaster/paint/tile/finishing excluded. Electrical/security/ironmongery specialty beyond normal door/window set excluded unless later shown.
+S11-UNDERCOST	PASS	S11 is not priced as door leaf/window sheet only. It includes timber door sets, aluminium sliding doors with tempered glass, top hung aluminium windows, Breezeway Altair adjustable glass louvres, ironmongery/sealant/flashing/fixing sundries, direct labour, specialist installation labour and opening access/protection.
+S11-OVERPRICE	PASS WITH NOTE	W4/W5/W6 are not charged as windows. BS1 brick screens excluded to S10. S10 walling and S12 finishes are excluded.
+S11-DOUBLECOUNT	PASS	No duplicate with S10 masonry/brick screens or S12 finishes. No structural duplicate with S08.
+S11-MARKUP	PASS	No customer markup/gross margin included.
+S11-GATE	S11 recheck gate	PASS - create S11 takeoff audit V1, S11 BOQ.xlsm paste-ready V1 and tracker V23. S12 may start only after those files are committed.
+
+CheckID	CheckItem	Result	Action
+S11-RC-001	Door schedule rendered/text extracted	PASS	Use D1/D2/D3 schedule from Surau Plan Roof Plan Bldg Tender_Constn.pdf.
+S11-RC-002	Window schedule rendered/text extracted	PASS	Use W1-W6 and BS1 schedule from Surau Plan Roof Plan Bldg Tender_Constn.pdf.
+S11-RC-003	Plan label count checked	PASS	Use D1=4, D2=3, D3=3, W1=2, W2=5, W3=2, W4=2, W5=3, W6=1, BS1=7.
+S11-RC-004	W4/W5/W6 handling checked	PASS	Opening only with no windows - no S11 window cost.
+S11-RC-005	BS1 handling checked	PASS	Brick screen ventilation opening already included under S10 screen scope - exclude from S11 cost.
+S11-RC-006	D2 glass spec checked	PASS	Use powder coated aluminium sliding door with 10mm clear tempered glass.
+S11-RC-007	W1 glass spec checked	PASS	Use 8mm clear glass top hung powder coated aluminium framed window.
+S11-RC-008	W2/W3 louvre spec checked	PASS	Use Breezeway Altair adjustable glass louvres with tempered glass panels.
+S11-RC-009	Duplicate with S10/S12 checked	PASS	Exclude masonry/screen/finishes from S11.
+S11-RC-010	100% / 99.9% gate checked	PASS	No unsupported/random allowance. Authorised full allowance basis closed for current BOQ cost.
