@@ -1,0 +1,31 @@
+Paste to S04!A:C - SPEC
+Spec	Description	Note
+S04-TITLE	Crossing bridge and permanent site entrance	Measured working-cost drawing/spec basis from rendered customer drawing `CROSSING BRIDGE.pdf`.
+S04-STATUS	WORKING-COST DRAWING/SPEC BASIS - COMPLETE FOR NEXT SXX	Margin/profit/customer selling price is not included and will be calculated later. V2 replaces S04 V1 working-cost allowance basis.
+S04-SOURCE	`CROSSING BRIDGE.pdf` rendered from owner uploaded Drawing.zip.	Visible title block: LAYOUT PLAN AND DETAIL / CROSSING BRIDGE / STRC/DETAIL/01.
+S04-SPEC	Drawing notes specify ABUTMENT/WALL G30, SLABS G30 and LEAN CONCRETE G15.	S04 V1 used too small an allowance. V2 corrects concrete grade and volume from rendered drawing.
+S04-QTY	Deck slab: 10000 x 4000 x 250 thick = 10.00m3 G30.	Source: plan deck detail and beam layout plan.
+S04-QTY	RC beams: 2 beams 450 x 750 x 10000, net below slab = 4.50m3 G30.	Net beam volume avoids double counting the 250mm slab already measured over the beam zone.
+S04-QTY	Abutments and wing walls measured from abutment detail, section 1-1 and section 2-2.	Two abutment bases/walls plus wing wall allowance = 16.875m3 G30.
+S04-QTY	Lean concrete: 50mm thick below two abutment bases = 0.60m3 G15.	G15 line added to approved addendum because root Materials has no exact G15 item.
+S04-QTY	Reinforcement is drawing-derived working-cost basis from visible T12-100, T10-150, 4T16, 2T12, 6T32, T10-150 links and abutment T16/T20 details.	Use 2900kg before 5% waste/lap/cutting allowance. Final BBS/supplier quote may refine.
+S04-QTY	Formwork material is drawing-derived working-cost basis for deck underside/edges, beam sides, abutment and wing-wall exposed faces.	Use 110m2 before 10% formwork material wastage/reuse loss.
+S04-COSTCHECK	Undercost/overprice/double-count check done.	Undercost reduced by adding G30/G15 concrete, rebar, formwork, labour, backhoe and concrete placing access. Overprice reduced by avoiding slab/beam concrete double count. No markup included.
+S04-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S04!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: G30 structural concrete for slab, net beams, abutments and wing walls. CALC NOTE: 31.375m3 x 1.05 = 32.944m3. S04 V1 undercosted this item.	S04-B1-001	Ready Mix Concrete G30 (Per m3)	M3	31.375	0.05	375.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: G15 lean concrete 50mm below two abutment bases. CALC NOTE: 0.60m3 x 1.05 = 0.63m3.	S04-B1-002	Ready Mix Concrete G15 Lean Concrete (Current Working Cost Per m3)	M3	0.60	0.05	340.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: visible T12-100, T10-150, 4T16, 2T12, 6T32, T10-150 links plus abutment T16/T20 allowance. CALC NOTE: 2900kg x 1.05 = 3045kg. Supplier/BBS verification item, not random allowance.	S04-B1-003	Reinforcement Steel Bar Supply Allowance (Current Working Cost Per kg)	KG	2900	0.05	3.80
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: deck underside/edges, beam sides, abutment and wing-wall exposed faces. CALC NOTE: 110m2 x 1.10 = 121m2.	S04-B1-004	Formwork Plywood Timber and Release Oil Material Allowance (Current Working Cost Per m2)	M2	110	0.10	35.00
+
+Paste to S04!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: setout/level checks, formwork/rebar supervision, concrete placement, finishing and QA support for full crossing bridge scope.	S04-B2-001	Labour - Skilled Worker (Per MH)	MH	160	0	22.50
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: material handling, excavation support, formwork/rebar/concrete assistance and curing support for full crossing bridge scope.	S04-B2-002	Labour - General Helper (Per MH)	MH	128	0	16.25
+
+Paste to S04!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: S04-specific abutment/wingwall excavation, trimming, backfill support and handling. Does not duplicate S03 general earthwork.	S04-B3-001	Backhoe Hire - Standard (Per Day)	DAY	1	0	750.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: concrete placing access for 31m3+ structural pour. Supplier quote can replace later.	S04-B3-002	Concrete Pump / Placing Access Allowance (Current Working Cost Per Lot)	LOT	1	0	1200.00
