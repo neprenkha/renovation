@@ -1,0 +1,27 @@
+Spec	Description	Note
+S08-RECHECK-TITLE	S08 repeated drawing/spec verification before cost takeoff	Repeated check was done before S08 costing and before opening S09.
+S08-RECHECK-STATUS	PASS - S08 may be taken off on working-cost drawing/spec basis	Customer margin/profit/customer selling price remains separate and is not included.
+S08-SOURCE-1	01-SURAU JERUSSALAM LP-R02 Layout1.pdf	Rendered and visually inspected. Relevant visible drawings/details: Roof Layout Plan, Intermediate Roof Layout Plan 1, Intermediate Roof Layout Plan 2, Column Reinforcement Schedule and General Notes.
+S08-SOURCE-2	06-SURAU JURESSALAM ROOF BEAM DETAIL-R01 Model.pdf	Rendered and visually inspected. Relevant visible roof beam details: RF1 to RF21, mainly 125x300 roof beams with segment dimensions and reinforcement notes.
+S08-SOURCE-3	07-SURAU JURESSALAM INT RF BEAM DETAIL-R01 Model.pdf	Rendered and visually inspected. Relevant internal roof beam details: IRB1B1/IRB1B2/IRB1B3/IRB1B4 and IRB2B1/IRB2B2/IRB2B3/IRB2B4 type beams, 125x300/125x350 noted.
+S08-GENERAL-NOTES	General notes checked: beams and columns use G25 concrete; reinforcement schedule shows column marks C1/C3 and 125x125 column sizes with 4T12 and R6 ties.	Use G25 for RC columns and roof/intermediate beams. Use rebar/formwork references from approved addendum where root master list has no exact line.
+S08-COLUMN-SCOPE	S08 includes above-ground/superstructure column portions only.	S05 already priced pad footings, stump/column starter and ground beams; do not duplicate below-ground/ground beam items.
+S08-BEAM-SCOPE	S08 includes roof beam and intermediate roof beam RC concrete/rebar/formwork only.	S07 slab is excluded. Roof steel/timber framing and roof covering are excluded to S09 if shown by roof framing drawings.
+S08-BEAM-LENGTH-BASIS	Roof beam length basis was compiled from rendered roof layout grids and RF/IRB beam detail drawings.	RF beam working length basis: 121.20m. Internal roof beam working length basis: 57.60m. Total RC beam length basis: 178.80m.
+S08-COLUMN-COUNT-BASIS	Column count basis was checked against rendered foundation/column schedule and pad/roof layouts.	Working basis: 38 above-ground column locations using 125x125 C1/C3 schedule, 3.0m height allowance. Site level/roof bearing height may refine.
+S08-UNDERCOST	Undercost check passed after including major required lines.	Included G25 concrete, rebar, formwork, labour, concrete placing, scaffolding bays and jack/U-head support. This avoids beam/column concrete-only undercost.
+S08-OVERPRICE	Overprice check passed with notes.	S05 footings/stumps/ground beams excluded; S07 slab/apron excluded; S09 roof framing/cover excluded. Internal roof beam quantities use separate length basis and are not double counted with RF beams.
+S08-MARKUP	No customer markup included.	All lines are internal working cost only.
+S08-GATE	S08 recheck gate	PASS - create S08 takeoff audit V1, S08 BOQ.xlsm paste-ready V1 and tracker V18. S09 may start only after those files are committed.
+
+CheckID	CheckItem	Result	Action
+S08-RC-001	Relevant drawings rendered/visually inspected	PASS	Use LP-R02 layout, roof beam detail and internal roof beam detail.
+S08-RC-002	Concrete grade	PASS	Use G25 for roof beams and columns.
+S08-RC-003	Column schedule	PASS	Use 125x125 C1/C3 schedule with 4T12 and R6 ties basis.
+S08-RC-004	Roof beam sizes	PASS	Use RF roof beams as 125x300 basis where labelled.
+S08-RC-005	Internal roof beam sizes	PASS	Use internal roof beams as 125x300/125x350 basis where labelled; cost with 125x350 average for IRB to reduce undercost.
+S08-RC-006	Duplicate with S05	PASS	Exclude footings, stump/column starter below-ground and ground beams already costed in S05.
+S08-RC-007	Duplicate with S07	PASS	Exclude ground floor slab/apron/steps/ramp already costed in S07.
+S08-RC-008	Duplicate with S09	PASS	Exclude roof framing, roof covering, battens/trusses and roof accessories.
+S08-RC-009	Temporary support/scaffolding	PASS	Include scaffolding bay and jack/U-head rental allowance.
+S08-RC-010	Workbook output requirement	PASS	Separate BOQ.xlsm paste-ready file required.
