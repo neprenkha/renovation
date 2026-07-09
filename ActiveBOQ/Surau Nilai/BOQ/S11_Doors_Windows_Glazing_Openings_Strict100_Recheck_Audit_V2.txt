@@ -1,0 +1,135 @@
+# S11 Doors Windows Glazing Openings — Strict 100 Recheck Audit V2
+
+Generated MYT: 2026-07-10 07:18
+
+## Purpose
+
+Owner requested repeated careful verification that S11 is truly ready for takeoff at 100% current BOQ cost basis according to customer drawings/specifications and can proceed to S12 only if S11 passes.
+
+Important rule applied:
+
+```text
+100% target = current BOQ cost basis complete for S11.
+99.9% is not a pass.
+Customer selling price / margin is separate and not part of this gate unless owner asks for selling price.
+```
+
+## Header compliance check
+
+Latest owner uploaded header checked:
+
+```text
+GPTRenovationHeader.txt
+Generated MYT: 2026-07-10 07:00
+```
+
+Relevant header rules applied:
+
+```text
+13) Sequential SXX costing gate
+13D) Drawing-spec SXX completion gate
+13E) Authorised allowance / 100% current BOQ cost basis rule
+13F) Aluminium / Glass / Door-Window Spec Schedule Rule
+```
+
+Header rule 13F requires every aluminium/glass/opening item to be scheduled separately by mark, exact size, frame/spec, glass type/thickness, brand/system, quantity, area, inclusion/exclusion and no-cost opening notes.
+
+## Active S11 files checked
+
+```text
+ActiveBOQ/Surau Nilai/BOQ/S11_AluminiumGlass_SpecSizeQuantity_Schedule_V2.txt
+ActiveBOQ/Surau Nilai/BOQ/S11_Doors_Windows_Glazing_Openings_Takeoff_Audit_V3.txt
+ActiveBOQ/Surau Nilai/BOQ/S11_BOQXLSM_PASTE_READY_V2.txt
+ActiveBOQ/Surau Nilai/BOQ/24_SXX_COSTING_TRACKER_V24.md
+```
+
+Older S11 files are superseded and must not be pasted as active S11 output:
+
+```text
+S11_Doors_Windows_Glazing_Openings_Takeoff_Audit_V1.txt
+S11_Doors_Windows_Glazing_Openings_Takeoff_Audit_V2.txt
+S11_BOQXLSM_PASTE_READY_V1.txt
+```
+
+## Customer drawing/spec source checked
+
+```text
+Surau Plan Roof Plan Bldg Tender_Constn.pdf
+Surau Juasseh sections and elevations tender_constn 1.pdf
+01-SURAU JERUSSALAM LP-R02 Layout1.pdf
+```
+
+## S11 door/window/glass/aluminium final schedule check
+
+| Mark | Type | Size | Spec | Brand/system | Qty | Status |
+|---|---|---:|---|---|---:|---|
+| D1 | Solid timber door | 900W x 2400H | Solid timber door to detail, frame/ironmongery/finish allowance included | Not aluminium/glass | 4 nos | INCLUDED IN S11 |
+| D2 | Aluminium sliding door | 2300W x 2400H | Powder coated aluminium frame, 10mm clear tempered glass, manufacturer specification | Brand not stated | 3 nos | INCLUDED IN S11, ACTUAL ALUMINIUM/GLASS PRICE TO BE REPLACED BY OWNER LATER |
+| D3 | Solid timber door | 1000W x 2400H | Solid timber door to detail, frame/ironmongery/finish allowance included | Not aluminium/glass | 3 nos | INCLUDED IN S11 |
+| W1 | Top hung aluminium window | 900W x 1200H | Powder coated aluminium frame, 8mm clear glass | Brand not stated | 2 nos | INCLUDED IN S11, ACTUAL ALUMINIUM/GLASS PRICE TO BE REPLACED BY OWNER LATER |
+| W2 | Adjustable glass louvre | 2280W x 2400H | Tempered glass panels, adjustable glass louvre | Breezeway Altair | 5 nos | INCLUDED IN S11, ACTUAL ALUMINIUM/GLASS PRICE TO BE REPLACED BY OWNER LATER |
+| W3 | Adjustable glass louvre | 750W x 2400H | Tempered glass panels, adjustable glass louvre | Breezeway Altair | 2 nos | INCLUDED IN S11, ACTUAL ALUMINIUM/GLASS PRICE TO BE REPLACED BY OWNER LATER |
+| W4 | High-level opening | 2400W x 1250H | Lighting/ventilation opening only with no windows | Not applicable | 2 nos | NO S11 WINDOW COST |
+| W5 | High-level opening | 1000W x 1250H | Lighting/ventilation opening only with no windows | Not applicable | 3 nos | NO S11 WINDOW COST |
+| W6 | High-level opening | 1700W x 1250H | Lighting/ventilation opening only with no windows | Not applicable | 1 no | NO S11 WINDOW COST |
+| BS1 | Brick screen ventilation opening | 850W x 2400H | Brick screen / ventilation opening by brick screen | Not aluminium/glass | 7 nos | EXCLUDED TO S10 BRICK SCREEN |
+
+## S11 aluminium/glass actual-price-later schedule
+
+These are the only S11 items for owner actual aluminium/glass pricing later:
+
+| Mark | Pricing description | Qty | Total area |
+|---|---|---:|---:|
+| D2 | 2300W x 2400H powder coated aluminium sliding door with 10mm clear tempered glass, brand not stated, manufacturer specification, panel count not stated in drawing | 3 nos | 16.56 m2 |
+| W1 | 900W x 1200H top hung powder coated aluminium window with 8mm clear glass, brand not stated | 2 nos | 2.16 m2 |
+| W2 | 2280W x 2400H Breezeway Altair adjustable glass louvre with tempered glass panels | 5 nos | 27.36 m2 |
+| W3 | 750W x 2400H Breezeway Altair adjustable glass louvre with tempered glass panels | 2 nos | 3.60 m2 |
+
+## S11 cost summary checked
+
+```text
+Block 1 material: RM43,606.80
+Block 2 labour:   RM3,100.00
+Block 3 service:  RM8,064.80
+Base working cost: RM54,771.60
+Optional 10% contingency: RM5,477.16
+Working cost with contingency: RM60,248.76
+Customer selling price: NOT READY - markup/gross margin not applied
+```
+
+## Strict gate checklist
+
+| Check | Result | Note |
+|---|---|---|
+| Drawing/spec source checked | PASS | Floor plan, door/window schedule, elevations/opening context and structural boundary layout were used. |
+| Aluminium/glass schedule by mark | PASS | D2, W1, W2 and W3 separated. |
+| Size by mark | PASS | Each priced aluminium/glass item has W x H. |
+| Quantity by mark | PASS | D2 qty 3, W1 qty 2, W2 qty 5, W3 qty 2. |
+| Brand/system checked | PASS | W2/W3 Breezeway Altair recorded; D2/W1 brand not stated recorded. |
+| Glass thickness/type checked | PASS | D2 10mm clear tempered glass; W1 8mm clear glass; W2/W3 tempered glass panels. |
+| Panel count | PASS WITH NOTE | Drawing does not state D2 panel count; recorded as panel count not stated in drawing and left for owner/supplier actual-price basis. No invented panel count. |
+| No-cost openings separated | PASS | W4/W5/W6 recorded as no S11 window cost. |
+| BS1 duplicate prevention | PASS | BS1 excluded to S10 brick screen. |
+| S10 duplicate prevention | PASS | Masonry/opening formation excluded from S11. |
+| S12 duplicate prevention | PASS | Plaster/paint/tile/final finishes excluded from S11. |
+| Block 1 complete | PASS | Door/window/louvre supply and sundries included. |
+| Block 2 complete | PASS | Main contractor labour/support included. |
+| Block 3 complete | PASS | Door installation, aluminium/glass installation and opening access/protection included. |
+| Markup check | PASS | No customer markup applied. |
+| 100% / 99.9% gate | PASS | No unsupported/random allowance or hanging spec remains for current BOQ cost basis. |
+
+## Decision
+
+```text
+S11 STRICT 100% CURRENT BOQ COST BASIS: PASS
+S11 ACTIVE AUDIT FILE: S11_Doors_Windows_Glazing_Openings_Takeoff_Audit_V3.txt
+S11 ACTIVE PASTE FILE: S11_BOQXLSM_PASTE_READY_V2.txt
+S11 ACTIVE ALUMINIUM/GLASS SCHEDULE: S11_AluminiumGlass_SpecSizeQuantity_Schedule_V2.txt
+S12 START ALLOWED: YES
+```
+
+## Header update decision
+
+No new header update is required in this recheck because the latest uploaded `GPTRenovationHeader.txt` already contains the aluminium/glass spec schedule rule and the 100% / 99.9% gate rule.
+
+If a later SXX contains aluminium/glass and lacks a full spec-size-quantity schedule, that SXX must be held before moving next.
