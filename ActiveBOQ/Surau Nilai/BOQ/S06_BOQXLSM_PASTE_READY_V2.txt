@@ -1,0 +1,33 @@
+Paste to S06!A:C - SPEC
+Spec	Description	Note
+S06-TITLE	Under-slab plumbing, sewerage and drainage rough-in	Corrected V2 working-cost drawing/spec basis after repeated check of rendered sanitary plumbing and sewerage schematic drawings.
+S06-STATUS	WORKING-COST DRAWING/SPEC BASIS - COMPLETE FOR NEXT SXX	Margin/profit/customer selling price is not included and will be calculated later. V2 supersedes V1.
+S06-SOURCE	Use `Surau Sanitary Plumbing Schematic 1.pdf` and `Surau Sewerage Schematic 1.pdf`.	Rendered from owner uploaded Drawing.zip in this chat; repeated check used rendered images plus extracted drawing text/word positions.
+S06-SCOPE	Internal under-slab/first-fix plumbing and sewer rough-in to first external interface.	Excludes S12 final sanitary fixtures, taps, basins, WC, roof tanks, pump and final commissioning. Excludes S21 external manholes/public sewer connection and S22 stormwater drainage.
+S06-QTY	Corrected count basis: WC soil rough-in 5 points; floor trap 10 points; gully trap 6 points; water supply outlet rough-in 25 points.	V1 undercounted floor traps as 8 and water outlet rough-in as 20. V2 corrects this before S07.
+S06-QTY	Corrected pipe length basis: 100mm UPVC sewer 35m; 50mm UPVC waste 70m; 19/25mm ABS water main 70m; 12mm ABS branch 100m.	Schematic is NTS, so lengths are drawing/spec-derived working-cost allowance from fixture counts and building/group runs, not final as-built measurement.
+S06-COSTCHECK	Undercost/overprice/double-count check done after repeated verification.	Undercost reduced by correcting traps/outlets, longer pipe lengths, higher fittings allowance and labour MH. Overprice reduced by excluding final fixtures/tanks/pump and external sewer/manholes. No markup included.
+S06-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S06!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: internal WC soil rough-in and branch to first external interface. CALC NOTE: 35m x 1.10 = 38.5m. External MH chain excluded to S21.	S06-B1-001	UPVC Sewer Pipe 100mm Rough-In Allowance (Current Working Cost Per m)	M	35	0.10	25.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: internal floor trap, gully trap, basin/ablution/wuduk waste branches. CALC NOTE: 70m x 1.10 = 77m. V2 increased from 60m after repeated check found 10 floor traps.	S06-B1-002	UPVC Waste Pipe 50mm Rough-In Allowance (Current Working Cost Per m)	M	70	0.10	12.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: concealed/under-slab water supply main rough-in from meter/pump direction to toilet/wuduk zones. CALC NOTE: 70m x 1.10 = 77m. Final meter/pump/tank/taps excluded to S12.	S06-B1-003	ABS Class 12 Water Supply Main Pipe 19mm-25mm Rough-In Allowance (Current Working Cost Per m)	M	70	0.10	9.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: 12mm branch rough-in to WC, basin, tap/ablution/wuduk/feet-wash supply points. CALC NOTE: 100m x 1.10 = 110m. V2 increased from 80m after repeated check found 25 water outlet rough-in points.	S06-B1-004	ABS Class 12 Water Supply Branch Pipe 12mm Rough-In Allowance (Current Working Cost Per m)	M	100	0.10	4.50
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: floor trap labels `ft` counted from rendered sewerage schematic. V2 corrected from 8 to 10. Final grating/finish adjustment may be later S12/S16.	S06-B1-005	Floor Trap Rough-In Set Allowance (Current Working Cost Per pcs)	PCS	10	0	35.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: gully trap labels `gt` counted from rendered sewerage schematic. External manholes excluded to S21.	S06-B1-006	Gully Trap Rough-In Set Allowance (Current Working Cost Per pcs)	PCS	6	0	85.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: 5 WC soil points: Muslimah 2, Muslimin 2, OKU 1. WC pan/cistern/seat final items excluded to S12.	S06-B1-007	WC Soil Connector and Sleeve Rough-In Allowance (Current Working Cost Per pcs)	PCS	5	0	28.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: 25 rough-in water supply outlet points from 5 WC + 16 taps + 4 basins. Stop cocks handled in fittings lot. Final taps/fixtures excluded to S12.	S06-B1-008	Water Supply Outlet Stub-Up/Sleeve/Elbow Allowance (Current Working Cost Per point)	POINT	25	0	18.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: elbows, tees, reducers, sockets, solvent cement, sleeves, clamps and pipe protection for 10 FT, 6 GT, 5 WC and 25 water outlet rough-ins. Prevents undercost from counting straight pipe only.	S06-B1-009	Plumbing Rough-In Fittings Solvent Sleeves Hangers Consumable Allowance (Current Working Cost Per lot)	LOT	1	0	1100.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: temporary caps/plugs/protection for rough-in before slab/final works. Separate from service test labour.	S06-B1-010	Temporary Caps Test Plugs and Protection Allowance (Current Working Cost Per lot)	LOT	1	0	300.00
+
+Paste to S06!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: plumbing/sewerage rough-in layout, pipe setting, trap placement, outlet point setting and coordination before slab/final works. V2 increased from 96 MH.	S06-B2-001	Labour - Skilled Worker (Per MH)	MH	104	0	22.50
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: trenching support, material handling, pipe bedding/support, protection and backfill assistance. V2 increased from 80 MH.	S06-B2-002	Labour - General Helper (Per MH)	MH	88	0	16.25
+
+Paste to S06!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: S06-specific shallow trench/rough-in support to first external interface. Does not duplicate S03 general earthwork or S21 external sewer excavation.	S06-B3-001	Backhoe Hire - Standard (Per Day)	DAY	1	0	750.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: first-fix rough-in pressure/leak check before slab/final works. Excludes final S12 commissioning and S21 authority/public connection testing.	S06-B3-002	Plumbing Rough-In Pressure/Leak Test Allowance (Current Working Cost Per Lot)	LOT	1	0	350.00
