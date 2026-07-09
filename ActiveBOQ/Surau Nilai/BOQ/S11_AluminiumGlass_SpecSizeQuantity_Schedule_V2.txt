@@ -1,0 +1,71 @@
+# S11 Aluminium / Glass / Opening Full Spec-Size-Quantity Schedule V2
+
+Generated MYT: 2026-07-10 07:02
+
+This file supersedes the too-broad S11 V1 aluminium/glass grouping for pricing review.
+
+Purpose:
+
+```text
+Owner will calculate/replace actual aluminium and glass price later.
+This schedule extracts full drawing/spec/size/quantity/brand basis so the actual price can be entered accurately.
+```
+
+Sources checked:
+
+```text
+Surau Plan Roof Plan Bldg Tender_Constn.pdf
+Surau Juasseh sections and elevations tender_constn 1.pdf
+01-SURAU JERUSSALAM LP-R02 Layout1.pdf
+```
+
+Rule applied:
+
+```text
+Each different aluminium/glass item must be listed separately by mark, size, frame/spec, glass thickness, brand/system where available, quantity and area.
+Do not merge different sizes/specs into one vague line.
+```
+
+## Priced aluminium/glass/opening items
+
+| Mark | Item type | Drawing size mm | Approx size ft | Panel/leaf basis | Frame / finish | Glass spec | Brand / system | Qty | Area per unit m2 | Total area m2 | Pricing status | Notes |
+|---|---|---:|---:|---|---|---|---|---:|---:|---:|---|---|
+| D2 | Sliding door | 2300W x 2400H | 7.55ftW x 7.87ftH | Panel count not stated in drawing - supplier/owner actual price basis | Powder coated aluminium frame | 10mm clear tempered glass | Brand not stated; manufacturer specification stated | 3 nos | 5.52 | 16.56 | ACTUAL ALUMINIUM/GLASS PRICE TO BE REPLACED BY OWNER LATER | Keep as separate D2 item. Do not merge with W1/W2/W3. |
+| W1 | Top hung window | 900W x 1200H | 2.95ftW x 3.94ftH | Top hung sash basis; exact sash split not stated | Powder coated aluminium framed window | 8mm clear glass | Brand not stated | 2 nos | 1.08 | 2.16 | ACTUAL ALUMINIUM/GLASS PRICE TO BE REPLACED BY OWNER LATER | Keep as separate W1 item. |
+| W2 | Adjustable glass louvre | 2280W x 2400H | 7.48ftW x 7.87ftH | Adjustable glass louvre panels | Louvre framing/system to manufacturer detail | Tempered glass panels | Breezeway Altair | 5 nos | 5.472 | 27.36 | ACTUAL ALUMINIUM/GLASS PRICE TO BE REPLACED BY OWNER LATER | Brand/system present: Breezeway Altair. Do not merge with W3 because size differs. |
+| W3 | Adjustable glass louvre | 750W x 2400H | 2.46ftW x 7.87ftH | Adjustable glass louvre panels | Louvre framing/system to manufacturer detail | Tempered glass panels | Breezeway Altair | 2 nos | 1.80 | 3.60 | ACTUAL ALUMINIUM/GLASS PRICE TO BE REPLACED BY OWNER LATER | Brand/system present: Breezeway Altair. Do not merge with W2 because size differs. |
+
+## Non-priced / excluded opening records
+
+| Mark | Drawing size mm | Approx size ft | Qty | Status | Reason |
+|---|---:|---:|---:|---|---|
+| W4 | 2400W x 1250H | 7.87ftW x 4.10ftH | 2 nos | NO S11 WINDOW COST | Schedule states high-level lighting and ventilation opening only with no windows. Opening formation belongs to masonry/wall scope, not aluminium/glass supply. |
+| W5 | 1000W x 1250H | 3.28ftW x 4.10ftH | 3 nos | NO S11 WINDOW COST | Schedule states high-level lighting and ventilation opening only with no windows. |
+| W6 | 1700W x 1250H | 5.58ftW x 4.10ftH | 1 no | NO S11 WINDOW COST | Schedule states high-level lighting and ventilation opening only with no windows. |
+| BS1 | 850W x 2400H | 2.79ftW x 7.87ftH | 7 nos | EXCLUDED TO S10 | Brick screen ventilation opening by way of brick screen; already included under S10 facing brick lighting/ventilation screen. |
+
+## Timber door records retained separately
+
+| Mark | Item type | Drawing size mm | Approx size ft | Qty | Status |
+|---|---|---:|---:|---:|---|
+| D1 | Solid timber door to detail | 900W x 2400H | 2.95ftW x 7.87ftH | 4 nos | Keep in S11, but not aluminium/glass actual-price schedule. |
+| D3 | Solid timber door to detail | 1000W x 2400H | 3.28ftW x 7.87ftH | 3 nos | Keep in S11, but not aluminium/glass actual-price schedule. |
+
+## S11 V2 cost schedule impact
+
+S11 V2 keeps the same interim working-cost total as S11 V1, but the aluminium/glass priced items are split into separate spec/size/quantity lines for actual owner pricing later.
+
+```text
+D2 remains separate from W1/W2/W3.
+W2 and W3 are no longer merged as one louvre row in the owner-facing spec schedule.
+W4/W5/W6 remain no-cost opening-only records.
+BS1 remains excluded to S10.
+```
+
+## Gate
+
+```text
+S11 ALUMINIUM/GLASS SPEC-SIZE-QUANTITY SCHEDULE: COMPLETE
+S11 BOQ.XLSM PASTE FILE: MUST USE V2
+S12 START ALLOWED AFTER TRACKER V24: YES
+```
