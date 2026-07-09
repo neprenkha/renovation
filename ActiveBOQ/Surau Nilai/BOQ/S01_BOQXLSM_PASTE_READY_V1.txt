@@ -1,0 +1,31 @@
+Paste to S01!A:C - SPEC
+Spec	Description	Note
+S01-TITLE	Preliminaries, mobilisation, setting out, hoarding and signboard	Site/project setup before measured permanent works for Surau Nilai / SURAU JURESSALAM.
+S01-OVERVIEW	Mobilisation/demobilisation, setting out, temporary hoarding, project signboard, safety/protection consumables, temporary utilities setup and site coordination.	Working cost basis only. Customer markup/gross margin not included. Hoarding/signboard included because S01 source includes `Hoarding and Signboard 1.pdf`.
+S01-LOT	Governing working lot is Lot 20093.	Owner-corrected lot. If drawing shows Lot 20059 or another lot, record CONFLICT and correct affected SXX before continuing.
+S01-SOURCE	Use `Hoarding and Signboard 1.pdf`, `Surau Site Plan Tender_Constn.pdf`, `Survey Tapak Surau Juassewh Sentosa.pdf`, `1.2 Materials.txt`, `1.3 Labour.txt` and GPTEditable addendum references.	CALC NOTE: drawing/source reconciliation is mandatory if later SXX shows contradiction, length change, duplicate scope, undercost or overprice risk.
+S01-QTY	Temporary hoarding working length is 50m with 5% material wastage.	DEFAULT USED: workbook material block uses Usage Qty 50 and Wastage/Buffer 0.05 so formula produces 52.50m. Labour block uses final rounded 53m with Wastage/Buffer 0.
+S01-QTY	Project signboard is 1 unit 4ft x 8ft.	DEFAULT USED: one signboard material and one installation allowance are included.
+S01-LABOUR	Initial setting out/site setup labour uses 2 skilled workers and 2 helpers for 1 day.	CALC NOTE: 2 skilled x 8h = 16 MH; 2 helpers x 8h = 16 MH.
+S01-MARKUP	All S01 rates are no-markup working cost rates unless line note says otherwise.	Customer selling price must be produced later through separate markup/gross margin calculation.
+S01-CROSSCHECK	If any later SXX, supplier quote or drawing source contradicts S01, create S01 next-version correction before continuing too far.	CALC NOTE: prevents double count, undercost, overprice and wrong markup assumption.
+S01-USER-INPUT	Owner requires every SXX to be muktamad as working-cost basis before moving on, with no NIL/blank required lines and clear markup status.	User also requires BOQ.xlsm paste-ready output using README - BOQ.txt paste ranges, not GitHub audit table format.
+
+Paste to S01!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: 50m x 1.05 = 52.50m workbook quantity; if later drawing confirms different hoarding length/type, revise S01 before continuing affected summary.	S01-B1-001	Temporary Hoarding Material Allowance (Current Working Cost Per m)	M	50	0.05	65.00
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: one 4ft x 8ft project signboard included for S01.	S01-B1-002	Project Signboard 4ft x 8ft (Current Working Cost)	PCS	1	0	280.00
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: basic temporary safety/protection consumables only; do not double count if later SXX includes same temporary protection.	S01-B1-003	Site Safety and Protection Consumable Allowance (Current Working Cost)	LOT	1	0	500.00
+
+Paste to S01!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. CALC NOTE: 2 skilled workers x 8 hours for initial setting out/setup check.	S01-B2-001	Labour - Skilled Worker (Per MH)	MH	16	0	22.50
+NO MARKUP - ROOT COST. CALC NOTE: 2 helpers x 8 hours for initial site setup assistance.	S01-B2-002	Labour - General Helper (Per MH)	MH	16	0	16.25
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: hoarding labour uses rounded 53m working quantity; material wastage already handled in Block 1, so labour buffer is 0.	S01-B2-003	Temporary Hoarding Installation Labour (Current Working Cost Per m)	M	53	0	25.00
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: install one project signboard.	S01-B2-004	Project Signboard Installation Labour (Current Working Cost)	PCS	1	0	150.00
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: one day site setup/admin coordination allowance; not a selling rate.	S01-B2-005	Site Supervision Admin Coordination Allowance (Current Working Cost Per Day)	DAY	1	0	180.00
+
+Paste to S01!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: one lot mobilisation/demobilisation working cost; do not duplicate in later SXX unless specialist mobilisation is separate and clearly stated.	S01-B3-001	Mobilisation and Demobilisation Allowance (Current Working Cost)	LOT	1	0	1500.00
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: temporary construction utility setup only; permanent authority deposits/consultant fees excluded unless owner instructs inclusion.	S01-B3-002	Temporary Water/Electricity Setup Allowance (Current Working Cost)	LOT	1	0	750.00
