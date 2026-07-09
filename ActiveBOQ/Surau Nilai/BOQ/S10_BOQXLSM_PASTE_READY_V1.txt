@@ -1,0 +1,31 @@
+Paste to S10!A:C - SPEC
+Spec	Description	Note
+S10-TITLE	External walls / masonry / brickwork / wall structural infill	Current BOQ 100% cost basis from repeated check of rendered floor plan, sections and elevations.
+S10-STATUS	COMPLETE FOR NEXT SXX - CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS	Margin/profit/customer selling price is not included and will be calculated later.
+S10-SOURCE	Use `Surau Plan Roof Plan Bldg Tender_Constn.pdf`, `Surau Juasseh sections and elevations tender_constn 1.pdf`, and `01-SURAU JERUSSALAM LP-R02 Layout1.pdf`.	Rendered/text-extracted source checked before costing.
+S10-WALL-SPEC	Selected Taiwan kiln bricks supplied in pallets and protected; brickwork neat and cleaned of slurry fairface construction with architect-approved mock-up.	From sections/elevations wall note.
+S10-SEALANT-SPEC	All brickwork and breeze blocks unless plastered to be protected with 3 coats of Sissons matt waterproof silicon sealant inside and outside.	Included in S10 because it is specifically tied to brickwork/breeze-block wall construction.
+S10-AREA	Full allowance basis: facing/fairface brickwork 245m2; common/plastered wall substrate 110m2; facing brick ventilation screen 40m2; cement screen blocks 35m2; sealant 640m2.	Drawing-derived full allowances after openings and wall categories. Not minimum quantity and not unsupported/random allowance.
+S10-COSTCHECK	Undercost/overprice/double-count check done.	Includes walling, screens, sealant, mortar/ties/lintels/sills/sundries, direct labour, specialist labour and wall-access scaffold. S05/S08/S09/S11/S12/S22 scopes excluded. No markup included.
+S10-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S10!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: selected Taiwan kiln/fairface brickwork. Full net allowance after openings, not minimum. CALC NOTE: gross 360m2 - opening/non-brick deductions 115m2 = 245m2.	S10-B1-001	Selected Taiwan Kiln Facing Fairface Brickwork Supply Allowance (Current Working Cost Per m2)	M2	245	0	90.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: internal/plastered wall substrate and CT wall substrate. Final plaster/paint/tile finishes excluded to S12. CALC NOTE: gross 145m2 - opening deductions 35m2 = 110m2.	S10-B1-002	Common Brick Block Walling Supply Allowance for Plastered Areas (Current Working Cost Per m2)	M2	110	0	45.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: facing brick lighting/ventilation screen and BS1-type openings.	S10-B1-003	Facing Brick Lighting and Ventilation Screen Supply Allowance (Current Working Cost Per m2)	M2	40	0	120.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: cement screen blocks near open air courtyard/ramp/screen areas.	S10-B1-004	Cement Screen Blocks Supply Allowance (Current Working Cost Per m2)	M2	35	0	80.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: 3 coats Sissons matt waterproof silicon sealant material inside/outside where required.	S10-B1-005	Sissons Matt Waterproof Silicone Sealant Three-Coat Material Allowance (Current Working Cost Per m2)	M2	640	0	12.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: mortar, wall ties, minor lintel/sill, corner and masonry sundries so walling is not brick/block-only.	S10-B1-006	Masonry Mortar Wall Ties Lintels Sills and Setting Out Sundries Allowance (Current Working Cost Per lot)	LOT	1	0	3500.00
+
+Paste to S10!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: main contractor setout, coordination, checking, wall line QA and interface work. Specialist masonry labour separate under Block 3.	S10-B2-001	Labour - Skilled Worker (Per MH)	MH	120	0	22.50
+NO MARKUP - ROOT COST. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: material handling, mortar support, curing/protection support and cleanup. Specialist masonry labour separate under Block 3.	S10-B2-002	Labour - General Helper (Per MH)	MH	144	0	16.25
+
+Paste to S10!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: facing/fairface brickwork plus common walling substrate installation. CALC NOTE: 245m2 + 110m2 = 355m2.	S10-B3-001	Masonry Brickwork and Fairface Wall Installation Specialist Labour Allowance (Current Working Cost Per m2)	M2	355	0	45.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: facing brick ventilation screens and cement screen blocks. CALC NOTE: 40m2 + 35m2 = 75m2.	S10-B3-002	Cement and Facing Brick Screen Installation Specialist Labour Allowance (Current Working Cost Per m2)	M2	75	0	55.00
+NO MARKUP - ADDENDUM COST BASIS. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: 3-coat Sissons matt waterproof silicone sealant application inside/outside where required.	S10-B3-003	Waterproof Silicone Sealant Three-Coat Application Labour Allowance (Current Working Cost Per m2)	M2	640	0	6.00
+NO MARKUP - ROOT COST. CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS: walling/screen working access for low-rise masonry areas. Separate from S08 RC beam scaffold/jack support; refundable deposit excluded.	S10-B3-004	Scaffolding Bay Set (Used) 1.7m(H) x 0.9m(W) incl 1 Platform (Per Month). Deposit RM195/set refundable.	SET	20	0	45.00
