@@ -1,0 +1,33 @@
+Spec	Description	Note
+S06-RECHECK-TITLE	S06 repeated drawing/spec verification	Second-pass check against rendered `Surau Sanitary Plumbing Schematic 1.pdf` and `Surau Sewerage Schematic 1.pdf` before proceeding to S07.
+S06-RECHECK-STATUS	S06 V1 required correction before S07	V1 was usable as working-cost basis but repeated check found floor trap and water outlet count undercount risk.
+S06-SOURCE-1	Surau Sewerage Schematic 1.pdf	Rendered and text/word-position checked. Visible title: SEWERAGE SCHEMATIC / SJS/BP/005 / AS SHOWN / DEC 2025.
+S06-SOURCE-2	Surau Sanitary Plumbing Schematic 1.pdf	Rendered and text/word-position checked. Visible title: SANITARY PLUMBING SCHEMATIC / SJS/BP/004 / 1:100 / DEC 2025.
+S06-SCOPE-CONFIRM	S06 remains first-fix / under-slab / rough-in plumbing and sewerage only.	Exclude S12 final fixtures/taps/tanks/pump/final commissioning, S21 external sewer manholes/public connection, S22 stormwater drainage, S07 slab/hardcore/DPM/BRC.
+S06-RECHECK-SEWERAGE	Word-position/text extraction and visual crop check: WC=5, floor trap `ft`=10, gully trap `gt`=6, manholes MH1-MH8 visible.	V1 counted WC=5 and GT=6 correctly, but floor traps were counted 8. V2 corrects floor trap rough-in to 10.
+S06-RECHECK-WATER	Word-position/text extraction and visual crop check: Sanitary plumbing schematic shows WC=5, tap=16, basin `b.`=4, stop cock `sc`=19, sink/stopcock reference `sr`=1.	V1 water outlet rough-in count 20 risked undercount. V2 uses 25 outlet rough-in points based on 5 WC + 16 taps + 4 basins, with stop cock/extra small fittings handled under fittings/consumables.
+S06-RECHECK-PIPE-LENGTH	Schematic is NTS, so pipe run lengths cannot be exact scaled lengths from the drawing.	V2 increases drawing/spec working-cost lengths to reduce undercost: 50mm waste 70m, ABS main 70m, ABS branch 100m. 100mm sewer remains 35m because external sewer/manhole chain is excluded to S21.
+S06-RECHECK-UNDERCOST	PASS after V2 correction.	Added 2 floor traps, 5 water outlet rough-in points, longer waste/main/branch pipe, higher fittings allowance, and labour MH increase.
+S06-RECHECK-OVERPRICE	PASS with scope note.	V2 still excludes roof tanks, pump, water meter, final taps, WC pans, basins, final fixture commissioning, external manholes and public sewer connection.
+S06-RECHECK-DOUBLECOUNT	PASS.	S06 rough-in stops before S07 slab and does not include slab/hardcore/DPM/BRC. It also excludes S21 external sewer and S12 sanitary final fit-off.
+S06-RECHECK-MARKUP	PASS.	No customer markup/gross margin included. This is working cost only.
+S06-RECHECK-OUTPUT	Create S06 audit V2, S06 BOQ.xlsm paste-ready V2, and tracker V16.	After V2, S06 is COMPLETE FOR NEXT SXX on working-cost drawing/spec basis and S07 may proceed.
+
+ComparisonID	Item	S06 V1	Repeated check finding	S06 V2 correction	Reason
+S06-CMP-001	WC soil rough-in points	5	5 WC points visible/extracted	Keep 5	V1 correct.
+S06-CMP-002	Floor traps	8	10 `ft` labels visible/extracted	Increase to 10	V1 undercount risk.
+S06-CMP-003	Gully traps	6	6 `gt` labels visible/extracted	Keep 6	V1 correct.
+S06-CMP-004	Water outlet rough-in	20	At least 25 fixture/tap outlets visible: 5 WC + 16 taps + 4 basins	Increase to 25	V1 undercount risk.
+S06-CMP-005	100mm sewer pipe	35m	Sewerage drawing NTS; 100mm internal rough-in only, external MH chain excluded to S21	Keep 35m	Avoid double count with S21 external sewer/manholes.
+S06-CMP-006	50mm waste pipe	60m	10 floor traps + 6 gully traps + basin/ablution/wuduk branches increase pipe demand	Increase to 70m	Avoid undercost from extra trap/waste branches.
+S06-CMP-007	ABS main pipe 19/25mm	60m	Water schematic distribution from meter/pump/tank direction to toilet/wuduk groups; NTS	Increase to 70m	Avoid undercost while keeping final tank/pump/meter excluded.
+S06-CMP-008	ABS branch pipe 12mm	80m	25 fixture/tap outlets plus stop cock locations; NTS	Increase to 100m	Avoid undercost from V1 20 outlet basis.
+S06-CMP-009	Fittings/consumables	RM900 lot	More traps/outlets/branches than V1	Increase to RM1100 lot	Avoid undercost from fittings, sockets, elbows, tees, solvent, sleeves and clamps.
+S06-CMP-010	Labour MH	96 skilled + 80 helper	More trap/outlet branches and more checking/protection required	Increase to 104 skilled + 88 helper	Avoid undercost.
+
+SummaryID	Description	AmountRM	Status	Note
+S06-V2-SUM-001	V1 base working cost	9794.50	SUPERSEDED	V1 had undercount risk in floor trap and water outlet basis.
+S06-V2-SUM-002	V2 base working cost	10794.50	COMPLETE FOR NEXT SXX - WORKING-COST DRAWING/SPEC BASIS	Use S06 V2 for workbook and tracker.
+S06-V2-SUM-003	V2 optional 10% contingency	1079.45	OPTIONAL BUFFER	Separate from wastage, not profit.
+S06-V2-SUM-004	V2 working cost with contingency	11873.95	WORKING COST WITH CONTINGENCY	No customer markup included.
+S06-V2-GATE	S06 recheck gate	0.00	PASS - S07 MAY PROCEED	Proceed to S07 on working-cost drawing/spec path.
