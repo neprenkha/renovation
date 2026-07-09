@@ -1,0 +1,32 @@
+Paste to S07!A:C - SPEC
+Spec	Description	Note
+S07-TITLE	Ground floor slab, apron, steps and ramps	Working-cost drawing/spec basis from repeated check of rendered slab/layout drawings.
+S07-STATUS	WORKING-COST DRAWING/SPEC BASIS - COMPLETE FOR NEXT SXX	Margin/profit/customer selling price is not included and will be calculated later.
+S07-SOURCE	Use `01-SURAU JERUSSALAM LP-R02 Layout1.pdf`, `02-SURAU JERUSSALAM SLAB SECTION 01.pdf`, and `03-SURAU JERUSSALAM SLAB SECTION 02.pdf`.	Rendered from owner uploaded Drawing.zip in this chat and repeatedly checked before costing.
+S07-SLAB-SPEC	Non-suspended ground floor slab: 150mm concrete, BRC A8 bottom, BRC B5 top strip zones, polythene sheet/DPM, 100mm crusher run/hardcore, 50mm lean concrete where shown.	Concrete grade: G25 for slab/apron; G15 for lean concrete. S05 ground beams excluded. S06 pipe rough-ins excluded.
+S07-APRON-SPEC	Typical apron: 100mm concrete apron, wire mesh A6, 150mm hardcore; perimeter drain visible but excluded to drainage SXX.	Apron/steps/ramp allowance is drawing-derived from visible hatching/stair/ramp/entrance areas.
+S07-QTY	Ground floor slab area 264.96m2; apron/steps/ramp area 48.00m2.	Area derived from rendered 2400mm grid/cell check and visible entrance/apron/ramp/stair zones. Site verification may refine.
+S07-COSTCHECK	Undercost/overprice/double-count check done.	Includes G25/G15 concrete, BRC A8/B5/A6, DPM, crusher run/hardcore, edge/steps formwork, slab sundries, labour, concrete placing and equipment allowance. No markup included.
+S07-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S07!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: 150mm NSS slab plus 100mm apron/steps/ramp concrete and minor edge/thickening allowance. CALC NOTE: 46.00m3 x 1.05 = 48.30m3. Excludes S05 ground beams.	S07-B1-001	Ready Mix Concrete G25 (Per m3)	M3	46.00	0.05	365.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: 50mm lean concrete below non-suspended slab where detail shows. CALC NOTE: 13.25m3 x 1.05 = 13.913m3. Footing lean concrete already in S05.	S07-B1-002	Ready Mix Concrete G15 Lean Concrete (Current Working Cost Per m3)	M3	13.25	0.05	340.00
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: 100mm under NSS slab and 150mm under apron/steps/ramp. CALC NOTE: 33.696m3 before compaction/wastage, rounded upward to 5 trips to avoid undercost.	S07-B1-003	Crusher Run (10-Wheel Truck)	TRIP	5	0	830.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: slab sections show BRC A8 bottom mesh. CALC NOTE: 264.96m2 x 1.10 = 291.456m2.	S07-B1-004	BRC A8 Wire Mesh Supply Allowance (Current Working Cost Per m2)	M2	264.96	0.10	12.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: slab cut sections show BRC B5 top strips 600mm/750mm near beam/edge locations. CALC NOTE: 180m2 x 1.05 = 189m2. Strip basis avoids full double-mesh overprice.	S07-B1-005	BRC B5 Wire Mesh Top Strip Supply Allowance (Current Working Cost Per m2)	M2	180	0.05	8.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: typical apron detail specifies wire mesh A6. CALC NOTE: 48m2 x 1.10 = 52.8m2. Perimeter drain excluded to S22.	S07-B1-006	BRC A6 Wire Mesh Apron Supply Allowance (Current Working Cost Per m2)	M2	48	0.10	9.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: typical NSS detail specifies 1 layer polythene sheet. CALC NOTE: 264.96m2 x 1.10 = 291.456m2.	S07-B1-007	Polythene Sheet Damp Proof Membrane Allowance (Current Working Cost Per m2)	M2	264.96	0.10	2.50
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: slab/apron/steps/ramp edge formwork and minor vertical faces. CALC NOTE: 45m2 x 1.10 = 49.5m2. Ground beam formwork excluded to S05.	S07-B1-008	Formwork Plywood Timber and Release Oil Material Allowance (Current Working Cost Per m2)	M2	45	0.10	35.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: screed guides, curing, spacers/chairs, control joint/saw-cut small consumables for slab/apron pour.	S07-B1-009	Ground Slab Pour Screed Joint and Curing Consumable Allowance (Current Working Cost Per lot)	LOT	1	0	650.00
+
+Paste to S07!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: setout, formwork, DPM, mesh fixing, concrete supervision, screeding, finishing and curing.	S07-B2-001	Labour - Skilled Worker (Per MH)	MH	180	0	22.50
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: base preparation, material handling, mesh/chair/DPM support, concrete placement and curing assistance.	S07-B2-002	Labour - General Helper (Per MH)	MH	160	0	16.25
+
+Paste to S07!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: concrete placing access for slab/apron/steps/ramp pours. Supplier quote can replace later.	S07-B3-001	Concrete Pump / Placing Access Allowance (Current Working Cost Per Lot)	LOT	1	0	1200.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: compaction equipment, concrete vibrator, screeding/finishing small equipment and tool wear. Direct labour separate.	S07-B3-002	Plate Compactor Concrete Vibrator and Slab Finishing Equipment Allowance (Current Working Cost Per Lot)	LOT	1	0	850.00
