@@ -8,6 +8,24 @@ This header is a standalone handover and governance file for ACTIVEBOQ / Mix BOQ
 
 When the owner pastes this header into another AI session or gives it with the latest catalog PDF, that reader must understand the versioning rule, source order, customer-facing catalog intent, quotation method and safety boundaries.
 
+## Canonical editable header location
+
+The repository-level GPT governance/header may be edited only through the canonical editable copy under:
+
+```text
+GPTEditable/GPT Header Renovation.md
+```
+
+The root file:
+
+```text
+GPT Header Renovation.md
+```
+
+remains a visible repository header/reference. If both files exist, the editable folder copy and root header must be kept aligned in the same session whenever owner changes a permanent general rule.
+
+`GPTEditable/` is for GPT-editable governance files only. It is not a project/customer work folder.
+
 ## Browser reply timestamp rule
 
 Every browser/chat reply for this renovation project must show Malaysia date/time near the top:
@@ -22,15 +40,86 @@ This header belongs only to `neprenkha/renovation`.
 
 Before every reply, prompt, audit or GitHub edit, confirm the work belongs to `neprenkha/renovation`. If the request, permission screen, repository, file names or task point to `neprenkha/BOQ`, LBHub, Enginuity, ONEBOT, ACCOUNT or another project, stop first and warn the owner. Do not silently mix headers, files, rules, branches or project authority.
 
-## ActiveBOQ active work folder
+## ActiveBOQ parent-folder and active workspace rule
 
-The current active customer-pricing work is under `ActiveBOQ/`.
+`ActiveBOQ/` is a parent folder for many separate customers, sites and BOQ jobs. It is not itself one customer/site workspace.
 
-`ActiveBOQ/` is for the current extension/renovation customer job where customer supplied floor plan and owner needs price calculation plus customer-facing quotation.
+When the owner names a workspace such as:
 
-The root repo remains the reference source for catalog, material, labour, BOQ and quotation rules. ActiveBOQ must use root reference files but must not overwrite root catalog versions or reference files.
+```text
+ActiveBOQ/Surau Nilai/
+ActiveBOQ/+60 13-731 9262 - fahrurrazy fr/
+```
+
+GPT must treat that exact folder as the hard write boundary.
+
+Do not write generated project files directly under:
+
+```text
+ActiveBOQ/
+```
+
+Do not write into another customer/site folder.
+
+The root repo remains the reference source for catalog, material, labour, BOQ and quotation rules. ActiveBOQ job folders may use root reference files but must not overwrite root catalog versions or reference files.
 
 Before quotation work, check job label, floor plan, work area, house/storey type, measurements/scale, finish tier, add-ons, site risks and output format.
+
+Earlier wording that treated `ActiveBOQ/` as the current customer-pricing job is superseded: the active job is now the specific child folder named by owner.
+
+## Standard ActiveBOQ job folder layout
+
+For each customer/site folder, use this structure where applicable:
+
+```text
+GPT_CONTROL/
+Takeoff_Work/
+BOQ/
+BOQ_work/
+Drawing/
+OriginalFile/
+```
+
+Folder roles:
+
+| Folder | Purpose | GPT write rule |
+|---|---|---|
+| `GPT_CONTROL/` | Local notes, file maps, job-specific reminders if needed | Can write, but general rules must update this header |
+| `Takeoff_Work/` | Measurement notes, takeoff detail, correction logs, assumptions | Can write |
+| `BOQ/` | Customer estimate, quotation draft, BOQ, supplier files and final outputs | Can write |
+| `BOQ_work/` | Intermediate work files | Can write, but do not auto-delete |
+| `Drawing/` | Uploaded PDFs/drawings | Read-only |
+| `OriginalFile/` | Owner original/source files | Read-only |
+
+Job-specific README/header files are allowed only as local notes. They must not replace this repository-level header. Any permanent/general rule learned from any job must be copied back into `GPT Header Renovation.md` / `GPTEditable/GPT Header Renovation.md` in the same session.
+
+## Read-only and editable file authority
+
+Default read-only unless owner explicitly says otherwise:
+
+- all `Drawing/` folders;
+- all `OriginalFile/` folders;
+- old version files such as V1, V2, V3 etc.;
+- root reference files such as Materials, Labour, README-BOQ, quotation README, price references, PDF/DOCX catalog renders, old catalog versions and owner source files.
+
+Default editable/work-output folders are only the GPT-created work folders inside the active workspace, such as `Takeoff_Work/`, `BOQ/`, `BOQ_work/`, and `GPT_CONTROL/`.
+
+If owner explicitly says a file or folder is read-only, GPT must not edit, rename, move, overwrite or delete it.
+
+## Version-chain rule for working outputs
+
+For working outputs, V1, V2, V3 and later are immutable references once created unless owner explicitly asks direct edit on that exact file.
+
+When an update is needed:
+
+- do not edit V1 directly;
+- create V2;
+- V2 must include the useful/current content from V1 plus the new changes;
+- if V2 is later insufficient, create V3;
+- V3 must include the useful/current content from V1 and V2 plus the new changes;
+- continue the same cumulative pattern for later versions.
+
+Do not create a new version that only contains the latest delta and loses earlier working context. Each new version must be usable as the current complete reference for that file family.
 
 ## Floorplan estimate and AI responsibility rule
 
@@ -52,7 +141,13 @@ Do not present estimates as final measured quantities. Final quotation remains s
 
 ## Current ActiveBOQ drawing corrections
 
-For the current original ActiveBOQ customer job, owner corrected these drawing dimensions:
+For the original ActiveBOQ customer job now organized under:
+
+```text
+ActiveBOQ/+60 13-731 9262 - fahrurrazy fr/
+```
+
+owner corrected these drawing dimensions:
 
 - house type is rumah berkembar / semi-detached, not a small terrace assumption;
 - kitchen L-shape: 3062mm + 5485mm full-height / full usable kitchen run;
@@ -85,7 +180,7 @@ Manual BOQ fallback is required for custom interior/renovation scopes such as ki
 
 Workflow:
 
-1. Read customer request and floor plan/drawing in `ActiveBOQ/`.
+1. Read customer request and floor plan/drawing in the active job folder, not directly in `ActiveBOQ/` root.
 2. Split job into S01, S02, S03 scopes by actual construction sequence.
 3. Produce SPEC A:C first according to `README - BOQ.txt`.
 4. Use exact descriptions from `1.2 Materials.txt` and `1.3 Labour.txt` where available.
@@ -192,19 +287,23 @@ When preparing a customer quotation from internal cost, create a separate upgrad
 
 If a rate is already a selling/package rate, mark it as `SELLING RATE USED`. If it is only cost/provisional, mark it as `WORKING COST` or `PROVISIONAL COST`.
 
-## Immutable source and upgrade-file rule
+## Immutable source and cumulative upgrade-file rule
 
 Do not edit original customer files, old catalog versions, PDFs, DOCX, Materials, Labour, README or Deep Research unless owner explicitly asks to revise that exact file.
 
 Customer originals such as `Customer Request.txt`, floor plans, drawings, photos and uploaded PDFs are source evidence and must remain unchanged.
 
-Every correction, audit, BOQ, SPEC, measurement extraction or quotation draft must be saved as a new upgrade file in `ActiveBOQ/` with a clear version suffix, for example:
+Every correction, audit, BOQ, SPEC, measurement extraction or quotation draft must be saved as a new upgrade file inside the active customer/site workspace, not directly under `ActiveBOQ/` root.
+
+Use a clear version suffix, for example:
 
 - `Customer_Request_Audit_V1.md`
 - `Customer_Request_SPEC_V1.tsv`
 - `ActiveBOQ_Takeoff_V1.tsv`
 - `Customer_Quotation_Draft_V1.md`
 - later corrections as V2, V3 and so on.
+
+If V1 exists and needs updating, create V2 with V1 useful/current content included. If V2 needs updating, create V3 with V1 and V2 useful/current content included. Do not create a V2/V3 that contains only the new small correction and loses the earlier work trail.
 
 If V5 catalog needs correction, create V6. Do not edit V5 directly unless owner explicitly instructs direct V5 correction.
 
@@ -239,7 +338,7 @@ Actual current repository overrides memory.
 
 1. Latest explicit owner instruction.
 2. This header for workflow rules.
-3. ActiveBOQ current job files.
+3. ActiveBOQ current job folder files.
 4. Latest versioned catalog where applicable.
 5. `README - BOQ.txt` for manual takeoff.
 6. `1.2 Materials.txt`.
@@ -276,13 +375,15 @@ Do not change catalog prices, size bands, thresholds or add-on guide prices unle
 
 When owner creates a permanent workflow rule, corrects a recurring mistake, changes source authority, or explicitly asks for header update, update this header in the same work session. A chat apology or acknowledgement alone is not enough.
 
+If the new rule is general across jobs, update this repository-level header instead of only creating a customer/site local README.
+
 ## Work continuation rule
 
 When owner asks to update GitHub or create catalog/ActiveBOQ/BOQ/audit/quotation work, do not stop at explanation if the safe next action is known. Proceed with the smallest complete safe task; if blocked, state exact block and exact owner action required.
 
 ## ActiveBOQ quotation test rule
 
-For customer quotation work under `ActiveBOQ/`, use: customer location/job label, house type/storey type, floor plan evidence, work area and measured/assumed size, finish tier, add-ons, site risks, catalog/manual BOQ reference, inclusions, exclusions, assumptions and remaining questions. Do not promise brand/model unless written in quotation.
+For customer quotation work under an `ActiveBOQ/<customer-or-site>/` folder, use: customer location/job label, house type/storey type, floor plan evidence, work area and measured/assumed size, finish tier, add-ons, site risks, catalog/manual BOQ reference, inclusions, exclusions, assumptions and remaining questions. Do not promise brand/model unless written in quotation.
 
 ## Known mistakes to avoid
 
@@ -305,5 +406,8 @@ For customer quotation work under `ActiveBOQ/`, use: customer location/job label
 - Do not present a cost estimate as customer selling price without explicit markup/margin calculation.
 - Do not work in hidden branch when owner expects `main`, unless branch workflow is explicitly agreed.
 - Do not request or use permission for `neprenkha/BOQ` when current work is `neprenkha/renovation`.
-- Do not treat root catalog as active customer job; active customer job is under `ActiveBOQ/`.
+- Do not treat root catalog as active customer job; active customer job is the specific child folder under `ActiveBOQ/` named by owner.
 - Do not force custom renovation items into catalog package pricing when manual BOQ is more suitable.
+- Do not scatter generated files directly under `ActiveBOQ/` root.
+- Do not edit read-only `Drawing/` or `OriginalFile/` folders.
+- Do not make per-customer README/header the only place for a general rule; copy general rules back into this header.
