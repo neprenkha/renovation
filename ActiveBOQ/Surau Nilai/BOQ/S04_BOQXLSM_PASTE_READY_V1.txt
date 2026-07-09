@@ -1,0 +1,30 @@
+Paste to S04!A:C - SPEC
+Spec	Description	Note
+S04-TITLE	Crossing bridge and permanent site entrance	Permanent access/crossing bridge and site entrance works after general earthwork and before building substructure/road/drainage works.
+S04-OVERVIEW	RC crossing/access slab, reinforcement, formwork material, crusher run approach allowance, associated skilled/helper labour and backhoe support for bridge/entrance works.	MUKTAMAD WORKING-COST BASIS. Customer markup/gross margin not included.
+S04-SOURCE	Use `CROSSING BRIDGE.pdf`, `Surau Site Plan Tender_Constn.pdf`, `Survey Tapak Surau Juassewh Sentosa.pdf`, `1.2 Materials.txt`, `1.3 Labour.txt` and GPTEditable addendum references.	CALC NOTE: CROSSING BRIDGE.pdf is the main S04 source and exists in GitHub. Later contradiction correction rule remains active.
+S04-CROSSCHECK	S04 excludes preliminaries/hoarding/ESCP, general platform earthwork, building substructure, slab/apron, permanent drainage and road/premix works.	CALC NOTE: do not duplicate S01, S02, S03, S05, S07, S22 or S24 scope.
+S04-QTY	Ready Mix Concrete G25 is locked at 3.20 m3 with 5% wastage.	OWNER-DIRECTED CURRENT FINAL BASIS: workbook material block uses Usage Qty 3.20 and Wastage/Buffer 0.05 so formula produces 3.36m3 concrete quantity.
+S04-QTY	Reinforcement steel is locked at 320kg with 5% wastage.	OWNER-DIRECTED CURRENT FINAL BASIS: root material has no exact rebar line, so addendum working-cost basis is used.
+S04-QTY	Formwork material is locked at 22m2 with 10% wastage.	OWNER-DIRECTED CURRENT FINAL BASIS: root material has no exact formwork material line, so addendum working-cost basis is used.
+S04-QTY	Crusher run approach allowance is locked at 1 trip.	OWNER-DIRECTED CURRENT FINAL BASIS: full 10-wheel trip basis; road base/premix S24 is excluded.
+S04-QTY	Skilled worker is locked at 48 MH and general helper is locked at 32 MH.	OWNER-DIRECTED CURRENT FINAL BASIS: setting, formwork/rebar handling/placing assistance and concrete placement/finishing assistance. Labour buffer is 0.
+S04-QTY	Backhoe hire is locked at 1 day.	OWNER-DIRECTED CURRENT FINAL BASIS: S04-specific bridge/entrance excavation/backfill/support; not a duplicate of S03 general earthwork.
+S04-MARKUP	All S04 rates are no-markup working cost rates unless line note says otherwise.	Customer selling price must be produced later through separate markup/gross margin calculation.
+S04-USER-INPUT	Owner requires every SXX to be completed once as far as possible, with repeated preflight checks before output so work is not repeated like S02.	S04 output is BOQ.xlsm paste-ready using README - BOQ.txt paste ranges. Later contradictions require correction version, not delay now.
+
+Paste to S04!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ROOT COST. CALC NOTE: 3.20m3 x 1.05 = 3.36m3 workbook quantity. Building substructure concrete is excluded from S04.	S04-B1-001	Ready Mix Concrete G25 (Per m3)	M3	3.20	0.05	365.00
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: 320kg x 1.05 = 336kg workbook quantity. If later bar schedule/source contradicts, revise affected SXX as new version before affected summary proceeds.	S04-B1-002	Reinforcement Steel Bar Supply Allowance (Current Working Cost Per kg)	KG	320	0.05	3.80
+NO MARKUP - ADDENDUM COST BASIS. CALC NOTE: 22m2 x 1.10 = 24.20m2 workbook quantity. Labour is separate in Block 2.	S04-B1-003	Formwork Plywood Timber and Release Oil Material Allowance (Current Working Cost Per m2)	M2	22	0.10	35.00
+NO MARKUP - ROOT COST. CALC NOTE: full 10-wheel trip basis; S24 road base/premix is excluded.	S04-B1-004	Crusher Run (10-Wheel Truck)	TRIP	1	0	850.00
+
+Paste to S04!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. CALC NOTE: setout/levels, formwork, rebar handling, concrete placement and finishing assistance.	S04-B2-001	Labour - Skilled Worker (Per MH)	MH	48	0	22.50
+NO MARKUP - ROOT COST. CALC NOTE: manual handling, material movement, formwork/rebar/concrete assistance.	S04-B2-002	Labour - General Helper (Per MH)	MH	32	0	16.25
+
+Paste to S04!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. CALC NOTE: bridge/entrance excavation, backfill support and material handling. This is S04-specific and does not duplicate S03 general earthwork.	S04-B3-001	Backhoe Hire - Standard (Per Day)	DAY	1	0	750.00
