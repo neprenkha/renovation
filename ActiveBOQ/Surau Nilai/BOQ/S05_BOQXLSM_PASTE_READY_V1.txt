@@ -1,0 +1,28 @@
+Paste to S05!A:C - SPEC
+Spec	Description	Note
+S05-TITLE	Building substructure: footing, stump and ground beam	Working-cost drawing/spec basis from rendered customer structural drawings.
+S05-STATUS	WORKING-COST DRAWING/SPEC BASIS - COMPLETE FOR NEXT SXX	Margin/profit/customer selling price is not included and will be calculated later.
+S05-SOURCE	Use `01-SURAU JERUSSALAM LP-R02 Layout1.pdf`, `04-SURAU JERUSSALAM GROUND BEAM DETAIL 01.pdf`, and `05-SURAU JERUSSALAM GROUND BEAM DETAIL 02.pdf`.	Rendered from owner uploaded Drawing.zip in this chat.
+S05-SPEC	General notes specify PAD FOOTING G25, COLUMN G25, BEAMS G25, SLABS G25 and LEAN CONCRETE G15.	S05 uses G25 for pad footing, stump/column starter and ground beam; G15 for lean concrete only.
+S05-QTY	Pad footing layout visually counted from rendered plan: P1=3, P2=16, P3=7, P4=12, P5=0.	Total pad footing count = 38. Pad footing schedule sizes: P1 550x550x250; P2 700x700x250; P3 850x850x250; P4 1050x1050x250; P5 1200x1200x250.
+S05-QTY	Ground beam path measured from rendered grid and GB detail sheets as drawing-derived working-cost basis.	Grid bays are 2400mm typical. Compiled GB length basis = 151.20m with average 150x400 concrete section because rendered GB detail sheets show 150mm width and 300/400/500/600 depth variants.
+S05-QTY	Rebar is drawing-derived working-cost basis from foundation schedule and ground beam detail sheets.	Pad footing table gives T12 bars by footing size; column/stump schedule gives 4T12 and R6 ties; GB sheets show GB reinforcement and links. Final BBS/supplier quote may refine.
+S05-CROSSCHECK	S05 excludes S03 earthwork/platform fill, S04 crossing bridge, S07 slab/apron/ramp/hardcore/DPM/BRC, S08 columns/roof beams, and S22/S24 drainage/road works.	Undercost/overprice/double-count check done. No markup included.
+S05-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S05!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: pad footings, stump/column starter and ground beams. CALC NOTE: 16.85m3 x 1.05 = 17.693m3. Excludes S07 slab/hardcore/DPM/BRC.	S05-B1-001	Ready Mix Concrete G25 (Per m3)	M3	16.85	0.05	365.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: 50mm lean concrete below pad footing bases. CALC NOTE: 1.35m3 x 1.05 = 1.418m3.	S05-B1-002	Ready Mix Concrete G15 Lean Concrete (Current Working Cost Per m3)	M3	1.35	0.05	340.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: pad footing schedule, stump/column starter schedule and GB detail sheets. CALC NOTE: 1600kg x 1.05 = 1680kg. Supplier/BBS verification item, not random allowance.	S05-B1-003	Reinforcement Steel Bar Supply Allowance (Current Working Cost Per kg)	KG	1600	0.05	3.80
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: pad footing sides, stump/column starter sides and ground beam sides. CALC NOTE: 170m2 x 1.10 = 187m2. If trench-cast no-formwork method is confirmed, reduce by correction version.	S05-B1-004	Formwork Plywood Timber and Release Oil Material Allowance (Current Working Cost Per m2)	M2	170	0.10	35.00
+
+Paste to S05!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: setout/level checks, footing/GB formwork, rebar fixing supervision, concrete placement and QA.	S05-B2-001	Labour - Skilled Worker (Per MH)	MH	240	0	22.50
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: manual excavation support, material movement, rebar/formwork/concrete assistance and curing.	S05-B2-002	Labour - General Helper (Per MH)	MH	192	0	16.25
+
+Paste to S05!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST. DRAWING/SPEC BASIS: S05-specific footing pits, ground beam trench excavation/trimming/backfill support. Does not duplicate S03 platform earthwork.	S05-B3-001	Backhoe Hire - Standard (Per Day)	DAY	2	0	750.00
+NO MARKUP - ADDENDUM COST BASIS. DRAWING/SPEC BASIS: concrete placing access for footing/GB pours. Supplier quote can replace later.	S05-B3-002	Concrete Pump / Placing Access Allowance (Current Working Cost Per Lot)	LOT	1	0	1200.00
