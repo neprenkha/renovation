@@ -1,0 +1,130 @@
+# S17 Overall Reconciliation / Final BOQ Review — HOLD V1
+
+Generated MYT: 2026-07-10 09:05
+
+## Purpose
+
+Owner requested S17 to be repeatedly checked so that it can be taken off at 100% according to customer drawing/spec and proceed to S18 only if it passes.
+
+S17 is not a new trade package. S17 is the overall reconciliation / final BOQ review gate for S01-S16.
+
+Strict gate applied:
+
+```text
+100% target = final overall current BOQ cost basis reconciled from all prior SXX.
+99.9% is not a pass.
+Customer selling price / margin is separate and must not be implied if markup is not calculated.
+```
+
+## Header compliance
+
+Latest uploaded owner header checked:
+
+```text
+GPTRenovationHeader.txt
+Generated MYT: 2026-07-10 07:00
+```
+
+Relevant header rules applied:
+
+```text
+13 Sequential SXX costing gate
+13B Drawing/spec and auditable takeoff rule
+13C BOQ.xlsm paste-ready output rule
+13D Drawing-spec SXX completion gate
+13E Authorised allowance / 100% current BOQ cost basis rule
+15 Price / cost rule
+```
+
+## S17 review source
+
+```text
+ActiveBOQ/Surau Nilai/BOQ/32_SXX_COSTING_TRACKER_V32.md
+All active SXX files listed inside tracker V32 from S01-S16
+Latest owner instruction that S13 is marked and can move on only as working-cost estimate when M&E drawing updates later
+```
+
+## S17 reconciliation result
+
+S17 cannot be marked 100% final drawing/spec BOQ review because the active tracker still records these blockers:
+
+```text
+S01 DRAWING/SPEC RESCAN: STILL REQUIRED BEFORE FINAL OVERALL CUSTOMER BOQ
+S02 DRAWING/SPEC RESCAN: STILL REQUIRED BEFORE FINAL OVERALL CUSTOMER BOQ
+S03 DRAWING/SPEC RESCAN: STILL REQUIRED BEFORE FINAL OVERALL CUSTOMER BOQ
+S13 DRAWING-SPEC EXACT ELECTRICAL DESIGN: HOLD UNTIL DEDICATED ELECTRICAL DRAWING / OWNER CONFIRMED ELECTRICAL SCHEDULE
+S04-S16 CUSTOMER SELLING PRICE: NOT READY - MARKUP/GROSS MARGIN NOT APPLIED
+```
+
+Because of those items, S17 cannot honestly open S18 as a fully reconciled final drawing/spec/customer BOQ.
+
+## Cost reconciliation from active SXX S01-S16
+
+These are current working-cost totals only. They are not customer selling price.
+
+| SXX | Active status basis | Base working cost RM | Working cost with 10% contingency RM | Final BOQ status |
+|---|---|---:|---:|---|
+| S01 | Working-cost only; drawing/spec rescan required | 8,750.00 | 9,625.00 | HOLD before final overall BOQ |
+| S02 | Working-cost only; drawing/spec rescan required | 1,944.00 | 2,138.40 | HOLD before final overall BOQ |
+| S03 | Working-cost only; drawing/spec rescan required | 2,090.00 | 2,299.00 | HOLD before final overall BOQ |
+| S04 | Working-cost drawing/spec basis complete | 36,004.11 | 39,604.52 | Cost basis usable, selling price not ready |
+| S05 | Working-cost drawing/spec basis complete | 31,089.07 | 34,197.98 | Cost basis usable, selling price not ready |
+| S06 | Working-cost drawing/spec basis complete after recheck | 10,794.50 | 11,873.95 | Cost basis usable, selling price not ready |
+| S07 | Working-cost drawing/spec basis complete after recheck | 43,805.56 | 48,186.12 | Cost basis usable, selling price not ready |
+| S08 | Customer/README accepted full allowance basis | 26,180.76 | 28,798.84 | Cost basis usable, selling price not ready |
+| S09 | Customer/README accepted full allowance basis | 85,790.00 | 94,369.00 | Cost basis usable, selling price not ready |
+| S10 | Customer/README accepted full allowance basis | 75,660.00 | 83,226.00 | Cost basis usable, selling price not ready |
+| S11 | Strict 100% current BOQ cost basis pass | 54,771.60 | 60,248.76 | Cost basis usable, selling price not ready |
+| S12 | Strict 100% current BOQ cost basis pass | 69,910.40 | 76,901.44 | Cost basis usable, selling price not ready |
+| S13 | Owner accepted premium-sensible size-based provisional electrical estimate | 75,670.00 | 83,237.00 | Working-cost estimate only; exact M&E drawing/spec hold |
+| S14 | Strict 100% current BOQ cost basis pass | 117,155.00 | 128,870.50 | Cost basis usable, selling price not ready |
+| S15 | Strict 100% current BOQ cost basis pass | 58,575.50 | 64,433.05 | Cost basis usable, selling price not ready |
+| S16 | Strict 100% current BOQ cost basis pass | 33,400.00 | 36,740.00 | Cost basis usable, selling price not ready |
+| TOTAL S01-S16 | Working-cost reconciliation only | 731,590.50 | 804,749.56 | NOT FINAL CUSTOMER BOQ |
+
+## S17 strict checklist
+
+| Check | Result | Note |
+|---|---|---|
+| S01-S16 active tracker checked | PASS | Tracker V32 reviewed. |
+| S01 final drawing/spec status | HOLD | Drawing/spec rescan still required before final overall BOQ. |
+| S02 final drawing/spec status | HOLD | Drawing/spec rescan still required before final overall BOQ. |
+| S03 final drawing/spec status | HOLD | Drawing/spec rescan still required before final overall BOQ. |
+| S04-S12 active cost basis | PASS FOR COST BASIS | Customer selling price not ready. |
+| S13 electrical/M&E | HOLD FOR EXACT DRAWING-SPEC | Owner accepted premium-sensible estimate only; exact design pending M&E update. |
+| S14-S16 active cost basis | PASS FOR COST BASIS | Customer selling price not ready. |
+| Customer selling price / markup | HOLD | Markup/gross margin not applied to S04-S16. |
+| Overall current working-cost total | PASS | S01-S16 base working cost reconciled at RM731,590.50. |
+| Overall with optional 10% contingency | PASS | S01-S16 working cost with contingency reconciled at RM804,749.56. |
+| Final drawing/spec/customer BOQ 100% | HOLD | Not all prior blockers cleared. |
+| S18 start gate | HOLD | S17 is not 100%. 99.9% is not a pass. |
+
+## Decision
+
+```text
+S17 OVERALL RECONCILIATION: HOLD
+S17 WORKING-COST RECONCILIATION: COMPLETE FOR REVIEW ONLY
+S17 FINAL DRAWING-SPEC / CUSTOMER BOQ: NOT COMPLETE
+S18 START ALLOWED: NO
+```
+
+## Exact blockers before S18
+
+S18 can start only after one of these paths is explicitly cleared:
+
+```text
+Path A - Final drawing/spec/customer BOQ path:
+1. Recheck/rescan S01 against hoarding/signboard/site/prelim drawing/source.
+2. Recheck/rescan S02 against ESCP drawing/source.
+3. Recheck/rescan S03 against earthwork/site/survey drawing/source.
+4. Replace or formally close S13 with final electrical/M&E drawing/spec or owner-confirmed final M&E allowance schedule.
+5. Apply requested markup/gross margin if owner wants customer selling price.
+6. Re-run S17 reconciliation V2.
+
+Path B - Working-cost planning-only path:
+Owner explicitly accepts that S17 is a working-cost planning reconciliation only and that S18 may continue for remaining reserved/non-final planning items.
+```
+
+## Header update decision
+
+No new header update is required because the current header already prevented the unsafe move: the correct result is HOLD when final drawing/spec 100% is not achieved.
