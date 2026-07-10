@@ -1,0 +1,52 @@
+S17 OVERALL RECONCILIATION / FINAL BOQ REVIEW - HOLD SUMMARY
+
+Generated MYT: 2026-07-10 09:05
+
+This file is not a normal trade paste file for *BOQ.xlsm.
+It is a summary/HOLD file only.
+Do not paste this as S17 trade block data unless the workbook has a dedicated summary area.
+
+STATUS
+S17 OVERALL RECONCILIATION: HOLD
+S17 WORKING-COST RECONCILIATION: COMPLETE FOR REVIEW ONLY
+S17 FINAL DRAWING-SPEC / CUSTOMER BOQ: NOT COMPLETE
+S18 START ALLOWED: NO
+
+REASON
+S01 DRAWING/SPEC RESCAN: STILL REQUIRED BEFORE FINAL OVERALL CUSTOMER BOQ
+S02 DRAWING/SPEC RESCAN: STILL REQUIRED BEFORE FINAL OVERALL CUSTOMER BOQ
+S03 DRAWING/SPEC RESCAN: STILL REQUIRED BEFORE FINAL OVERALL CUSTOMER BOQ
+S13 DRAWING-SPEC EXACT ELECTRICAL DESIGN: HOLD UNTIL DEDICATED ELECTRICAL DRAWING / OWNER CONFIRMED ELECTRICAL SCHEDULE
+S04-S16 CUSTOMER SELLING PRICE: NOT READY - MARKUP/GROSS MARGIN NOT APPLIED
+
+WORKING-COST RECONCILIATION ONLY
+SXX	Base Working Cost RM	Working Cost With 10% Contingency RM	Status
+S01	8750.00	9625.00	Working-cost only; drawing/spec rescan required
+S02	1944.00	2138.40	Working-cost only; drawing/spec rescan required
+S03	2090.00	2299.00	Working-cost only; drawing/spec rescan required
+S04	36004.11	39604.52	Working-cost drawing/spec basis complete
+S05	31089.07	34197.98	Working-cost drawing/spec basis complete
+S06	10794.50	11873.95	Working-cost drawing/spec basis complete after recheck
+S07	43805.56	48186.12	Working-cost drawing/spec basis complete after recheck
+S08	26180.76	28798.84	Customer/README accepted full allowance basis
+S09	85790.00	94369.00	Customer/README accepted full allowance basis
+S10	75660.00	83226.00	Customer/README accepted full allowance basis
+S11	54771.60	60248.76	Strict 100% current BOQ cost basis pass
+S12	69910.40	76901.44	Strict 100% current BOQ cost basis pass
+S13	75670.00	83237.00	Owner accepted premium-sensible size-based provisional electrical estimate; exact M&E drawing/spec hold
+S14	117155.00	128870.50	Strict 100% current BOQ cost basis pass
+S15	58575.50	64433.05	Strict 100% current BOQ cost basis pass
+S16	33400.00	36740.00	Strict 100% current BOQ cost basis pass
+TOTAL S01-S16	731590.50	804749.56	Working-cost reconciliation only; not final customer BOQ
+
+EXACT BLOCKERS BEFORE S18
+Path A - Final drawing/spec/customer BOQ path:
+1. Recheck/rescan S01 against hoarding/signboard/site/prelim drawing/source.
+2. Recheck/rescan S02 against ESCP drawing/source.
+3. Recheck/rescan S03 against earthwork/site/survey drawing/source.
+4. Replace or formally close S13 with final electrical/M&E drawing/spec or owner-confirmed final M&E allowance schedule.
+5. Apply requested markup/gross margin if owner wants customer selling price.
+6. Re-run S17 reconciliation V2.
+
+Path B - Working-cost planning-only path:
+Owner explicitly accepts that S17 is a working-cost planning reconciliation only and that S18 may continue for remaining reserved/non-final planning items.
