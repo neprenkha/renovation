@@ -1,0 +1,63 @@
+Surau Nilai - S20 Final Customer Price / Markup / Gross Margin / Final Output Recheck HOLD V1
+
+Status:
+S20 FINAL CUSTOMER PRICE / MARKUP / GROSS MARGIN PATH: HOLD
+S20 CONSTRUCTION DRAWING-COST TAKEOFF: NO NEW TRADE SCOPE AFTER S19
+S20 CURRENT BOQ COST BASIS CARRY-FORWARD: S01-S19 PASS
+S21 START ALLOWED: NO
+
+Owner instruction basis:
+- Owner requested repeated careful S20 checking and next S21 only if S20 is 100%.
+- Owner also clarified 13G: 100% means no missing known component, no missing required rate, no wrong explicit dimension/spec/quantity; 99.9% is fail.
+- Owner previously instructed markup/customer price to be ignored until all scope is complete and later discussed.
+
+Header basis checked:
+- Latest owner local GPTRenovationHeader.txt Generated MYT 2026-07-10 19:25.
+- Section 13G 100% completeness / logical estimate / no-missing-component rule is active.
+
+Current source/control files checked:
+- ActiveBOQ/Surau Nilai/BOQ/38_SXX_COSTING_TRACKER_V38.md
+- ActiveBOQ/Surau Nilai/BOQ/S19_FinalCurrentCostBOQ_13G_Strict100_Recheck_Audit_V2.txt
+- ActiveBOQ/Surau Nilai/BOQ/S19_BOQXLSM_PASTE_READY_OR_SUMMARY_V2.txt
+
+Current carried-forward construction cost basis:
+- S01-S16 corrected base working cost: RM748,244.00
+- Optional 10% contingency: RM74,824.40
+- Working cost with optional 10% contingency: RM823,068.40
+- S17 new cost impact: RM0.00
+- S18 new cost impact: RM0.00
+- S19 new cost impact: RM0.00
+
+S20 role decision:
+S20 is not a new construction trade takeoff. S18 closed all 24 current drawing/source files and S19 rechecked the active paste-chain and no-missing-component basis under 13G.
+
+The only S20 path opened by V38 is final customer price / markup / gross margin / final quotation output, or another owner-requested final output path.
+
+S20 cannot be marked 100% for final customer price because owner has not supplied or selected the markup/gross-margin rule, and owner previously said markup should be discussed later. Creating a markup now would be invented commercial pricing, not 100% owner/customer basis.
+
+13G strict check for S20:
+- Construction drawing/source coverage already 24/24 by S18: PASS
+- S19 no-missing-component current-cost consolidation: PASS
+- New S20 construction material/labour/service scope: NONE
+- Markup/gross-margin input for final customer output: MISSING / NOT OWNER-APPROVED
+- Final customer selling price: NOT READY
+- S20 100% final output gate: HOLD
+- S21 start gate: FAIL / NO
+
+Why S20 cannot pass 100% now:
+A final customer price/gross margin output requires a markup rule, margin percentage, selling-rate policy, or owner-approved pricing method. Because that input is not available and not authorised in this turn, S20 would be less than 100% if I invented it. Under 13G, a missing required commercial rate/policy for the active final-output path is a fail.
+
+Correct next condition:
+S20 can pass later only after owner provides or confirms one of these:
+1. markup percentage; or
+2. target gross margin percentage; or
+3. instruction to output working-cost-only final summary with no selling price; or
+4. another explicit final output path.
+
+Decision:
+S20 FINAL CUSTOMER PRICE / MARKUP / GROSS MARGIN PATH: HOLD
+S20 CURRENT BOQ COST BASIS CARRY-FORWARD: S01-S19 PASS
+S21 START ALLOWED: NO
+
+Header update decision:
+No new header update is required. The latest owner header already contains 13G and correctly blocks S20 from passing when a required component/rate/policy for the active S20 path is missing.
