@@ -1,0 +1,116 @@
+# S17 Overall Reconciliation / Final BOQ Review - Takeoff Audit V2
+
+Generated MYT: 2026-07-10 09:23
+
+## Correction basis
+
+Owner corrected S17 V1 logic:
+
+```text
+Markup/customer price must be ignored until all scope is complete and owner asks for markup discussion.
+S13 premium-sensible provisional electrical/M&E estimate is accepted as 100% temporary working-cost basis for SXX continuity and must not block later SXX.
+S01-S03 should have been rescanned and closed instead of blocking S17.
+```
+
+## Correction action completed
+
+```text
+S01 rescan completed: S01_Preliminaries_DrawingSpec_Rescan_Audit_V1.md
+S02 rescan completed: S02_ESCP_DrawingSpec_Rescan_Audit_V1.md
+S03 rescan completed and revised: S03_Earthwork_DrawingSpec_Revised_Takeoff_Audit_V2.txt
+S03 paste-ready revised: S03_BOQXLSM_PASTE_READY_V2.txt
+```
+
+## S17 V2 decision
+
+```text
+S17 OVERALL RECONCILIATION: PASS FOR CURRENT BOQ COST BASIS
+S17 FINAL CUSTOMER SELLING PRICE: NOT READY - MARKUP/GROSS MARGIN NOT APPLIED BY OWNER DECISION
+S17 DRAWING-SPEC FINAL ELECTRICAL DESIGN: S13 PROVISIONAL ACCEPTED FOR TEMPORARY WORKING-COST BASIS
+S18 START ALLOWED: YES - CURRENT BOQ COST BASIS PATH
+```
+
+## S03 correction impact
+
+Old S03 V1:
+
+```text
+Base working cost: RM2,090.00
+With 10% contingency: RM2,299.00
+```
+
+Revised S03 V2:
+
+```text
+Base working cost: RM18,743.50
+Optional 10% contingency: RM1,874.35
+Working cost with contingency: RM20,617.85
+```
+
+Increase from S03 V1 base:
+
+```text
+RM18,743.50 - RM2,090.00 = RM16,653.50
+```
+
+## Reconciled S01-S16 total after correction
+
+```text
+Previous S17 V1 total S01-S16 base working cost: RM731,590.50
+Less old S03 V1 base: RM2,090.00
+Add revised S03 V2 base: RM18,743.50
+Corrected S01-S16 base working cost: RM748,244.00
+
+Corrected optional 10% contingency: RM74,824.40
+Corrected working cost with contingency: RM823,068.40
+
+Customer selling price: NOT READY - deliberately ignored until owner asks for markup/gross margin stage
+```
+
+## Current active paste files for BOQ.xlsm
+
+```text
+S01_BOQXLSM_PASTE_READY_V1.txt
+S02_BOQXLSM_PASTE_READY_V2.txt
+S03_BOQXLSM_PASTE_READY_V2.txt
+S04_BOQXLSM_PASTE_READY_V2.txt
+S05_BOQXLSM_PASTE_READY_V1.txt
+S06_BOQXLSM_PASTE_READY_V2.txt
+S07_BOQXLSM_PASTE_READY_V1.txt
+S08_BOQXLSM_PASTE_READY_V2.txt
+S09_BOQXLSM_PASTE_READY_V1.txt
+S10_BOQXLSM_PASTE_READY_V1.txt
+S11_BOQXLSM_PASTE_READY_V2.txt
+S12_BOQXLSM_PASTE_READY_V1.txt
+S13_BOQXLSM_PASTE_READY_V2.txt
+S14_BOQXLSM_PASTE_READY_V1.txt
+S15_BOQXLSM_PASTE_READY_V1.txt
+S16_BOQXLSM_PASTE_READY_V1.txt
+```
+
+## S17 V2 gate checklist
+
+```text
+S01 drawing/spec rescan: PASS
+S02 drawing/spec rescan: PASS
+S03 drawing/spec rescan and cost correction: PASS - USE V2
+S04 current BOQ cost basis: PASS
+S05 current BOQ cost basis: PASS
+S06 current BOQ cost basis: PASS
+S07 current BOQ cost basis: PASS
+S08 authorised full allowance basis: PASS
+S09 authorised full allowance basis: PASS
+S10 authorised full allowance basis: PASS
+S11 aluminium/glass schedule and cost basis: PASS
+S12 current BOQ cost basis: PASS
+S13 owner-accepted premium-sensible provisional M&E basis: PASS FOR TEMPORARY WORKING-COST SEQUENCING
+S14 current BOQ cost basis: PASS
+S15 current BOQ cost basis: PASS
+S16 current BOQ cost basis: PASS
+Markup/customer selling price excluded by owner decision: PASS
+100% / 99.9% gate for current BOQ cost basis: PASS
+```
+
+## Status note
+
+S17 V2 is not a customer selling price close-out. It is a current BOQ working-cost reconciliation gate after S01-S16. Customer markup/gross margin remains a later stage by owner decision.
