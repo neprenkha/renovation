@@ -1,0 +1,11 @@
+Paste/summary for S17 - OVERALL RECONCILIATION ONLY
+
+Spec	Description	Note
+S17-TITLE	Overall reconciliation / final BOQ review - corrected current BOQ cost basis	V2 corrects V1: markup/customer price is ignored until owner asks; S13 provisional premium-sensible M&E is accepted for temporary working-cost sequencing; S01-S03 have been rescanned.
+S17-STATUS	PASS FOR CURRENT BOQ COST BASIS - S18 START ALLOWED	Not customer selling price. No markup/gross margin included.
+S17-S03-CORRECTION	S03 revised from V1 RM2,090.00 base to V2 RM18,743.50 base	Use S03_BOQXLSM_PASTE_READY_V2.txt, not old S03 V1.
+S17-TOTAL-BASE	Corrected S01-S16 base working cost: RM748,244.00	Previous S17 V1 total was RM731,590.50; corrected by replacing old S03 V1 with S03 V2.
+S17-TOTAL-CONTINGENCY	Optional 10% contingency: RM74,824.40	Contingency is not markup/profit.
+S17-TOTAL-WITH-CONTINGENCY	Working cost with optional 10% contingency: RM823,068.40	Internal planning cost only.
+S17-CUSTOMER-PRICE	Customer selling price: NOT READY	Markup/gross margin deliberately ignored until owner asks.
+S17-NEXT	S18 START ALLOWED: YES	Current BOQ cost basis path only.
