@@ -1,0 +1,107 @@
+Surau Nilai - S12 Internal Finishes Sanitary Fixtures Owner Scope Correction Takeoff Audit V2
+
+Supersedes:
+S12_InternalFinishes_SanitaryFixtures_Takeoff_Audit_V1.txt
+S12_BOQXLSM_PASTE_READY_V1.txt
+
+Status:
+S12 V2 OWNER SCOPE CORRECTION: PASS FOR CURRENT BOQ COST BASIS
+S12 TILE SUPPLY: INCLUDED BY OWNER CORRECTION
+S11 DOOR/WINDOW/GLAZING: ALREADY INCLUDED IN S11 COST; FUTURE ACTUAL PRICE REPLACEMENT ONLY
+S21 CORRECTION PACKAGE: OPENED AND CLOSED - NO SEPARATE NEW TRADE SCOPE AFTER CORRECTION
+
+Owner correction basis:
+- Tile supply should be counted in the BOQ cost chain, not left as an exclusion.
+- Door/window/glazing must be counted in the BOQ cost chain. S11 already includes these items; actual aluminium/glass supplier price may replace the current rate later, but it is not zero/excluded.
+- S01-SXX is cost-only. Markup/customer selling price remains outside the SXX chain.
+
+Source/control checked:
+- S12_Finishes_Sanitary_RateReference_V1.txt
+- S12_InternalFinishes_SanitaryFixtures_Takeoff_Audit_V1.txt
+- S12_BOQXLSM_PASTE_READY_V1.txt
+- S11_Doors_Windows_Glazing_Openings_Takeoff_Audit_V3.txt
+- S11_AluminiumGlass_SpecSizeQuantity_Schedule_V2.txt
+- 40_SXX_COSTING_TRACKER_V40.md
+- GPT Header amendment: Owner required supply items included
+
+S12 V2 scope change:
+- Add tile supply for PT porcelain floor tile area: 100m2 x RM55.00/m2 = RM5,500.00.
+- Add tile supply for CT ceramic tile wall/floor area: 175m2 x RM40.00/m2 = RM7,000.00.
+- Total added tile supply: RM12,500.00.
+- Existing tile consumables, tile labour, finishes and sanitary fixture lines remain unchanged.
+
+S12 V2 full corrected Block 1 material/product/consumable basis:
+1. Ceiling material / paint allowance: 232.63m2 x RM45.00 = RM10,468.35.
+2. Wall plaster/paint material allowance: 360m2 x RM18.00 = RM6,480.00.
+3. PT porcelain floor tile supply: 100m2 x RM55.00 = RM5,500.00.
+4. CT ceramic wall/floor tile supply: 175m2 x RM40.00 = RM7,000.00.
+5. Tile adhesive / G88 / Bondplus / grout consumables: 275m2 x RM20.00 = RM5,500.00.
+6. Carpet substrate material under ID carpet: 98.50m2 x RM22.00 = RM2,167.00.
+7. WC final fixtures: 5 sets x RM550.00 = RM2,750.00.
+8. Basin final fixtures: 4 sets x RM450.00 = RM1,800.00.
+9. Bib/wuduk/feet-wash taps: 15 points x RM65.00 = RM975.00.
+10. Stainless steel floor trap / grating covers: 10 points x RM85.00 = RM850.00.
+11. Sanitary final accessories and sundries: 1 lot x RM1,000.00 = RM1,000.00.
+
+S12 V2 Block 1 subtotal:
+RM44,490.35
+
+S12 V2 Block 2 labour basis retained:
+1. Ceiling installation/jointing/paint labour: RM8,142.05.
+2. Wall plaster/paint labour: RM9,000.00.
+3. Tile installation labour: RM12,375.00.
+4. Carpet substrate labour: RM1,773.00.
+5. Sanitary final fixture installation labour: RM3,230.00.
+
+S12 V2 Block 2 subtotal:
+RM34,520.05
+
+S12 V2 Block 3 service basis retained:
+1. Final finishes protection/cleaning/touch-up: RM1,800.00.
+2. Final sanitary fixture testing/commissioning/leak correction: RM650.00.
+3. Tile cutting/painting/finishing small tools and consumable service: RM950.00.
+
+S12 V2 Block 3 subtotal:
+RM3,400.00
+
+S12 V2 corrected total:
+Block 1 material/product/consumable: RM44,490.35
+Block 2 labour: RM34,520.05
+Block 3 service: RM3,400.00
+Base working cost: RM82,410.40
+Optional 10% contingency: RM8,241.04
+Working cost with optional contingency: RM90,651.44
+Customer selling price / markup: OUTSIDE SXX
+
+S12 V2 delta from S12 V1:
+S12 V1 base working cost: RM69,910.40
+Added owner-required tile supply: RM12,500.00
+S12 V2 base working cost: RM82,410.40
+Delta with optional 10% contingency: RM13,750.00
+
+S11 door/window/glazing check:
+S11 cost remains included and unchanged at base working cost RM54,771.60.
+S11 included D1 timber doors, D2 aluminium sliding doors, D3 timber doors, W1 aluminium top hung windows, W2 Breezeway Altair louvres and W3 Breezeway Altair louvres.
+Future actual aluminium/glass price may replace the current S11 rate, but the current BOQ cost basis is not zero and not excluded.
+
+Overall corrected current BOQ cost after S12 V2:
+Previous corrected base working cost: RM748,244.00
+Add S12 V2 tile supply delta: RM12,500.00
+Corrected base working cost after S12 V2: RM760,744.00
+Optional 10% contingency: RM76,074.40
+Corrected working cost with optional contingency: RM836,818.40
+Customer selling price / markup: OUTSIDE SXX
+
+13G / 13I strict check:
+- Owner correction checked: PASS.
+- Tile supply no longer excluded: PASS.
+- Tile supply has logical provisional working-cost rates: PASS.
+- Tile adhesive/consumables retained: PASS.
+- Tile labour retained: PASS.
+- Sanitary fixture quantities retained: PASS.
+- Door/window/glazing inclusion checked in S11: PASS.
+- Future actual supplier price recorded as replacement only, not exclusion: PASS.
+- No missing material/product/labour/service rate after correction: PASS.
+- No markup/customer selling price inserted into SXX: PASS.
+- Undercost check improved by adding tile supply: PASS.
+- Double-count check: tile supply added only once in S12 V2; S11 unchanged; S06 rough-in unchanged: PASS.
