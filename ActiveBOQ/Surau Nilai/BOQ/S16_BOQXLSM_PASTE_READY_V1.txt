@@ -1,0 +1,31 @@
+Paste to S16!A:C - SPEC
+Spec	Description	Note
+S16-TITLE	External utility, rainwater harvesting, garden taps and final concrete paving	Current BOQ 100% cost basis from repeated check of site plan/survey and boundary against S06/S09/S13/S14/S15.
+S16-STATUS	COMPLETE FOR NEXT SXX - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS	Customer selling price/margin is not included and will be calculated later.
+S16-SOURCE	Surau Site Plan Tender_Constn.pdf; Survey Tapak Surau Juassewh Sentosa.pdf; Surau Plan Roof Plan Bldg Tender_Constn.pdf	Site plan rendered/visually checked. Scope locked to external utility/rainwater/garden tap/conc paving, not loose signage.
+S16-SITE-SPEC	Lot 20093 area shown: 1,759m2 / 18,934 SF. Site plan shows rainwater harvesting tank, 1 day supply suction tank, garden taps, conc paving to detail and water utility interfaces.	Current quantities are drawing-derived full allowances for current BOQ basis.
+S16-COSTCHECK	Undercost/overprice/double-count check done.	S06 internal plumbing rough-in, S09 roof gutter/RWDP supply, S13 electrical, S14 road/drain/culvert/sump and S15 gatepost/meter/rubbish enclosure structure excluded. No markup included.
+S16-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S16!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: Rainwater harvesting tank to engineer's detail. Final capacity/brand may be replaced later by engineer/supplier detail, but current drawing-authorised allowance is closed for current BOQ basis.	S16-B1-001	Rainwater Harvesting Tank Supply Install Connection Allowance (Current Working Cost Per set)	SET	1	0	6500.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: 1 day supply suction tank to engineer's detail. Final capacity/brand may be replaced later.	S16-B1-002	One Day Supply Suction Tank Supply Install Connection Allowance (Current Working Cost Per set)	SET	1	0	4800.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: external garden tap bib tap, standpipe, valve and fittings. CALC NOTE: visible garden tap labels at external/perimeter positions = 4 points.	S16-B1-003	External Garden Tap Bib Tap Standpipe Valve and Fitting Allowance (Current Working Cost Per point)	POINT	4	0	220.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: external water supply pipework, sleeves, valves and connection allowance. CALC NOTE: drawing-derived full route allowance from meter/tank to taps and around building/perimeter = 95m.	S16-B1-004	External Water Supply Pipework Sleeve Valve and Connection Allowance (Current Working Cost Per m)	M	95	0	38.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: rainwater harvesting overflow and transfer pipework interface. S09 gutter/RWDP and S14 drain body excluded. CALC NOTE: 45m allowance.	S16-B1-005	Rainwater Harvesting Overflow and Transfer Pipework Allowance (Current Working Cost Per m)	M	45	0	45.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: external concrete paving to detail, excluding S07 building slab/apron and S14 premix road. CALC NOTE: 55m2.	S16-B1-006	External Concrete Paving Slab Finish Allowance (Current Working Cost Per m2)	M2	55	0	95.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: garden tap marker box, small concrete apron and protection allowance. CALC NOTE: 4 tap points.	S16-B1-007	Garden Tap Marker Box Small Concrete Apron and Protection Allowance (Current Working Cost Per point)	POINT	4	0	160.00
+
+Paste to S16!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: tank, garden tap and external water/rainwater pipework installation labour. CALC NOTE: 1 RWH tank + 1 suction tank + 4 taps + route install allowance = 8 point/set equivalent.	S16-B2-001	External Water Rainwater Tank and Garden Tap Installation Labour Allowance (Current Working Cost Per point/set)	POINT	8	0	180.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: external concrete paving form, lay and finish labour. Not duplicated with S07/S14. CALC NOTE: 55m2.	S16-B2-002	External Concrete Paving Form Lay Finish Labour Allowance (Current Working Cost Per m2)	M2	55	0	38.00
+NO MARKUP - ROOT COST: external utility, paving, handling and cleaning support labour.	S16-B2-003	Labour - General Helper (Per MH)	MH	96	0	16.25
+NO MARKUP - ROOT COST: skilled coordination, making-good and checking support.	S16-B2-004	Labour - Skilled Worker (Per MH)	MH	48	0	22.50
+
+Paste to S16!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: external water/rainwater tank/tap testing and flushing. Excludes S06 internal sanitary testing and S14 drain flushing.	S16-B3-001	External Water Rainwater Tank Tap Testing and Flushing Allowance (Current Working Cost Per lot)	LOT	1	0	850.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: external utility and paving small plant, compaction, cutting and tool allowance.	S16-B3-002	External Utility and Paving Small Plant Compaction Cutting Tool Allowance (Current Working Cost Per lot)	LOT	1	0	1200.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: S16 affected external utility final making-good, cleaning and handover allowance. Not full project defects/cleaning.	S16-B3-003	External Utility Final Making Good Cleaning and Handover Allowance (Current Working Cost Per lot)	LOT	1	0	1500.00
