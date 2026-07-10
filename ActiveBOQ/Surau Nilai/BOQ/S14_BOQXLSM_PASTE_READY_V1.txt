@@ -1,0 +1,38 @@
+Paste to S14!A:C - SPEC
+Spec	Description	Note
+S14-TITLE	Road, drainage, premix hardstanding, kerb, subsoil drain, sump and entrance culvert	Current BOQ 100% cost basis from repeated check of road and drainage layout/details.
+S14-STATUS	COMPLETE FOR NEXT SXX - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS	Customer selling price/margin not included.
+S14-SOURCE	Use `SJ_02R&D-LP-01-S0-01.pdf`, `SJ_02R&D-DT-02-S0-00.pdf`, and S09/S03/S04/S06 boundary files.	R&D layout and detail sheets rendered/extracted/visually inspected.
+S14-SPEC	Proposed premix road, proposed kerb, 375mm wide drain with 225mm HRGW, 200mm diameter subsoil drain, S1 1200x1200 brick sump, DO drain opening, entrance culvert.	Road/drainage scope from drawing legend and details.
+S14-COSTCHECK	Undercost/overprice/double-count check done.	S03 bulk earthwork, S04 crossing bridge/structural entrance bridge, S06 plumbing rough-in, S09 roof gutter/RWDP, S12/S13 items, TNB/water authority fees and customer markup are excluded. S14 includes ground road/drainage works and RWDP ground connection only.
+S14-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S14!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: proposed premix road/parking/hardstanding material, crusher run base, tack coat and premix material. CALC NOTE: full drawing-derived allowance 430m2.	S14-B1-001	Crusher Run Base Tack Coat and Premix Material Allowance (Current Working Cost Per m2)	M2	430	0	65.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: proposed concrete kerb supply. CALC NOTE: full drawing-derived allowance 155m.	S14-B1-002	Concrete Road Kerb Supply Allowance (Current Working Cost Per m)	M	155	0	42.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: drawing legend item 375mm wide drain with 225mm HRGW. CALC NOTE: full drawing-derived allowance 145m.	S14-B1-003	375mm Wide Drain with 225mm HRGW Material Allowance (Current Working Cost Per m)	M	145	0	160.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: drawing legend item 200mm diameter subsoil drain with gravel/geotextile allowance. CALC NOTE: full drawing-derived allowance 110m.	S14-B1-004	200mm Diameter Subsoil Drain Pipe Gravel and Geotextile Material Allowance (Current Working Cost Per m)	M	110	0	35.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: S1 1200 x 1200 brick sump material allowance from road/drain layout. CALC NOTE: 4 nos.	S14-B1-005	S1 1200 x 1200 Brick Sump Material Allowance (Current Working Cost Per no)	NO	4	0	900.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: DO drain opening material allowance. CALC NOTE: 2 nos.	S14-B1-006	Drain Opening DO Material Allowance (Current Working Cost Per no)	NO	2	0	500.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: entrance culvert pipe/box/headwall material allowance. CALC NOTE: 6m.	S14-B1-007	Entrance Culvert Pipe/Box and Headwall Material Allowance (Current Working Cost Per m)	M	6	0	250.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: ground connection from S09 RWDP discharge to S14 external drain. S09 downpipe itself not duplicated. CALC NOTE: 4 points.	S14-B1-008	Rainwater Downpipe Ground Connection to Drain Allowance (Current Working Cost Per point)	POINT	4	0	250.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: parking bay and direction arrow road marking over proposed premix road/hardstanding.	S14-B1-009	Parking Bay and Direction Arrow Road Marking Allowance (Current Working Cost Per lot)	LOT	1	0	1500.00
+
+Paste to S14!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: concrete road kerb installation labour. CALC NOTE: 155m.	S14-B2-001	Concrete Road Kerb Installation Labour Allowance (Current Working Cost Per m)	M	155	0	20.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: 375mm drain installation labour. CALC NOTE: 145m.	S14-B2-002	375mm Drain Installation Labour Allowance (Current Working Cost Per m)	M	145	0	75.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: 200mm subsoil drain installation labour. CALC NOTE: 110m.	S14-B2-003	200mm Subsoil Drain Installation Labour Allowance (Current Working Cost Per m)	M	110	0	22.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: S1 1200 x 1200 brick sump installation labour. CALC NOTE: 4 nos.	S14-B2-004	S1 1200 x 1200 Brick Sump Installation Labour Allowance (Current Working Cost Per no)	NO	4	0	500.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: DO drain opening installation labour. CALC NOTE: 2 nos.	S14-B2-005	Drain Opening DO Installation Labour Allowance (Current Working Cost Per no)	NO	2	0	250.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: entrance culvert installation labour. CALC NOTE: 6m.	S14-B2-006	Entrance Culvert Installation Labour Allowance (Current Working Cost Per m)	M	6	0	150.00
+NO MARKUP - ROOT COST: skilled worker support for road/drain setting out, levels, QA and coordination. CALC NOTE: 120 MH.	S14-B2-007	Labour - Skilled Worker (Per MH)	MH	120	0	22.50
+NO MARKUP - ROOT COST: general helper support for road/drain handling, cleaning and support. CALC NOTE: 160 MH.	S14-B2-008	Labour - General Helper (Per MH)	MH	160	0	16.25
+
+Paste to S14!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: premix laying, compaction and roller service. CALC NOTE: 430m2.	S14-B3-001	Premix Laying Compaction and Roller Service Allowance (Current Working Cost Per m2)	M2	430	0	25.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: road and drain excavation, backfill and disposal service allowance. Not duplicated with S03 bulk earthwork.	S14-B3-002	Road and Drain Excavation Backfill Disposal Service Allowance (Current Working Cost Per lot)	LOT	1	0	5500.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: backhoe, roller, plate compactor and drainage plant allowance.	S14-B3-003	Backhoe Roller Plate Compactor and Drainage Plant Allowance (Current Working Cost Per lot)	LOT	1	0	4500.00
+NO MARKUP - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: drainage flushing, water flow check and final cleaning allowance.	S14-B3-004	Drainage Flushing Water Flow Check and Final Cleaning Allowance (Current Working Cost Per lot)	LOT	1	0	1200.00
