@@ -1,0 +1,111 @@
+Surau Nilai - S19 Final Current-Cost BOQ Consolidation 13G Strict 100 Recheck Audit V2
+
+Status:
+S19 13G STRICT 100% RECHECK V2: PASS FOR CURRENT BOQ COST BASIS
+S19 NEW TRADE COST IMPACT: RM0.00
+S20 START ALLOWED: YES - MARKUP / FINAL CUSTOMER OUTPUT PATH ONLY WHEN OWNER ASKS
+
+Owner instruction basis:
+- Owner clarified that 100% means complete logical costing with no missing known component/rate/item.
+- 99.9% is fail if any visible/required item, rate, explicit size/spec/quantity, accessory, fitting, labour, making-good, plant or service component is missing or wrong.
+- Markup/customer price remains excluded until owner asks.
+- S13 premium-sensible provisional M&E estimate is accepted as temporary complete working-cost basis when all normal components are included.
+
+Header/governance checked:
+- Latest uploaded GPTRenovationHeader.txt, Generated MYT 2026-07-10 19:25.
+- Section 13G: 100% completeness / logical estimate / no-missing-component rule.
+- GitHub amendment: GPTEditable/GPT_Header_Amendment_100Percent_Completeness_NoMissingComponent_20260710.md.
+
+S19 role:
+S19 is not a new construction trade. S19 is a final current-cost BOQ consolidation / paste-chain / no-missing-component recheck after S18 confirmed all 24 current drawing/source files are covered.
+
+13G recheck basis:
+1. S18 24/24 drawing/source coverage is accepted and carried forward.
+2. S19 has no new drawing/source that creates a new material/labour/service BOQ line.
+3. Therefore S19 100% means the active S01-S18 paste/cost chain has no missing SXX file, missing component/rate, duplicate blocker, or unresolved owner-accepted provisional item.
+
+S18 coverage carried forward:
+- Layout / plan / elevations / sections: covered by S10, S11, S12 and related SXX.
+- Slab and ground beam details: covered by S05 and S07.
+- Roof beam / roof framing / roof cover: covered by S08 and S09.
+- Crossing bridge / entrance: covered by S04.
+- Hoarding / signboard / preliminaries: covered by S01 rescan.
+- ESCP: covered by S02 rescan.
+- Earthwork / site survey: covered by S03 V2 rescan/revision.
+- Road and drainage: covered by S14.
+- Fencing and gate: covered by S15.
+- Sanitary / sewerage / plumbing: covered by S06 and S12.
+- Site plan / rainwater / garden taps / external utility: covered by S16.
+- Electrical / M&E temporary current basis: covered by owner-accepted S13 premium-sensible provisional estimate; future final M&E drawing update only.
+
+Active current-cost BOQ paste chain checked under 13G:
+1. S01_BOQXLSM_PASTE_READY_V1.txt - PASS
+2. S02_BOQXLSM_PASTE_READY_V2.txt - PASS
+3. S03_BOQXLSM_PASTE_READY_V2.txt - PASS
+4. S04_BOQXLSM_PASTE_READY_V2.txt - PASS
+5. S05_BOQXLSM_PASTE_READY_V1.txt - PASS
+6. S06_BOQXLSM_PASTE_READY_V2.txt - PASS
+7. S07_BOQXLSM_PASTE_READY_V1.txt - PASS
+8. S08_BOQXLSM_PASTE_READY_V2.txt - PASS
+9. S09_BOQXLSM_PASTE_READY_V1.txt - PASS
+10. S10_BOQXLSM_PASTE_READY_V1.txt - PASS
+11. S11_BOQXLSM_PASTE_READY_V2.txt - PASS
+12. S12_BOQXLSM_PASTE_READY_V1.txt - PASS
+13. S13_BOQXLSM_PASTE_READY_V2.txt - PASS FOR TEMPORARY OWNER-ACCEPTED COMPLETE M&E BASIS
+14. S14_BOQXLSM_PASTE_READY_V1.txt - PASS
+15. S15_BOQXLSM_PASTE_READY_V1.txt - PASS
+16. S16_BOQXLSM_PASTE_READY_V1.txt - PASS
+17. S17_BOQXLSM_PASTE_READY_OR_SUMMARY_V3.txt - PASS
+18. S18_BOQXLSM_PASTE_READY_OR_SUMMARY_V1.txt - PASS
+19. S19_BOQXLSM_PASTE_READY_OR_SUMMARY_V1.txt - PASS, superseded for recheck by V2 summary
+
+S13 13G recheck:
+- Lights included: 36 general points + 8 feature/external points + 6 emergency/exit points.
+- Fans included: 10 fan points.
+- Power/switch included: 28 socket points + 18 switch/control points.
+- AC electrical basis included: 10 AC power/isolator points and 10 condensate drain/sleeve points.
+- Ventilation included: 6 ventilation points.
+- PA/data/security included: PA/audio wiring lot + 8 low-voltage/data points.
+- DB/protection included: 3-phase DB with MCB/RCD/ELCB/SPD/spare capacity allowance.
+- Earthing/bonding included.
+- Conduit/cable/trunking/fixing sundries included.
+- Labour included: electrical/low-voltage point labour, AC point labour, PA/data labour, DB/earthing/testing labour, helper MH and skilled MH.
+- Services included: testing/commissioning, ceiling access/making-good, tools/equipment, as-built/circuit labelling.
+- S13 has no missing obvious current component under owner-accepted provisional working-cost path.
+
+S03 correction retained:
+- Earthwork drawing quantity table FILL 255m3 / CUT 222m3 / net import/fill balance 33m3 / export 0m3 retained.
+- Old S03 V1 RM2,090.00 remains superseded.
+- S03 V2 RM18,743.50 remains active.
+
+Current consolidated working-cost total retained:
+- S01-S16 corrected base working cost: RM748,244.00
+- Optional 10% contingency: RM74,824.40
+- Working cost with optional 10% contingency: RM823,068.40
+- S17 new cost impact: RM0.00
+- S18 new cost impact: RM0.00
+- S19 V2 new cost impact: RM0.00
+- Customer selling price: NOT READY - markup/gross margin excluded by owner decision until owner asks.
+
+13G strict no-missing-component checklist:
+- Latest 13G owner header checked: PASS
+- 100% / 99.9% owner meaning checked: PASS
+- Explicit drawing data followed where current SXX had explicit data: PASS
+- Unclear/missing drawing data closed by logical/authorised allowance where needed: PASS
+- All active S01-S18 paste files present: PASS
+- S01-S16 active cost chain reconciled: PASS
+- S17/S18 no-cost reconciliation files present: PASS
+- S13 provisional M&E component completeness checked: PASS
+- No known visible/required component missing from active current BOQ basis: PASS
+- No required material/product/labour/service/rental/plant rate missing without accepted provisional/logical rate: PASS
+- No known explicit size/spec/quantity copied incorrectly in S19 consolidation: PASS
+- No line-count mismatch found in S19 consolidation: PASS
+- Duplicate prevention across all SXX: PASS
+- Markup/customer selling price excluded by owner decision: PASS
+- S19 final current-cost BOQ consolidation under 13G: PASS
+- S20 start gate: PASS
+
+Decision:
+S19 13G STRICT 100% RECHECK V2: PASS FOR CURRENT BOQ COST BASIS
+S19 NEW TRADE COST IMPACT: RM0.00
+S20 START ALLOWED: YES - MARKUP / FINAL CUSTOMER OUTPUT PATH ONLY WHEN OWNER ASKS
