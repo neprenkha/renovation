@@ -1,0 +1,86 @@
+Surau Nilai - S19 Final Current-Cost BOQ Consolidation Takeoff Audit V1
+
+Status:
+S19 FINAL CURRENT-COST BOQ CONSOLIDATION: PASS FOR CURRENT BOQ COST BASIS
+S19 NEW TRADE COST IMPACT: RM0.00
+S20 START ALLOWED: YES - MARKUP / FINAL CUSTOMER OUTPUT PATH ONLY WHEN OWNER ASKS
+
+Owner instruction basis:
+- S19 must be repeatedly checked and can proceed only if 100% for current drawing/spec cost basis.
+- 99.9% is not a pass.
+- Markup/customer price is not to be inserted unless owner asks.
+- S13 premium-sensible provisional M&E estimate is accepted as temporary working-cost basis and is not a blocker for SXX continuity.
+
+Source/control files checked:
+- ActiveBOQ/Surau Nilai/BOQ/36_SXX_COSTING_TRACKER_V36.md
+- GPTRenovationHeader.txt, Generated MYT 2026-07-10 07:00
+
+S19 role:
+S19 is not a new construction trade package. S19 is a final current-cost BOQ consolidation and paste-chain audit after S18 confirmed 24/24 current drawing/source coverage. S19 does not add new material, labour or service cost lines.
+
+Drawing/source coverage carried forward from S18:
+- Current 24-file drawing/source set: covered.
+- No unassigned drawing scope found before S19.
+- Layout / plan / elevations / sections: covered by S10, S11, S12 and related SXX.
+- Slab and ground beam details: covered by S05 and S07.
+- Roof beam / roof framing / roof cover: covered by S08 and S09.
+- Crossing bridge / entrance: covered by S04.
+- Hoarding / signboard / preliminaries: covered by S01 rescan.
+- ESCP: covered by S02 rescan.
+- Earthwork / site survey: covered by S03 V2 rescan/revision.
+- Road and drainage: covered by S14.
+- Fencing and gate: covered by S15.
+- Sanitary / sewerage / plumbing: covered by S06 and S12.
+- Site plan / rainwater / garden taps / external utility: covered by S16.
+- Electrical / M&E temporary current basis: covered by owner-accepted S13 premium-sensible provisional estimate; future final M&E drawing update only.
+
+Active current-cost BOQ paste chain checked:
+1. S01_BOQXLSM_PASTE_READY_V1.txt - PASS
+2. S02_BOQXLSM_PASTE_READY_V2.txt - PASS
+3. S03_BOQXLSM_PASTE_READY_V2.txt - PASS
+4. S04_BOQXLSM_PASTE_READY_V2.txt - PASS
+5. S05_BOQXLSM_PASTE_READY_V1.txt - PASS
+6. S06_BOQXLSM_PASTE_READY_V2.txt - PASS
+7. S07_BOQXLSM_PASTE_READY_V1.txt - PASS
+8. S08_BOQXLSM_PASTE_READY_V2.txt - PASS
+9. S09_BOQXLSM_PASTE_READY_V1.txt - PASS
+10. S10_BOQXLSM_PASTE_READY_V1.txt - PASS
+11. S11_BOQXLSM_PASTE_READY_V2.txt - PASS
+12. S12_BOQXLSM_PASTE_READY_V1.txt - PASS
+13. S13_BOQXLSM_PASTE_READY_V2.txt - PASS FOR TEMPORARY OWNER-ACCEPTED M&E BASIS
+14. S14_BOQXLSM_PASTE_READY_V1.txt - PASS
+15. S15_BOQXLSM_PASTE_READY_V1.txt - PASS
+16. S16_BOQXLSM_PASTE_READY_V1.txt - PASS
+17. S17_BOQXLSM_PASTE_READY_OR_SUMMARY_V3.txt - PASS
+18. S18_BOQXLSM_PASTE_READY_OR_SUMMARY_V1.txt - PASS
+
+Current corrected working-cost total retained:
+- S01-S16 corrected base working cost: RM748,244.00
+- Optional 10% contingency: RM74,824.40
+- Working cost with optional 10% contingency: RM823,068.40
+- S17 new cost impact: RM0.00
+- S18 new cost impact: RM0.00
+- S19 new cost impact: RM0.00
+
+S19 consolidated current-cost total:
+- Base working cost: RM748,244.00
+- Optional 10% contingency: RM74,824.40
+- Working cost with optional 10% contingency: RM823,068.40
+- Customer selling price: NOT READY - markup/gross margin excluded by owner decision until owner asks.
+
+S19 repeated strict check:
+- Latest owner header checked: PASS
+- Current active tracker V36 checked: PASS
+- S18 24/24 drawing/source coverage checked: PASS
+- Active paste chain S01-S18 checked: PASS
+- S03 V2 correction retained: PASS
+- S13 owner-accepted provisional M&E basis not treated as current blocker: PASS
+- Markup/customer selling price excluded by owner decision: PASS
+- No new construction-cost scope found for S19: PASS
+- Duplicate prevention across all SXX: PASS
+- 100% / 99.9% gate for current BOQ cost basis: PASS
+
+Decision:
+S19 FINAL CURRENT-COST BOQ CONSOLIDATION: PASS FOR CURRENT BOQ COST BASIS
+S19 NEW TRADE COST IMPACT: RM0.00
+S20 START ALLOWED: YES - MARKUP / FINAL CUSTOMER OUTPUT PATH ONLY WHEN OWNER ASKS
