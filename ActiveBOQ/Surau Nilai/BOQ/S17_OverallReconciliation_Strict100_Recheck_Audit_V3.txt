@@ -1,0 +1,125 @@
+# S17 Overall Reconciliation / Final BOQ Review — Strict 100 Recheck Audit V3
+
+Generated MYT: 2026-07-10 09:33
+
+## Purpose
+
+Owner requested another repeated careful S17 recheck before continuing to S18.
+
+This V3 recheck verifies that S17 V2/V34 correction is still valid and that S18 may proceed only on the correct current BOQ cost basis path.
+
+## Header compliance
+
+Latest owner local header checked in chat:
+
+```text
+GPTRenovationHeader.txt
+Generated MYT: 2026-07-10 07:00
+```
+
+Rules applied:
+
+```text
+13 Sequential SXX costing gate
+13B Drawing/spec and auditable takeoff rule
+13C BOQ.xlsm paste-ready output rule
+13D Drawing-spec SXX completion gate
+13E Authorised allowance / 100% current BOQ cost basis rule
+15 Price / cost rule
+```
+
+## Owner clarification applied
+
+```text
+Markup/customer selling price is deliberately excluded until owner asks for markup/gross margin stage.
+S13 premium-sensible provisional electrical/M&E estimate is accepted as temporary working-cost 100% basis for SXX continuity.
+S13 final electrical/M&E drawing update may be done later, but it is not a blocker for S18.
+S01-S03 must be rescanned/corrected, not left as S17 blockers.
+```
+
+## GitHub evidence checked
+
+```text
+34_SXX_COSTING_TRACKER_V34.md
+S01_Preliminaries_DrawingSpec_Rescan_Audit_V1.md
+S02_ESCP_DrawingSpec_Rescan_Audit_V1.md
+S03_Earthwork_DrawingSpec_Revised_Takeoff_Audit_V2.txt
+S03_BOQXLSM_PASTE_READY_V2.txt
+S13_Electrical_Aircond_PremiumSensible_Estimate_Assumption_V2.md
+S13_Electrical_Lighting_Power_Mechanical_Takeoff_Audit_V2.txt
+S13_BOQXLSM_PASTE_READY_V2.txt
+```
+
+## S01-S03 recheck result
+
+```text
+S01 DRAWING/SPEC RESCAN: PASS FOR CURRENT BOQ COST BASIS - USE V1
+S02 DRAWING/SPEC RESCAN: PASS FOR CURRENT BOQ COST BASIS - USE V2
+S03 DRAWING/SPEC RESCAN: PASS AND COST REVISED - USE V2
+```
+
+S03 old V1 cost was rejected because it was too low against the earthwork drawing quantity table.
+
+S03 V2 basis:
+
+```text
+FILL 255m3
+CUT 222m3
+Net import/fill balance 33m3
+Export 0m3
+S03 V2 base working cost: RM18,743.50
+```
+
+## S13 recheck result
+
+```text
+S13 WORKING-COST ESTIMATE COMPLETE - OWNER ACCEPTED PREMIUM-SENSIBLE SIZE-BASED PROVISIONAL PATH - USE V2
+S13 DRAWING-SPEC EXACT ELECTRICAL DESIGN: HOLD FOR FUTURE M&E UPDATE ONLY, NOT A BLOCKER FOR SXX CONTINUITY
+```
+
+Reason:
+
+```text
+Owner accepted the premium-sensible provisional estimate as enough for current SXX continuity.
+This is not customer selling price and not final electrical engineering design.
+Future M&E drawing/spec can replace S13 later by versioned correction.
+```
+
+## S17 repeated strict checklist
+
+| Check | Result | Note |
+|---|---|---|
+| S01 rescan blocker cleared | PASS | S01 rescan file exists and V34 records PASS for current BOQ cost basis. |
+| S02 rescan blocker cleared | PASS | S02 rescan file exists and V34 records PASS for current BOQ cost basis. |
+| S03 earthwork undercost corrected | PASS | S03 V2 replaces V1; revised cost uses drawing quantity table. |
+| S04-S07 status checked | PASS | Current working-cost/drawing-spec basis complete status preserved. |
+| S08-S10 authorised allowance status checked | PASS | Customer/README accepted full allowance basis preserved. |
+| S11 aluminium/glass schedule checked | PASS | Active audit V3 and paste V2 preserved. |
+| S12 status checked | PASS | Current BOQ cost basis pass preserved. |
+| S13 provisional M&E treatment checked | PASS | Accepted as temporary working-cost basis; not a continuity blocker. |
+| S14-S16 status checked | PASS | Current BOQ cost basis pass preserved. |
+| Markup/customer selling price treatment checked | PASS | Excluded by owner decision; not an S17/S18 blocker. |
+| Active paste file chain checked | PASS | S01-S16 active paste versions listed in tracker V34 remain valid. |
+| 100% / 99.9% gate for current BOQ cost basis | PASS | No current BOQ cost basis blocker remains for opening S18. |
+
+## Corrected total retained
+
+```text
+Corrected S01-S16 base working cost: RM748,244.00
+Corrected optional 10% contingency: RM74,824.40
+Corrected working cost with optional 10% contingency: RM823,068.40
+Customer selling price: NOT READY - deliberately excluded until owner asks
+```
+
+## Decision
+
+```text
+S17 STRICT 100% RECHECK V3: PASS FOR CURRENT BOQ COST BASIS
+S17 FINAL CUSTOMER SELLING PRICE: NOT READY - MARKUP/GROSS MARGIN EXCLUDED BY OWNER DECISION
+S13 FINAL ELECTRICAL/M&E DESIGN: FUTURE UPDATE ONLY - NOT A BLOCKER FOR SXX CONTINUITY
+S18 START ALLOWED: YES - CURRENT BOQ COST BASIS PATH
+```
+
+## Header update decision
+
+No new header update is required. The current uploaded `GPTRenovationHeader.txt` already separates current SXX completion from customer selling price/margin and already allows a working-cost path when owner accepts it.
