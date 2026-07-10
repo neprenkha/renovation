@@ -1,0 +1,31 @@
+Paste / review target: S17 reconciliation summary only
+
+Spec	Description	Note
+S17-TITLE	Overall reconciliation / final BOQ review gate	V3 repeated strict 100 recheck after owner clarified markup and S13 treatment.
+S17-STATUS	PASS FOR CURRENT BOQ COST BASIS	This is not customer selling price. Markup/gross margin deliberately excluded until owner asks.
+S17-S01-S03	S01/S02 rescan clear; S03 revised to V2	S03 V2 replaces old S03 V1 because earthwork drawing quantity table shows FILL 255m3, CUT 222m3, net import/fill 33m3.
+S17-S13	S13 accepted as premium-sensible provisional working-cost basis	Future final electrical/M&E drawing may update S13 later, but it is not a blocker for SXX continuity.
+S17-TOTAL	Corrected S01-S16 base working cost RM748,244.00	Working cost only, no customer markup.
+S17-CONTINGENCY	Corrected S01-S16 working cost with optional 10% contingency RM823,068.40	Optional contingency is not profit/markup.
+S17-GATE	S18 START ALLOWED: YES - CURRENT BOQ COST BASIS PATH	Use S18 only for remaining/current BOQ cost basis path, not final customer selling price.
+
+Active BOQ.xlsm paste chain after S17 V3
+
+SXX	Active paste file	Status
+S01	S01_BOQXLSM_PASTE_READY_V1.txt	PASS FOR CURRENT BOQ COST BASIS
+S02	S02_BOQXLSM_PASTE_READY_V2.txt	PASS FOR CURRENT BOQ COST BASIS
+S03	S03_BOQXLSM_PASTE_READY_V2.txt	PASS AND COST REVISED - USE V2
+S04	S04_BOQXLSM_PASTE_READY_V2.txt	COMPLETE - USE V2
+S05	S05_BOQXLSM_PASTE_READY_V1.txt	COMPLETE - USE V1
+S06	S06_BOQXLSM_PASTE_READY_V2.txt	COMPLETE AFTER RECHECK - USE V2
+S07	S07_BOQXLSM_PASTE_READY_V1.txt	COMPLETE AFTER RECHECK - USE V1
+S08	S08_BOQXLSM_PASTE_READY_V2.txt	COMPLETE - USE V2
+S09	S09_BOQXLSM_PASTE_READY_V1.txt	COMPLETE - USE V1
+S10	S10_BOQXLSM_PASTE_READY_V1.txt	COMPLETE - USE V1
+S11	S11_BOQXLSM_PASTE_READY_V2.txt	STRICT 100% CURRENT BOQ COST BASIS PASS - USE V2
+S12	S12_BOQXLSM_PASTE_READY_V1.txt	STRICT 100% CURRENT BOQ COST BASIS PASS - USE V1
+S13	S13_BOQXLSM_PASTE_READY_V2.txt	OWNER ACCEPTED PREMIUM-SENSIBLE PROVISIONAL WORKING-COST BASIS - USE V2
+S14	S14_BOQXLSM_PASTE_READY_V1.txt	STRICT 100% CURRENT BOQ COST BASIS PASS - USE V1
+S15	S15_BOQXLSM_PASTE_READY_V1.txt	STRICT 100% CURRENT BOQ COST BASIS PASS - USE V1
+S16	S16_BOQXLSM_PASTE_READY_V1.txt	STRICT 100% CURRENT BOQ COST BASIS PASS - USE V1
+S17	S17_BOQXLSM_PASTE_READY_OR_SUMMARY_V3.txt	RECONCILIATION SUMMARY - PASS FOR CURRENT BOQ COST BASIS
