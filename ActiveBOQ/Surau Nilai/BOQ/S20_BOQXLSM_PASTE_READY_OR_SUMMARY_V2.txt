@@ -1,0 +1,22 @@
+Surau Nilai - S20 BOQ.xlsm Summary V2
+
+Paste-ready note:
+S20 has no BOQ.xlsm construction cost paste block because S20 is not a new construction trade package.
+
+Correction:
+Previous S20 markup/final customer price classification is superseded.
+SXX sequence is cost-only for this BOQ workflow.
+Markup/gross margin/customer selling price is outside the SXX cost chain and must not create S20/S21 cost rows.
+
+S20 status:
+S20 SXX COST-ONLY CORRECTION / CLOSURE CHECKPOINT: PASS
+S20 NEW CONSTRUCTION COST IMPACT: RM0.00
+S21 START ALLOWED: NO - NO CURRENT COST SCOPE
+
+Current cost total retained:
+Base working cost: RM748,244.00
+Optional 10% contingency: RM74,824.40
+Working cost with optional 10% contingency: RM823,068.40
+
+Customer selling price:
+Outside SXX. Not part of BOQ cost takeoff chain.
