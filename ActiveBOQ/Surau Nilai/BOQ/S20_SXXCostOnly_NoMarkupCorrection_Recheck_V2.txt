@@ -1,0 +1,38 @@
+Surau Nilai - S20 SXX Cost-Only / No-Markup Correction Recheck V2
+
+Status:
+S20 PREVIOUS MARKUP CLASSIFICATION: ERROR - SUPERSEDED
+S20 COST TAKEOFF SCOPE: NO NEW CONSTRUCTION COST SCOPE AFTER S19
+SXX COST CHAIN STATUS: COST-COMPLETE TO CURRENT DRAWING/SPEC BASIS THROUGH S19
+S21 START ALLOWED: NO - NO DEFINED COST SCOPE
+
+Owner correction basis:
+- S01-SXX for this BOQ workflow is for cost takeoff only.
+- Markup/gross margin/customer selling price is outside the SXX cost chain.
+- S20 should not have been classified as Final Customer Price / Markup / Gross Margin path inside SXX.
+- S21 should not be opened unless there is a real remaining cost/takeoff scope or owner-defined cost package.
+
+Recheck basis:
+- V38/S19 already confirmed current BOQ cost basis PASS under 13G.
+- S18 already confirmed 24/24 current drawing/source coverage.
+- S19 already confirmed no missing component/rate/line count in the current BOQ basis.
+- S20 has no new material/labour/service construction line.
+
+Correct S20 interpretation:
+S20 is a correction/closure checkpoint only, not a trade package and not markup. The cost sequence should stop at S19 unless owner introduces another cost scope.
+
+S21 interpretation:
+There is no valid S21 cost scope currently identified. S21 is not a BOQ cost item and must not be used for markup. S21 can exist later only if owner adds a new cost scope, drawing/spec update, correction package, or reserved cost package.
+
+Current cost total retained:
+- S01-S16 corrected base working cost: RM748,244.00
+- Optional 10% contingency: RM74,824.40
+- Working cost with optional 10% contingency: RM823,068.40
+- S17 new cost impact: RM0.00
+- S18 new cost impact: RM0.00
+- S19 V2 new cost impact: RM0.00
+- S20 V2 new construction-cost impact: RM0.00
+
+Decision:
+S20 SXX COST-ONLY CORRECTION: PASS AS CORRECTION / CLOSURE CHECKPOINT
+S21 START ALLOWED: NO - NOT APPLICABLE UNTIL NEW COST SCOPE EXISTS
