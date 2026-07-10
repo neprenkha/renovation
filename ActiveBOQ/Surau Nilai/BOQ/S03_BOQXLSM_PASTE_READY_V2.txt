@@ -1,0 +1,26 @@
+Paste to S03!A:C - SPEC
+Spec	Description	Note
+S03-TITLE	Site clearing, earthwork, cut/fill and platform formation - revised drawing/spec basis	V2 supersedes old S03 V1 working-cost only because earthwork drawing quantity table was rescanned.
+S03-STATUS	DRAWING/SPEC RESCAN PASS - REVISED CURRENT BOQ COST BASIS	Customer selling price/margin is not included and is not required for SXX continuity unless owner asks.
+S03-SOURCE	SJ_01EW-CS-01-S0-00.pdf; SJ_01EW-DT-01-S0-00.pdf; SJ_01EW-LP-01-S0-00.pdf; Survey Tapak Surau Juassewh Sentosa.pdf	Rendered/visually checked and text extracted. Lot 20093 remains governing working lot; Lot 20059 conflicts are not adopted.
+S03-DRAWING-FACTS	Earthwork quantity table shows FILL 255m3, CUT 222m3, net import/fill balance 33m3 and export 0m3. Cross sections show platform level and road/carpark levels.	Old S03 V1 RM2,090.00 is superseded for current reconciliation because it was too low against the drawing quantity table.
+S03-COSTCHECK	S02 temporary ESCP/wash/erosion controls, S04 permanent entrance, S14 road/drainage and S16 concrete paving/utility are excluded. No markup included.	Duplicate prevention done.
+
+Paste to S03!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - DRAWING/SPEC RESCAN PASS: selected imported fill material allowance for net fill balance. CALC NOTE: net fill balance 33m3 x RM45/m3.	S03-B1-001	Selected Imported Fill Material Allowance (Current Working Cost Per m3)	M3	33	0	45.00
+
+Paste to S03!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - ROOT COST: skilled checking/support for earthwork setting-out, platform trim and level checking.	S03-B2-001	Labour - Skilled Worker (Per MH)	MH	24	0	22.50
+NO MARKUP - ROOT COST: general helper support for earthwork, traffic cleaning and platform trim support.	S03-B2-002	Labour - General Helper (Per MH)	MH	48	0	16.25
+
+Paste to S03!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - DRAWING/SPEC RESCAN PASS: site clearing, stripping and grubbing over Lot 20093 working area. CALC NOTE: 1,759m2 x RM1.50/m2.	S03-B3-001	Site Clearing Stripping and Grubbing Service Allowance (Current Working Cost Per m2)	M2	1759	0	1.50
+NO MARKUP - DRAWING/SPEC RESCAN PASS: cut excavation and stockpile/reuse handling. CALC NOTE: CUT 222m3 x RM18/m3.	S03-B3-002	Cut Excavation and Stockpile Reuse Handling Service Allowance (Current Working Cost Per m3)	M3	222	0	18.00
+NO MARKUP - DRAWING/SPEC RESCAN PASS: fill, spread and compact platform service. CALC NOTE: FILL 255m3 x RM16/m3.	S03-B3-003	Fill Spread and Compact Platform Service Allowance (Current Working Cost Per m3)	M3	255	0	16.00
+NO MARKUP - DRAWING/SPEC RESCAN PASS: import fill haulage, placing support and traffic cleaning. CALC NOTE: 33m3 x RM28/m3.	S03-B3-004	Import Fill Haulage Placing Support and Traffic Cleaning Allowance (Current Working Cost Per m3)	M3	33	0	28.00
+NO MARKUP - DRAWING/SPEC RESCAN PASS: backhoe / machinery allowance for cut-fill and platform shaping.	S03-B3-005	Backhoe and Earthwork Machinery Allowance (Current Working Cost Per lot)	LOT	1	0	2200.00
+NO MARKUP - DRAWING/SPEC RESCAN PASS: roller / plate compactor allowance for platform compaction.	S03-B3-006	Roller Plate Compactor Allowance (Current Working Cost Per lot)	LOT	1	0	1200.00
+NO MARKUP - DRAWING/SPEC RESCAN PASS: final trimming, level checking and platform making-good allowance.	S03-B3-007	Final Trimming Level Checking and Platform Making-Good Allowance (Current Working Cost Per lot)	LOT	1	0	900.00
