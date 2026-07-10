@@ -1,0 +1,163 @@
+# S18 Final Reserved Scope / Project Closeout Review Takeoff Audit V1
+
+Generated MYT: 2026-07-10 09:43
+
+## Status
+
+```text
+S18 FINAL RESERVED SCOPE / PROJECT CLOSEOUT REVIEW: PASS FOR CURRENT BOQ COST BASIS
+S18 NEW TRADE COST IMPACT: RM0.00
+S18 BOQ.XLSM INPUT: SUMMARY ONLY - NO NEW MATERIAL/LABOUR/SERVICE LINES
+S19 START ALLOWED: YES - FINAL CUSTOMER PRICE / MARKUP OR OWNER-REQUESTED FINAL OUTPUT PATH
+```
+
+## Header and gate basis
+
+Latest owner header checked:
+
+```text
+GPTRenovationHeader.txt
+Generated MYT: 2026-07-10 07:00
+```
+
+Owner strict gate repeated:
+
+```text
+Take off to next SXX is only allowed at 100%.
+99.9% is not a pass.
+```
+
+For S18, the 100% target is not a new construction trade. S18 is a final reserved-scope and drawing-coverage closeout gate. It must prove that all currently available customer drawings/sources are assigned to an SXX cost basis and that there is no visible leftover drawing scope requiring a new BOQ line before S19.
+
+Customer selling price / markup remains excluded unless owner explicitly asks for markup/gross margin stage.
+
+## Source set checked
+
+The Surau Nilai drawing/source set checked for S18 coverage contains 24 drawing files:
+
+```text
+01-SURAU JERUSSALAM LP-R02 Layout1.pdf
+02-SURAU JERUSSALAM SLAB SECTION 01.pdf
+03-SURAU JERUSSALAM SLAB SECTION 02.pdf
+04-SURAU JERUSSALAM GROUND BEAM DETAIL 01.pdf
+05-SURAU JERUSSALAM GROUND BEAM DETAIL 02.pdf
+06-SURAU JURESSALAM ROOF BEAM DETAIL-R01 Model.pdf
+07-SURAU JURESSALAM INT RF BEAM DETAIL-R01 Model.pdf
+CROSSING BRIDGE.pdf
+Fencing and Gate 1.pdf
+Hoarding and Signboard 1.pdf
+Roof Framing 1.pdf
+Roof Framing.pdf
+SJ_01ESCP-LP-01-S0-00.pdf
+SJ_01EW-CS-01-S0-00.pdf
+SJ_01EW-DT-01-S0-00.pdf
+SJ_01EW-LP-01-S0-00.pdf
+SJ_02R&D-DT-02-S0-00.pdf
+SJ_02R&D-LP-01-S0-01.pdf
+Surau Juasseh sections and elevations tender_constn 1.pdf
+Surau Plan Roof Plan Bldg Tender_Constn.pdf
+Surau Sanitary Plumbing Schematic 1.pdf
+Surau Sewerage Schematic 1.pdf
+Surau Site Plan Tender_Constn.pdf
+Survey Tapak Surau Juassewh Sentosa.pdf
+```
+
+## Drawing to SXX coverage matrix
+
+| No | Drawing/source | Assigned SXX coverage | S18 result |
+|---:|---|---|---|
+| 1 | 01-SURAU JERUSSALAM LP-R02 Layout1.pdf | S10 walls, S11 doors/windows/glazing, S12 finishes/sanitary interface | Covered |
+| 2 | 02-SURAU JERUSSALAM SLAB SECTION 01.pdf | S07 ground floor slab/apron/steps/ramps | Covered |
+| 3 | 03-SURAU JERUSSALAM SLAB SECTION 02.pdf | S07 ground floor slab/apron/steps/ramps | Covered |
+| 4 | 04-SURAU JERUSSALAM GROUND BEAM DETAIL 01.pdf | S05 building substructure | Covered |
+| 5 | 05-SURAU JERUSSALAM GROUND BEAM DETAIL 02.pdf | S05 building substructure | Covered |
+| 6 | 06-SURAU JURESSALAM ROOF BEAM DETAIL-R01 Model.pdf | S08 columns/RC frame/roof beam/superstructure RC | Covered |
+| 7 | 07-SURAU JURESSALAM INT RF BEAM DETAIL-R01 Model.pdf | S08 columns/RC frame/roof beam/superstructure RC | Covered |
+| 8 | CROSSING BRIDGE.pdf | S04 crossing bridge / entrance | Covered |
+| 9 | Fencing and Gate 1.pdf | S15 fencing/gate/meter enclosure/front boundary | Covered |
+| 10 | Hoarding and Signboard 1.pdf | S01 preliminaries/hoarding/signboard rescan | Covered |
+| 11 | Roof Framing 1.pdf | S09 roof framing/roof cover | Covered |
+| 12 | Roof Framing.pdf | S09 roof framing/roof cover | Covered |
+| 13 | SJ_01ESCP-LP-01-S0-00.pdf | S02 ESCP rescan | Covered |
+| 14 | SJ_01EW-CS-01-S0-00.pdf | S03 earthwork rescan/revision V2 | Covered |
+| 15 | SJ_01EW-DT-01-S0-00.pdf | S03 earthwork rescan/revision V2 | Covered |
+| 16 | SJ_01EW-LP-01-S0-00.pdf | S03 earthwork rescan/revision V2 | Covered |
+| 17 | SJ_02R&D-DT-02-S0-00.pdf | S14 road/drainage | Covered |
+| 18 | SJ_02R&D-LP-01-S0-01.pdf | S14 road/drainage | Covered |
+| 19 | Surau Juasseh sections and elevations tender_constn 1.pdf | S10 walls, S11 openings, S12 finishes/elevations | Covered |
+| 20 | Surau Plan Roof Plan Bldg Tender_Constn.pdf | S06 plumbing boundary, S07 slab, S09 roof, S10/S11/S12 layout/schedules, S16 external utility interface | Covered |
+| 21 | Surau Sanitary Plumbing Schematic 1.pdf | S06 under-slab plumbing and S12 sanitary final fixtures/accessories | Covered |
+| 22 | Surau Sewerage Schematic 1.pdf | S06 sewerage/plumbing rough-in boundary | Covered |
+| 23 | Surau Site Plan Tender_Constn.pdf | S01 site/prelim, S03 site/earthwork, S14 drainage, S15 gate/enclosure, S16 external utility | Covered |
+| 24 | Survey Tapak Surau Juassewh Sentosa.pdf | S03 earthwork/site/survey and S16 external utility/site validation | Covered |
+
+## Active SXX coverage after S18 check
+
+```text
+S01 DRAWING/SPEC RESCAN: PASS FOR CURRENT BOQ COST BASIS - USE V1
+S02 DRAWING/SPEC RESCAN: PASS FOR CURRENT BOQ COST BASIS - USE V2
+S03 DRAWING/SPEC RESCAN: PASS AND COST REVISED - USE V2
+S04 WORKING-COST DRAWING/SPEC BASIS: COMPLETE - USE V2
+S05 WORKING-COST DRAWING/SPEC BASIS: COMPLETE - USE V1
+S06 WORKING-COST DRAWING/SPEC BASIS: COMPLETE AFTER RECHECK - USE V2
+S07 WORKING-COST DRAWING/SPEC BASIS: COMPLETE AFTER RECHECK - USE V1
+S08 COMPLETE - CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS - USE V2
+S09 COMPLETE - CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS - USE V1
+S10 COMPLETE - CUSTOMER/README ACCEPTED FULL ALLOWANCE BASIS - USE V1
+S11 STRICT 100% CURRENT BOQ COST BASIS: PASS - USE AUDIT V3 / PASTE V2
+S12 STRICT 100% CURRENT BOQ COST BASIS: PASS - USE V1
+S13 WORKING-COST ESTIMATE COMPLETE - OWNER ACCEPTED PREMIUM-SENSIBLE SIZE-BASED PROVISIONAL PATH - USE V2
+S13 DRAWING-SPEC EXACT ELECTRICAL DESIGN: HOLD FOR FUTURE M&E UPDATE ONLY, NOT A BLOCKER FOR SXX CONTINUITY
+S14 STRICT 100% CURRENT BOQ COST BASIS: PASS - USE V1
+S15 STRICT 100% CURRENT BOQ COST BASIS: PASS - USE V1
+S16 STRICT 100% CURRENT BOQ COST BASIS: PASS - USE V1
+S17 STRICT 100% RECHECK V3: PASS FOR CURRENT BOQ COST BASIS
+S18 FINAL RESERVED SCOPE / PROJECT CLOSEOUT REVIEW: PASS FOR CURRENT BOQ COST BASIS
+```
+
+## S18 cost result
+
+S18 is a closeout/reconciliation SXX and does not add a new measured trade line.
+
+```text
+S18 NEW BLOCK 1 MATERIAL COST: RM0.00
+S18 NEW BLOCK 2 LABOUR COST: RM0.00
+S18 NEW BLOCK 3 SERVICE COST: RM0.00
+S18 NEW BASE WORKING COST IMPACT: RM0.00
+```
+
+Corrected S01-S16 total retained from S17 V3:
+
+```text
+Corrected S01-S16 base working cost: RM748,244.00
+Corrected optional 10% contingency: RM74,824.40
+Corrected working cost with optional 10% contingency: RM823,068.40
+Customer selling price: NOT READY - markup/gross margin excluded by owner decision
+```
+
+## Duplicate / missing-scope checks
+
+```text
+No unassigned drawing file found in the current 24-file drawing set: PASS
+No S18 new-cost trade required from visible drawing set: PASS
+No duplicate with S01 preliminaries/hoarding/signboard: PASS
+No duplicate with S03 earthwork: PASS
+No duplicate with S04 crossing bridge/entrance: PASS
+No duplicate with S06 plumbing/sewerage: PASS
+No duplicate with S09 roof rainwater goods: PASS
+No duplicate with S13 provisional M&E: PASS
+No duplicate with S14 road/drainage: PASS
+No duplicate with S15 fencing/gate/meter enclosure: PASS
+No duplicate with S16 external utility/rainwater/garden tap: PASS
+Markup/customer selling price excluded by owner decision: PASS
+100% / 99.9% gate for current BOQ cost basis: PASS
+```
+
+## S18 decision
+
+```text
+S18 FINAL RESERVED SCOPE / PROJECT CLOSEOUT REVIEW: PASS FOR CURRENT BOQ COST BASIS
+S18 NEW COST IMPACT: RM0.00
+S18 DRAWING/SOURCE COVERAGE CHECK: 24/24 CURRENT DRAWINGS COVERED
+S19 START ALLOWED: YES - FINAL CUSTOMER PRICE / MARKUP OR OWNER-REQUESTED FINAL OUTPUT PATH
+```
