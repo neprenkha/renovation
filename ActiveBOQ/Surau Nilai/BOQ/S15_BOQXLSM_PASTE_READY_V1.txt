@@ -1,0 +1,37 @@
+Paste to S15!A:C - SPEC
+Spec	Description	Note
+S15-TITLE	Fencing, gate, front meter/bin enclosure and boundary entrance metalwork	Current BOQ 100% cost basis from repeated check of Fencing and Gate drawing.
+S15-STATUS	COMPLETE FOR NEXT SXX - CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS	Margin/profit/customer selling price is not included and will be calculated later.
+S15-SOURCE	Use `Fencing and Gate 1.pdf`.	Rendered and visually inspected: elevation from road outside, plan, sectional details, fencing section and title block.
+S15-DRAWING-BASIS	Total frontage 19.486m from 4431mm + 10883mm + 4172mm. Main gate 10883mm. Anti-climb fencing to manufacturer detail. 900x700 metal doors. 200x200 ceramic wall/floor tiles. Drainage outlet, meter positions and MS grating shown.	Scale 1:50; quantities use drawing-derived full allowance basis.
+S15-COSTCHECK	Undercost/overprice/double-count check done.	S01 temporary hoarding, S04 crossing bridge/road entrance, S14 road/drain/culvert, S13 internal electrical/security, S06 plumbing/sewer rough-in and S10 main building walling excluded. No markup included.
+S15-MARKUP	All lines are working cost only.	Customer selling price/margin to be calculated later.
+
+Paste to S15!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: anti-climb fencing panel to manufacturer detail. CALC NOTE: (4.431m + 4.172m) x 1.827m = 15.72m2.	S15-B1-001	Anti-Climb Fencing Panel Supply Allowance to Manufacturer Detail (Current Working Cost Per m2)	M2	15.72	0	260.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: large metal vehicle gate to manufacturer detail. CALC NOTE: 10.883m x 2.073m = 22.56m2.	S15-B1-002	Large Metal Vehicle Gate Supply Allowance to Manufacturer Detail (Current Working Cost Per m2)	M2	22.56	0	750.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: facing brick gate wall/post and meter/bin enclosure material allowance. Excludes S10 main building walling.	S15-B1-003	Facing Brick Gate Wall Post and Meter/Bin Enclosure Material Allowance (Current Working Cost Per m2)	M2	28	0	150.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: RC gate/fence footing, plinth, coping and base beam allowance. Excludes S04 entrance and S14 road/drain.	S15-B1-004	RC Gate Footing Plinth Coping and Base Beam Material Allowance (Current Working Cost Per m)	M	19.5	0	260.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: 900 x 700mm metal doors to manufacturer detail shown at bin/meter enclosures.	S15-B1-005	900 x 700mm Metal Door Supply Allowance to Manufacturer Detail (Current Working Cost Per set)	SET	2	0	900.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: 900 x 700mm metal door or glass window inspection panel allowance at right enclosure.	S15-B1-006	900 x 700mm Metal Door or Glass Window Inspection Panel Allowance (Current Working Cost Per set)	SET	1	0	650.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: 200 x 200mm ceramic wall and floor tiles at bin/meter enclosure areas.	S15-B1-007	200 x 200mm Ceramic Wall and Floor Tile Material Allowance (Current Working Cost Per m2)	M2	35	0	65.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: drainage outlet and small pipe connection at gate/bin area. External long drain excluded to S14.	S15-B1-008	Drainage Outlet and Small Pipe Connection Allowance (Current Working Cost Per point)	POINT	1	0	450.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: MS grating to engineer detail shown on plan.	S15-B1-009	MS Grating to Engineer Detail Allowance (Current Working Cost Per set)	SET	1	0	950.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: electrical and water meter enclosure interface sundries. Utility authority meter/deposit not included.	S15-B1-010	Electrical and Water Meter Enclosure Interface Sundries Allowance (Current Working Cost Per lot)	LOT	1	0	2200.00
+
+Paste to S15!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: main gate fabrication handling, hanging, alignment and fixing labour. CALC NOTE: 22.56m2 x RM160/m2.	S15-B2-001	Main Gate Fabrication Handling Hanging Alignment and Fixing Labour Allowance (Current Working Cost Per m2)	M2	22.56	0	160.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: anti-climb fence installation labour.	S15-B2-002	Anti-Climb Fence Installation Labour Allowance (Current Working Cost Per m2)	M2	15.72	0	85.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: gate facing brick wall/post and tile labour. CALC NOTE: 28m2 facing brick/wall + 35m2 tile = 63m2 labour basis.	S15-B2-003	Gate Facing Brick Wall Post and Tile Labour Allowance (Current Working Cost Per m2)	M2	63	0	65.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: gate/fence footing, plinth and coping labour.	S15-B2-004	Gate Footing Plinth and Coping Labour Allowance (Current Working Cost Per m)	M	19.5	0	85.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: small metal door and inspection panel installation. CALC NOTE: 2 metal doors + 1 inspection panel = 3 sets.	S15-B2-005	Small Metal Door and Inspection Panel Installation Labour Allowance (Current Working Cost Per set)	SET	3	0	250.00
+NO MARKUP - ROOT COST: handling, cleanup, minor making-good and support labour.	S15-B2-006	Labour - General Helper (Per MH)	MH	60	0	16.25
+NO MARKUP - ROOT COST: setout, fixing coordination, QA and gate adjustment support.	S15-B2-007	Labour - Skilled Worker (Per MH)	MH	40	0	22.50
+
+Paste to S15!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: metal gate/fence anti-rust primer, paint and touch-up allowance.	S15-B3-001	Metal Gate Fence Anti-Rust Primer Paint and Touch-Up Allowance (Current Working Cost Per lot)	LOT	1	0	3500.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: gate hinges, track, stopper, lock, drop bolt, roller and hardware allowance.	S15-B3-002	Gate Hinges Track Stopper Lock Drop Bolt Roller and Hardware Allowance (Current Working Cost Per lot)	LOT	1	0	2200.00
+NO MARKUP - S15 RATE BASIS. CUSTOMER/DRAWING ACCEPTED FULL ALLOWANCE BASIS: gate adjustment, opening test, cleaning and handover allowance.	S15-B3-003	Gate Adjustment Opening Test Cleaning and Handover Allowance (Current Working Cost Per lot)	LOT	1	0	950.00
