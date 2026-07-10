@@ -1,0 +1,17 @@
+Paste to S18!A:C - SPEC
+Spec	Description	Note
+S18-TITLE	Final reserved scope / project closeout review	S18 is a closeout/reconciliation SXX, not a new measured construction trade.
+S18-STATUS	PASS FOR CURRENT BOQ COST BASIS	All 24 current drawing/source files are assigned to S01-S16/S17 coverage. No unallocated drawing scope found.
+S18-COST-IMPACT	RM0.00 new cost impact	S18 does not add material/labour/service cost. Existing S01-S16 corrected working-cost total remains active.
+S18-DRAWING-COVERAGE	24/24 current drawing/source files covered	No new BOQ.xlsm material/labour/service paste lines required for S18.
+S18-TOTAL-REFERENCE	Corrected S01-S16 base working cost RM748,244.00; with optional 10% contingency RM823,068.40	Customer selling price/markup excluded until owner asks.
+S18-NEXT	S19 start allowed	S19 may proceed to final customer price/markup or owner-requested final output path.
+
+Paste to S18!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+
+Paste to S18!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+
+Paste to S18!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
