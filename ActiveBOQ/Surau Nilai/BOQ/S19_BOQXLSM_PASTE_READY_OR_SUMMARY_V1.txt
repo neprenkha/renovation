@@ -1,0 +1,48 @@
+Surau Nilai - S19 BOQ.xlsm Paste-Ready or Summary V1
+
+S19 is a final current-cost BOQ consolidation / paste-chain audit.
+S19 is not a new construction trade sheet and does not add new BOQ.xlsm material/labour/service lines.
+
+Paste/use note:
+- Do not paste S19 as a normal trade material/labour/service block unless the workbook has a summary/control area.
+- Use this file as S19 summary/control evidence.
+- Active trade paste files remain S01-S16, with S17/S18/S19 summary files as reconciliation controls.
+
+S19 status:
+S19 FINAL CURRENT-COST BOQ CONSOLIDATION: PASS FOR CURRENT BOQ COST BASIS
+S19 NEW TRADE COST IMPACT: RM0.00
+S20 START ALLOWED: YES - MARKUP / FINAL CUSTOMER OUTPUT PATH ONLY WHEN OWNER ASKS
+
+Active paste file chain:
+S01_BOQXLSM_PASTE_READY_V1.txt
+S02_BOQXLSM_PASTE_READY_V2.txt
+S03_BOQXLSM_PASTE_READY_V2.txt
+S04_BOQXLSM_PASTE_READY_V2.txt
+S05_BOQXLSM_PASTE_READY_V1.txt
+S06_BOQXLSM_PASTE_READY_V2.txt
+S07_BOQXLSM_PASTE_READY_V1.txt
+S08_BOQXLSM_PASTE_READY_V2.txt
+S09_BOQXLSM_PASTE_READY_V1.txt
+S10_BOQXLSM_PASTE_READY_V1.txt
+S11_BOQXLSM_PASTE_READY_V2.txt
+S12_BOQXLSM_PASTE_READY_V1.txt
+S13_BOQXLSM_PASTE_READY_V2.txt
+S14_BOQXLSM_PASTE_READY_V1.txt
+S15_BOQXLSM_PASTE_READY_V1.txt
+S16_BOQXLSM_PASTE_READY_V1.txt
+S17_BOQXLSM_PASTE_READY_OR_SUMMARY_V3.txt
+S18_BOQXLSM_PASTE_READY_OR_SUMMARY_V1.txt
+S19_BOQXLSM_PASTE_READY_OR_SUMMARY_V1.txt
+
+Consolidated current-cost total:
+Base working cost: RM748,244.00
+Optional 10% contingency: RM74,824.40
+Working cost with optional 10% contingency: RM823,068.40
+Customer selling price: NOT READY - markup/gross margin excluded until owner asks
+
+S19 gate:
+Latest header checked: PASS
+V36/S18 coverage checked: PASS
+No unassigned drawing scope found: PASS
+No new material/labour/service lines required: PASS
+100% / 99.9% gate for current BOQ cost basis: PASS
