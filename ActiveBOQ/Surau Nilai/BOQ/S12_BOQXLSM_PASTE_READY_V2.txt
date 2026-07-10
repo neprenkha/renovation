@@ -1,0 +1,34 @@
+Paste to S12!A:C - SPEC
+Spec	Description	Note
+S12-TITLE	Internal plaster, ceiling, finishes, tile supply, sanitary final fixtures and internal finish interface	V2 owner correction includes tile supply in current BOQ cost basis.
+S12-STATUS	COMPLETE FOR CURRENT BOQ COST BASIS - OWNER REQUIRED TILE SUPPLY INCLUDED	Margin/profit/customer selling price is outside SXX and not included.
+S12-SOURCE	Surau Plan Roof Plan Bldg Tender_Constn.pdf; Surau Juasseh sections and elevations tender_constn 1.pdf; Surau Sanitary Plumbing Schematic 1.pdf; Surau Sewerage Schematic 1.pdf; owner correction 2026-07-10	Tile supply is included by owner correction even where exact final tile brand/model may be replaced later.
+S12-CROSSCHECK	Exclude S06 rough-in, S10 wall substrate/brickwork, S11 doors/windows/glazing, S13 electrical/M&E, external drainage and customer markup.	S11 door/window/glazing remains included in S11, not S12.
+
+Paste to S12!E:K - Materials Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Price/Unit (RM)
+S12-B1-001	Ceiling	Seamless Joint Plasterboard Ceiling with KCC Emulsion Paint Material Allowance (Current Working Cost Per m2)	M2	232.63	0	45.00
+S12-B1-002	Wall Plaster Paint	Plastered Wall and KCC Emulsion Paint Material Allowance (Current Working Cost Per m2)	M2	360.00	0	18.00
+S12-B1-003	Tile Supply	300 x 600mm Porcelain Floor Tile Supply Logical Provisional Working Cost Per m2	M2	100.00	0	55.00
+S12-B1-004	Tile Supply	Ceramic Wall/Floor Tile Supply Logical Provisional Working Cost Per m2	M2	175.00	0	40.00
+S12-B1-005	Tile Consumables	Tile Adhesive G88 Bonding Agent Bondplus Cement Grout Bonder and Grout Consumables Allowance (Current Working Cost Per m2)	M2	275.00	0	20.00
+S12-B1-006	Carpet Substrate	Cement Render and Two Coats Sissons Silicone Sealant under ID Carpet Material Allowance (Current Working Cost Per m2)	M2	98.50	0	22.00
+S12-B1-007	WC Fixture	WC Pan Cistern Seat and Flush Fitting Final Fixture Allowance (Current Working Cost Per set)	SET	5.00	0	550.00
+S12-B1-008	Basin Fixture	Wash Hand Basin Tap Waste Trap and Bracket Final Fixture Allowance (Current Working Cost Per set)	SET	4.00	0	450.00
+S12-B1-009	Tap Fixture	Bib Tap Ablution Tap Feet-Wash Tap Final Fixture Allowance (Current Working Cost Per point)	POINT	15.00	0	65.00
+S12-B1-010	Grating	Stainless Steel Floor Trap / Sump Grating Final Cover Allowance (Current Working Cost Per point)	POINT	10.00	0	85.00
+S12-B1-011	Accessories and Sundries	Sanitary Final Accessories Silicone Sealant Fixing and Small Fittings Allowance (Current Working Cost Per lot)	LOT	1.00	0	1000.00
+
+Paste to S12!P:V - Labour Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+S12-B2-001	Ceiling	Plasterboard Ceiling Installation Jointing and Paint Labour Allowance (Current Working Cost Per m2)	M2	232.63	0	35.00
+S12-B2-002	Wall Plaster Paint	Internal Wall Plastering and KCC Emulsion Paint Labour Allowance (Current Working Cost Per m2)	M2	360.00	0	25.00
+S12-B2-003	Tile Works	Floor and Wall Tile Installation Labour Allowance (Current Working Cost Per m2)	M2	275.00	0	45.00
+S12-B2-004	Carpet Substrate	Cement Render and Sissons Silicone Sealant under Carpet Labour Allowance (Current Working Cost Per m2)	M2	98.50	0	18.00
+S12-B2-005	Sanitary Installation	Sanitary Final Fixture Installation Labour Allowance (Current Working Cost Per point)	POINT	34.00	0	95.00
+
+Paste to S12!AA:AG - Service Block
+Note	Spec	Description	UOM	Usage Qty	Wastage/Buffer	Rate (RM)
+S12-B3-001	Finishes Protection	Final Finishes Protection Cleaning and Handover Touch-Up Allowance (Current Working Cost Per lot)	LOT	1.00	0	1800.00
+S12-B3-002	Sanitary Testing	Final Sanitary Fixture Testing Commissioning and Leak Correction Allowance (Current Working Cost Per lot)	LOT	1.00	0	650.00
+S12-B3-003	Finishing Tools	Tile Cutting Painting and Finishing Small Tools Consumable Service Allowance (Current Working Cost Per lot)	LOT	1.00	0	950.00
