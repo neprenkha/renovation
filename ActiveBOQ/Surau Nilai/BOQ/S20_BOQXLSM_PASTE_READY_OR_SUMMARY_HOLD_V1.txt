@@ -1,0 +1,27 @@
+Surau Nilai - S20 BOQ.xlsm Paste-Ready or Summary HOLD V1
+
+S20 is not a new construction trade paste package.
+
+Status:
+S20 FINAL CUSTOMER PRICE / MARKUP / GROSS MARGIN PATH: HOLD
+S20 CURRENT BOQ COST BASIS CARRY-FORWARD: S01-S19 PASS
+S21 START ALLOWED: NO
+
+No BOQ.xlsm material/labour/service paste block is produced for S20 because S20 has no new construction-cost line.
+
+Current cost basis carried forward:
+Base working cost: RM748,244.00
+Optional 10% contingency: RM74,824.40
+Working cost with optional 10% contingency: RM823,068.40
+
+Customer selling price:
+NOT READY - markup/gross margin excluded until owner provides/approves pricing method.
+
+S20 blocker:
+Markup / gross margin / final customer output method is not supplied or approved in this turn. Under Section 13G, S20 cannot be 100% final output if a required commercial rate/policy is missing.
+
+Required owner decision to complete S20 later:
+- markup percentage; or
+- target gross margin percentage; or
+- instruction to output working-cost-only final summary with no customer selling price; or
+- another explicit final output path.
